@@ -143,3 +143,4 @@ D:\paintshop\HeadQApplication\PaintShopApplication\obj\Release\HeadQApplication.
 D:\paintshop\HeadQApplication\PaintShopApplication\obj\Release\HeadQApplication.colorsDeleteSync.resources
 D:\paintshop\HeadQApplication\PaintShopApplication\obj\Release\HeadQApplication.formulasEditSync.resources
 D:\paintshop\HeadQApplication\PaintShopApplication\obj\Release\HeadQApplication.formulasDeleteSync.resources
+D:\paintshop\HeadQApplication\PaintShopApplication\obj\Release\PaintShopApplication.vbprojResolveAssemblyReference.cache

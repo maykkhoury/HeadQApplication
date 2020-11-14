@@ -73,3 +73,4 @@ insert into Geely select * from formula where id_car=80;
 insert into Haima_Auto select * from formula where id_car=81;
 
 insert into Saipa select * from formula where id_car=82;
+insert into Color_Cards select * from formula where id_car=(select id_car from car where tableName='Color_Cards');

@@ -73,3 +73,4 @@ alter table Geely add code_formulaX varchar(100), code_formulaXp varchar(100),co
 alter table Haima_Auto add code_formulaX varchar(100), code_formulaXp varchar(100),code_formulaXpp varchar(100),code_formulaY varchar(100), code_formulaYp varchar(100),code_formulaYpp varchar(100),code_formulaZ varchar(100), code_formulaZp varchar(100),code_formulaZpp varchar(100);
 
 alter table Saipa add code_formulaX varchar(100), code_formulaXp varchar(100),code_formulaXpp varchar(100),code_formulaY varchar(100), code_formulaYp varchar(100),code_formulaYpp varchar(100),code_formulaZ varchar(100), code_formulaZp varchar(100),code_formulaZpp varchar(100);
+alter table Color_Cards add code_formulaX varchar(100), code_formulaXp varchar(100),code_formulaXpp varchar(100),code_formulaY varchar(100), code_formulaYp varchar(100),code_formulaYpp varchar(100),code_formulaZ varchar(100), code_formulaZp varchar(100),code_formulaZpp varchar(100);

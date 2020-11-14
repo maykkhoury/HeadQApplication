@@ -65,3 +65,5 @@ UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulax = st.id_formula SET 
 UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode;
 UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode;
 UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode;
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode;
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode;

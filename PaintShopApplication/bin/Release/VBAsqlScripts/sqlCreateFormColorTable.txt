@@ -65,4 +65,5 @@ create table BYD_Auto_formulaColor(id_formulaColor long, id_formula long, id_col
 create table JAC_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));
 create table Geely_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));
 create table Haima_Auto_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));
-create table Saipa_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite double, id_unit long, state varchar(50), primary key(id_formulaColor))
+create table Saipa_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));
+create table Color_Cards_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));

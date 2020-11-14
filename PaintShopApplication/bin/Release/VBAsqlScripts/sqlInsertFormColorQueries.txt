@@ -73,3 +73,5 @@ insert into Geely_formulaColor select * from formulaColor where id_formula in (s
 insert into Haima_Auto_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=81);
 
 insert into Saipa_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=82);
+
+insert into Color_Cards_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=(select id_car from car where tableName='Color_Cards'));

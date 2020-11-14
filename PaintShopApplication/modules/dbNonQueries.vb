@@ -842,24 +842,69 @@ Module dbNonQueries
             MessageBox.Show("could not insert record:" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
             Return False
         End Try
+        'Dim idCar As Integer = getCars(" where tableName='" & tableName & "'")(0).id_car
 
         Dim scriptsFolder As String = My.Application.Info.DirectoryPath & "\\VBAsqlScripts"
         Dim query As String = ""
         Dim createCarTablesScriptPath As String = scriptsFolder & "\\sqlCreateCarTables.txt"
-        query = vbNewLine & "create table " & tableName & "(id_formula long,id_formulaX long,id_formulaY long,formulaImgPath varchar(100),otherPrice double,id_otherCurreny long,id_otherUnit long, type varchar(50),id_car long,version varchar(5),name_formula varchar(50),c_year varchar(255),variant varchar(255),duplicate varchar(50),colorCode varchar(100),colorRGB varchar(50),clientName varchar(50),cardNumber varchar(100),seqnum long,state varchar(50),id_formulaZ long,id_formulaZp long,id_formulaZ2p long,id_formulaXp long,id_formulaX2p long,id_formulaYp long,id_formulaY2p long,isEquation15perc4201 long,converted varchar(255),Date_cre_mod varchar(255),noEquation4201_180 long,colorRGBPerc varchar(255), modified_once long, primary key (id_formula));"
+        query = vbNewLine & "create table " & tableName & " (id_formula long,id_formulaX long,id_formulaY long,formulaImgPath varchar(100),otherPrice double,id_otherCurreny long,id_otherUnit long, type varchar(50),id_car long,version varchar(5),name_formula varchar(50),c_year varchar(255),variant varchar(255),duplicate varchar(50),colorCode varchar(100),colorRGB varchar(50),clientName varchar(50),cardNumber varchar(100),seqnum long,state varchar(50),id_formulaZ long,id_formulaZp long,id_formulaZ2p long,id_formulaXp long,id_formulaX2p long,id_formulaYp long,id_formulaY2p long,isEquation15perc4201 long,converted varchar(255),Date_cre_mod varchar(255),noEquation4201_180 long,colorRGBPerc varchar(255), modified_once long, primary key (id_formula));"
         appendFile(createCarTablesScriptPath, query, False)
 
+        Dim sqlAlterCarsTablesScriptPath As String = scriptsFolder & "\\sqlAlterCarsTablesScript.txt"
+        query = vbNewLine & "alter table " & tableName & " add code_formulaX varchar(100), code_formulaXp varchar(100),code_formulaXpp varchar(100),code_formulaY varchar(100), code_formulaYp varchar(100),code_formulaYpp varchar(100),code_formulaZ varchar(100), code_formulaZp varchar(100),code_formulaZpp varchar(100);"
+        appendFile(sqlAlterCarsTablesScriptPath, query, False)
+
         Dim insertIntoCarTablesScriptPath As String = scriptsFolder & "\\sqlInsertCarQueries.txt"
-        query = vbNewLine & "insert into " & tableName & " select * from formula where id_car=(select id_car from car where table_name='" & tableName & "')"
+        query = vbNewLine & "insert into " & tableName & " select * from formula where id_car=(select id_car from car where tableName='" & tableName & "');"
         appendFile(insertIntoCarTablesScriptPath, query, False)
 
         Dim createFormulaColorTablesScriptPath As String = scriptsFolder & "\\sqlCreateFormColorTable.txt"
-        query = vbNewLine & "create table " & tableName & "_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), primary key(id_formulaColor))"
+        query = vbNewLine & "create table " & tableName & "_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));"
         appendFile(createFormulaColorTablesScriptPath, query, False)
+        Dim createFormulaColorTablesMobileScriptPath As String = scriptsFolder & "\\sqlCreateFormColorTable.mobile.txt"
+        query = vbNewLine & "create table " & tableName & "_formulaColor(id_formulaColor long, id_formula long, id_color long, quantite varchar(255), id_unit long, state varchar(50), encrypted long, primary key(id_formulaColor));"
+        appendFile(createFormulaColorTablesMobileScriptPath, query, False)
 
         Dim insertIntoFormulaColorTablesScriptPath As String = scriptsFolder & "\\sqlInsertFormColorQueries.txt"
-        query = vbNewLine & "insert into " & tableName & "_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=(select id_car from car where table_name='" & tableName & "'))"
+        query = vbNewLine & "insert into " & tableName & "_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=(select id_car from car where tableName='" & tableName & "'));"
         appendFile(insertIntoFormulaColorTablesScriptPath, query, False)
+
+        Dim sqlUpdateMultif_xPath As String = scriptsFolder & "\\sqlUpdateMultif_x.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode;"
+        appendFile(sqlUpdateMultif_xPath, query, False)
+
+        Dim sqlUpdateMultif_xpPath As String = scriptsFolder & "\\sqlUpdateMultif_xp.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode;"
+        appendFile(sqlUpdateMultif_xpPath, query, False)
+
+        Dim sqlUpdateMultif_xppPath As String = scriptsFolder & "\\sqlUpdateMultif_xpp.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode;"
+        appendFile(sqlUpdateMultif_xppPath, query, False)
+
+        Dim sqlUpdateMultif_yPath As String = scriptsFolder & "\\sqlUpdateMultif_y.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode;"
+        appendFile(sqlUpdateMultif_yPath, query, False)
+
+        Dim sqlUpdateMultif_ypPath As String = scriptsFolder & "\\sqlUpdateMultif_yp.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode;"
+        appendFile(sqlUpdateMultif_ypPath, query, False)
+
+        Dim sqlUpdateMultif_yppPath As String = scriptsFolder & "\\sqlUpdateMultif_ypp.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode;"
+        appendFile(sqlUpdateMultif_yppPath, query, False)
+
+        Dim sqlUpdateMultif_zPath As String = scriptsFolder & "\\sqlUpdateMultif_z.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode;"
+        appendFile(sqlUpdateMultif_zPath, query, False)
+
+        Dim sqlUpdateMultif_zpPath As String = scriptsFolder & "\\sqlUpdateMultif_zp.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode;"
+        appendFile(sqlUpdateMultif_zpPath, query, False)
+
+        Dim sqlUpdateMultif_zppPath As String = scriptsFolder & "\\sqlUpdateMultif_zpp.txt"
+        query = vbNewLine & "UPDATE " & tableName & " mt INNER JOIN " & tableName & " st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode;"
+        appendFile(sqlUpdateMultif_zppPath, query, False)
+
     End Function
     Public Sub setLastChosenCar(ByVal chosenCar As Car)
         Try
