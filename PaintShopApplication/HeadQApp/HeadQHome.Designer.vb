@@ -132,6 +132,11 @@ Partial Class HeadQHome
         Me.butSearchLangForm = New System.Windows.Forms.Button()
         Me.tbGarages = New System.Windows.Forms.TabPage()
         Me.grpGarageForm = New System.Windows.Forms.GroupBox()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.butBrowseHqDirectory = New System.Windows.Forms.Button()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.txtHqDirectory = New HeadQApplication.MyTextBox()
+        Me.butConvertToHQ = New System.Windows.Forms.Button()
         Me.chkApply6 = New System.Windows.Forms.CheckBox()
         Me.chkUsername = New System.Windows.Forms.CheckBox()
         Me.txtusername = New HeadQApplication.MyTextBox()
@@ -278,6 +283,7 @@ Partial Class HeadQHome
         Me.fldExcelDialog = New System.Windows.Forms.FolderBrowserDialog()
         Me.prgBar = New System.Windows.Forms.ProgressBar()
         Me.dlgBasicColorDialog = New System.Windows.Forms.ColorDialog()
+        Me.lbHqConversionProgress = New System.Windows.Forms.Label()
         Me.tbTabs.SuspendLayout()
         Me.tbFormulas.SuspendLayout()
         Me.grpFormulas.SuspendLayout()
@@ -290,6 +296,7 @@ Partial Class HeadQHome
         Me.grpLanguageForm.SuspendLayout()
         Me.tbGarages.SuspendLayout()
         Me.grpGarageForm.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         CType(Me.pctThemeColor, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
@@ -309,8 +316,8 @@ Partial Class HeadQHome
         'tbTabs
         '
         Me.tbTabs.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tbTabs.Controls.Add(Me.tbFormulas)
         Me.tbTabs.Controls.Add(Me.tbCars)
         Me.tbTabs.Controls.Add(Me.tbLanguage)
@@ -338,8 +345,8 @@ Partial Class HeadQHome
         'grpFormulas
         '
         Me.grpFormulas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpFormulas.BackColor = System.Drawing.Color.Transparent
         Me.grpFormulas.Controls.Add(Me.butNegativeQty)
         Me.grpFormulas.Controls.Add(Me.lbAttention)
@@ -852,8 +859,8 @@ Partial Class HeadQHome
         'lsvFamily
         '
         Me.lsvFamily.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lsvFamily.BackColor = System.Drawing.Color.White
         Me.lsvFamily.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cformulaId, Me.cctype, Me.ccarname, Me.ccode, Me.ccname, Me.cyear, Me.cversion, Me.ccardNbr})
         Me.lsvFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1052,8 +1059,8 @@ Partial Class HeadQHome
         'grpCars
         '
         Me.grpCars.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpCars.BackColor = System.Drawing.Color.Transparent
         Me.grpCars.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.grpCars.Controls.Add(Me.butClearCars)
@@ -1127,7 +1134,7 @@ Partial Class HeadQHome
         'pctCarImg
         '
         Me.pctCarImg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.pctCarImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pctCarImg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pctCarImg.Location = New System.Drawing.Point(126, 87)
@@ -1251,7 +1258,7 @@ Partial Class HeadQHome
         'lsvCars
         '
         Me.lsvCars.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lsvCars.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidcar, Me.ColumnHeader1})
         Me.lsvCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lsvCars.FullRowSelect = True
@@ -1301,8 +1308,8 @@ Partial Class HeadQHome
         'grpLanguageForm
         '
         Me.grpLanguageForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpLanguageForm.BackColor = System.Drawing.Color.Transparent
         Me.grpLanguageForm.Controls.Add(Me.butClearLang)
         Me.grpLanguageForm.Controls.Add(Me.butDeleteLangForm)
@@ -1454,7 +1461,7 @@ Partial Class HeadQHome
         'lsvLanguage
         '
         Me.lsvLanguage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lsvLanguage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidLang, Me.ColumnHeader3, Me.ColumnHeader4})
         Me.lsvLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lsvLanguage.FullRowSelect = True
@@ -1509,9 +1516,10 @@ Partial Class HeadQHome
         'grpGarageForm
         '
         Me.grpGarageForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpGarageForm.BackColor = System.Drawing.Color.Transparent
+        Me.grpGarageForm.Controls.Add(Me.GroupBox7)
         Me.grpGarageForm.Controls.Add(Me.chkApply6)
         Me.grpGarageForm.Controls.Add(Me.chkUsername)
         Me.grpGarageForm.Controls.Add(Me.txtusername)
@@ -1569,6 +1577,62 @@ Partial Class HeadQHome
         Me.grpGarageForm.TabIndex = 70
         Me.grpGarageForm.TabStop = False
         Me.grpGarageForm.Text = "Garages"
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.lbHqConversionProgress)
+        Me.GroupBox7.Controls.Add(Me.butBrowseHqDirectory)
+        Me.GroupBox7.Controls.Add(Me.Label36)
+        Me.GroupBox7.Controls.Add(Me.txtHqDirectory)
+        Me.GroupBox7.Controls.Add(Me.butConvertToHQ)
+        Me.GroupBox7.Location = New System.Drawing.Point(433, 115)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(236, 117)
+        Me.GroupBox7.TabIndex = 89
+        Me.GroupBox7.TabStop = False
+        '
+        'butBrowseHqDirectory
+        '
+        Me.butBrowseHqDirectory.BackColor = System.Drawing.SystemColors.Control
+        Me.butBrowseHqDirectory.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butBrowseHqDirectory.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.butBrowseHqDirectory.Location = New System.Drawing.Point(194, 16)
+        Me.butBrowseHqDirectory.Name = "butBrowseHqDirectory"
+        Me.butBrowseHqDirectory.Size = New System.Drawing.Size(37, 26)
+        Me.butBrowseHqDirectory.TabIndex = 88
+        Me.butBrowseHqDirectory.Text = "--"
+        Me.butBrowseHqDirectory.UseVisualStyleBackColor = False
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label36.Location = New System.Drawing.Point(13, 23)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(85, 15)
+        Me.Label36.TabIndex = 87
+        Me.Label36.Text = "Folder Path:"
+        '
+        'txtHqDirectory
+        '
+        Me.txtHqDirectory.Location = New System.Drawing.Point(104, 18)
+        Me.txtHqDirectory.Name = "txtHqDirectory"
+        Me.txtHqDirectory.ReadOnly = True
+        Me.txtHqDirectory.Size = New System.Drawing.Size(84, 23)
+        Me.txtHqDirectory.TabIndex = 86
+        '
+        'butConvertToHQ
+        '
+        Me.butConvertToHQ.BackColor = System.Drawing.SystemColors.Control
+        Me.butConvertToHQ.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butConvertToHQ.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.butConvertToHQ.Location = New System.Drawing.Point(16, 64)
+        Me.butConvertToHQ.Name = "butConvertToHQ"
+        Me.butConvertToHQ.Size = New System.Drawing.Size(205, 47)
+        Me.butConvertToHQ.TabIndex = 85
+        Me.butConvertToHQ.Text = "Generate corresponding HQ"
+        Me.butConvertToHQ.UseVisualStyleBackColor = False
         '
         'chkApply6
         '
@@ -2072,7 +2136,7 @@ Partial Class HeadQHome
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.txtGarageDirectory)
         Me.GroupBox2.Controls.Add(Me.butInstall)
-        Me.GroupBox2.Location = New System.Drawing.Point(933, 117)
+        Me.GroupBox2.Location = New System.Drawing.Point(933, 115)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(236, 117)
         Me.GroupBox2.TabIndex = 88
@@ -2311,7 +2375,7 @@ Partial Class HeadQHome
         'lsvGarage
         '
         Me.lsvGarage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lsvGarage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidGarage, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.cidlanggarage, Me.cappequation, Me.cgversion, Me.cgcoat})
         Me.lsvGarage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lsvGarage.FullRowSelect = True
@@ -2396,8 +2460,8 @@ Partial Class HeadQHome
         'grpBColors
         '
         Me.grpBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpBColors.BackColor = System.Drawing.Color.Transparent
         Me.grpBColors.Controls.Add(Me.chkBColorFormNameAlt2)
         Me.grpBColors.Controls.Add(Me.txtBColorNameFormAlt2)
@@ -2717,7 +2781,7 @@ Partial Class HeadQHome
         'lbCurrencyDetailsValue2
         '
         Me.lbCurrencyDetailsValue2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbCurrencyDetailsValue2.AutoSize = True
         Me.lbCurrencyDetailsValue2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbCurrencyDetailsValue2.ForeColor = System.Drawing.SystemColors.ActiveCaption
@@ -2730,7 +2794,7 @@ Partial Class HeadQHome
         'Label13
         '
         Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlText
@@ -2823,8 +2887,8 @@ Partial Class HeadQHome
         'lsvBColors
         '
         Me.lsvBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lsvBColors.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidBColor, Me.ColumnHeader2, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader9, Me.ColumnHeader14})
         Me.lsvBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lsvBColors.FullRowSelect = True
@@ -2904,8 +2968,8 @@ Partial Class HeadQHome
         'GroupBox3
         '
         Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.Controls.Add(Me.butClearUpdate)
         Me.GroupBox3.Controls.Add(Me.butBrowseUpdate)
         Me.GroupBox3.Controls.Add(Me.Label12)
@@ -2966,7 +3030,7 @@ Partial Class HeadQHome
         'butUpdateFile
         '
         Me.butUpdateFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.butUpdateFile.BackColor = System.Drawing.SystemColors.Control
         Me.butUpdateFile.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.butUpdateFile.ForeColor = System.Drawing.SystemColors.ControlText
@@ -3044,6 +3108,14 @@ Partial Class HeadQHome
         Me.prgBar.TabIndex = 63
         Me.prgBar.Visible = False
         '
+        'lbHqConversionProgress
+        '
+        Me.lbHqConversionProgress.AutoSize = True
+        Me.lbHqConversionProgress.Location = New System.Drawing.Point(16, 44)
+        Me.lbHqConversionProgress.Name = "lbHqConversionProgress"
+        Me.lbHqConversionProgress.Size = New System.Drawing.Size(0, 17)
+        Me.lbHqConversionProgress.TabIndex = 89
+        '
         'HeadQHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3076,6 +3148,8 @@ Partial Class HeadQHome
         Me.tbGarages.ResumeLayout(False)
         Me.grpGarageForm.ResumeLayout(False)
         Me.grpGarageForm.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         CType(Me.pctThemeColor, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3357,4 +3431,10 @@ Partial Class HeadQHome
     Friend WithEvents MobileSyncToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents chkApply6 As System.Windows.Forms.CheckBox
     Friend WithEvents butNegativeQty As System.Windows.Forms.Button
+    Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
+    Friend WithEvents butBrowseHqDirectory As System.Windows.Forms.Button
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents txtHqDirectory As HeadQApplication.MyTextBox
+    Friend WithEvents butConvertToHQ As System.Windows.Forms.Button
+    Friend WithEvents lbHqConversionProgress As System.Windows.Forms.Label
 End Class

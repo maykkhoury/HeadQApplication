@@ -696,10 +696,10 @@ Module GlobalVariables
     End Function
 
 
-    Public Function getColorById(ByVal id) As Color
+    Public Function getColorById(ByVal id, Optional ByVal specificConString = Nothing) As Color
 
         Dim whereStr As String = " WHERE id_color=" & id
-        Dim colorTab() As Color = getColors(whereStr)
+        Dim colorTab() As Color = getColors(whereStr, specificConString)
         Dim color As Color = Nothing
         If Not colorTab Is Nothing Then
             If colorTab.Length > 0 Then

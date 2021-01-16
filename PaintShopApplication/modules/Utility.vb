@@ -7,6 +7,7 @@ Imports System.IO.Packaging
 
 Module Utility
     Private TripleDes As New TripleDESCryptoServiceProvider
+    Public colorsFromSpecificDB() As Color
     Public Function getCodeFormulaX(ByVal id_formula As Integer, ByVal allFormulasHash As Hashtable) As String
         Dim code As String = ""
         Dim formula As Formula = allFormulasHash.Item(id_formula)
@@ -1045,6 +1046,26 @@ Module Utility
         Next
         Return result
     End Function
+
+    Public Function getColorByIdFromArray(ByVal idColor As Integer, Optional ByVal specificConString As String = Nothing) As Color
+        Dim allColorsToUse As Color()
+        If specificConString Is Nothing Then
+            allColorsToUse = colors
+        Else
+            allColorsToUse = colorsFromSpecificDB
+        End If
+
+        Dim result As Color = Nothing
+        Dim i As Integer
+        For i = 0 To colors.Length - 1
+            If idColor = colors(i).id_color Then
+                result = colors(i)
+            End If
+        Next
+        Return result
+
+    End Function
+
     Private Function modifyQtys(ByVal formulaColorTab As FormulaColor(), ByVal percCurrent As Double, ByVal colorCodeCurrent As String, ByVal percNew As Double, ByVal colorCodeNew As String) As FormulaColor()
         If colorsAddedAutomaticaly.Contains(colorCodeCurrent) Then
             Return formulaColorTab
@@ -1833,6 +1854,10 @@ Module Utility
         Return deductedColor
     End Function
 
+  
+
+
+
 #Region "startOptimizationProcedure"
     Public Function startOptimizationProcedure(ByVal dbFileLocation As String, ByVal forMobile As Boolean) As Boolean
         Dim specificConString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" &
@@ -2372,7 +2397,7 @@ Module Utility
 
 
 
-    Public Function hashStringWithSalt(password As String, salt As String) As String
+    Public Function hashStringWithSalt(ByVal password As String, ByVal salt As String) As String
         Dim convertedToBytes As Byte() = Encoding.UTF8.GetBytes(password & salt)
         Dim hashType As HashAlgorithm = New SHA512Managed()
         Dim hashBytes As Byte() = hashType.ComputeHash(convertedToBytes)

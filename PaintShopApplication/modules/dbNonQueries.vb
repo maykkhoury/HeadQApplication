@@ -461,15 +461,30 @@ Module dbNonQueries
             MessageBox.Show("could not select max :" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
         End Try
     End Function
-    Public Function getLastInsertedFormulaColorId() As Integer
+    Public Function getLastInsertedFormulaColorId(Optional ByVal specificConString As String = Nothing) As Integer
         Try
-            openConnection()
-            Dim DR As OleDb.OleDbDataReader = selectQuery("Select max(id_formulaColor) FROM [formulaColor]")
+
+            Dim DR As OleDb.OleDbDataReader
+            If specificConString Is Nothing Then
+                openConnection()
+                DR = selectQuery("Select max(id_formulaColor) FROM [formulaColor]")
+            Else
+                openSpecificConnection(specificConString)
+                DR = selectQuerySpecificDB("Select max(id_formulaColor) FROM [formulaColor]")
+            End If
+
+
             If DR.Read Then
                 getLastInsertedFormulaColorId = DR.Item(0)
             End If
             DR.Close()
-            closeConnection()
+
+            If specificConString Is Nothing Then
+                closeConnection()
+            Else
+                closeSpecificConnection()
+            End If
+
         Catch ex As Exception
             getLastInsertedFormulaColorId = -1
             MessageBox.Show("could not select max :" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
@@ -535,6 +550,35 @@ Module dbNonQueries
         End Try
     End Function
 
+
+
+    Public Function insertIntoFormulaColorSpecificDB(ByVal newId_formulaColor, ByVal id_formula, ByVal id_color, ByVal quantite, ByVal id_unit, ByVal specificConString) As Boolean
+        Try
+
+            Dim encQuantity As String = encryptQuantity(quantite, newId_formulaColor)
+
+            openSpecificConnection(specificConString)
+
+            Dim SQLstr As String
+            SQLstr = String.Format("INSERT INTO [formulaColor] (id_formulaColor, id_formula,id_color,quantite,id_unit,state, encrypted) VALUES({0},{1},{2},'{3}',{4},'I',{5})", newId_formulaColor, id_formula, id_color, encQuantity, id_unit, encryptionActive)
+            Dim Command As New OleDb.OleDbCommand(SQLstr, specifDB)
+
+            Dim icount As Integer = Command.ExecuteNonQuery()
+            If icount > 0 Then
+                insertIntoFormulaColorSpecificDB = True
+
+            Else
+                insertIntoFormulaColorSpecificDB = False
+            End If
+            closeSpecificConnection()
+
+        Catch ex As Exception
+            closeSpecificConnection()
+            insertIntoFormulaColorSpecificDB = False
+            MessageBox.Show("could not insert record:" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
+        End Try
+
+    End Function
     Public Function insertIntoFormulaColor(ByVal id_formula, ByVal id_color, ByVal quantite, ByVal id_unit) As Boolean
         Try
 
@@ -800,6 +844,22 @@ Module dbNonQueries
             MessageBox.Show("could not INSERT record:" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
         End Try
     End Sub
+
+    Public Function deleteFromFormulaColorSpecificDB(ByVal idFormula As Integer, ByVal specificConString As String) As Boolean
+        openSpecificConnection(specificConString)
+        Dim SQLstr As String = String.Format("DELETE FROM [formulaColor] WHERE id_formula={0} ", idFormula)
+        Dim Command2 As New OleDb.OleDbCommand(SQLstr, specifDB)
+
+        Dim icount2 As Integer = Command2.ExecuteNonQuery()
+        If icount2 > 0 Then
+            deleteFromFormulaColorSpecificDB = True
+            'insertIntoUpdateTable(SQLstr, "DELETE")
+        Else
+            deleteFromFormulaColorSpecificDB = False
+        End If
+        closeSpecificConnection()
+
+    End Function
 
 #End Region
 

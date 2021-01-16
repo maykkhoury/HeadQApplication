@@ -79,6 +79,7 @@ Public Class HeadQHome
         'setChkBackColor()
         loadCars()
         txtColorCode.Focus()
+        Control.CheckForIllegalCrossThreadCalls = False
     End Sub
 
     Private Sub butAddNewFormula_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles butAddNewFormula.Click
@@ -2288,6 +2289,218 @@ Public Class HeadQHome
 
     End Sub
 
+    Private Sub butBrowseHqDirectory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles butBrowseHqDirectory.Click
+        If FBrowserGarage.ShowDialog() = DialogResult.OK Then
+            txtHqDirectory.Text = FBrowserGarage.SelectedPath
+        Else
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub butConvertToHQ_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles butConvertToHQ.Click
+        If lbIdGarageForm.Text < 0 Then
+            MsgBox("You must select a garage first", MsgBoxStyle.Information)
+            Exit Sub
+        End If
+        If txtHqDirectory.Text = "" Then
+            MsgBox("Please choose a directory first", MsgBoxStyle.Information)
+            Exit Sub
+        End If
+
+        setChosenGarage(lbIdGarageForm.Text)
+        Dim leGarage As Garage = getGarageById(lbIdGarageForm.Text)
+        Dim garageFolderName As String = leGarage.garage_name & leGarage.location
+        garageFolderName = garageFolderName.Replace(" ", "")
+        txtHqDirectory.Text = txtHqDirectory.Text & "\hq" & garageFolderName
+        'create the folder'
+        If (Not System.IO.Directory.Exists(txtHqDirectory.Text)) Then
+            System.IO.Directory.CreateDirectory(txtHqDirectory.Text)
+        End If
+        '''''''''''''''''''
+        Dim logo As String = leGarage.logo
+        If leGarage.coat Is Nothing Then
+            MsgBox("You can't generate a garage before setting its coat (LS or 2K)!", MsgBoxStyle.Exclamation)
+            Exit Sub
+        Else
+            If leGarage.coat <> "LS" And leGarage.coat <> "2K" Then
+                MsgBox("You can't generate a garage before setting its coat (LS or 2K)!", MsgBoxStyle.Exclamation)
+                Exit Sub
+            End If
+        End If
+
+        'copy all inside the hq folder
+        My.Computer.FileSystem.CopyDirectory(My.Application.Info.DirectoryPath, txtHqDirectory.Text, True)
+
+        startHqConversionProcess(txtHqDirectory.Text & "\dbPaintShop.mdb")
+
+    End Sub
+
+#Region "startHqConversionProcess"
+
+    Dim convertToHqThread As System.Threading.Thread
+
+
+
+    Public Sub startHqConversionProcessThread(ByVal dbFileLocation As String)
+        Me.Enabled = False
+
+        Dim specificConString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" &
+            dbFileLocation & ";Jet OLEDB:Database Password=A!mA@HaP#pYZ$o;"
+        Dim allFormulas As Formula() = getFormulas("", specificConString)
+        colorsFromSpecificDB = getColors("", specificConString)
+
+        Dim chosenGarage As Garage = getChosenGarage(specificConString)
+
+        Dim newId_formulaColor As Integer = getLastInsertedFormulaColorId(specificConString) + 1
+
+        Dim formulaIdToDeleteArray As New ArrayList
+
+        Dim indexFormula As Integer = 0
+        For Each formula In allFormulas
+            indexFormula += 1
+            lbHqConversionProgress.Text = indexFormula & " of " & allFormulas.Length
+
+            Console.WriteLine(indexFormula & " of " & allFormulas.Length)
+            Dim formulaColorTab As FormulaColor() = getFormulaColorsByIdFormulaForHqConversion(formula.id_formula, specificConString)
+            Dim couche As Boolean = isCouche(formula.name_formula)
+            Dim typeFormula As String = formula.type
+            Dim timePassed As TimeSpan
+            Dim Starttime As DateTime
+            Dim EndTime As DateTime
+
+            If typeFormula = "LS" Then
+                'sort descending
+
+                Starttime = DateTime.Now
+                formulaColorTab = sortDescending(formulaColorTab)
+                EndTime = DateTime.Now
+
+                timePassed = EndTime - Starttime
+                Console.WriteLine("SortDescending time:" & timePassed.ToString)
+            Else
+                If typeFormula = "BC" Then
+
+                    Starttime = DateTime.Now
+                    formulaColorTab = applyEquationBC(formulaColorTab, "4002", "4110", specificConString)
+                    EndTime = DateTime.Now
+
+                    timePassed = EndTime - Starttime
+                    Console.WriteLine("applyEquationBC time:" & timePassed.ToString)
+                End If
+
+                If chosenGarage.apply_equation Then
+
+                    Starttime = DateTime.Now
+                    formulaColorTab = eqDoubleCBXB_50per4010(formulaColorTab, specificConString)
+                    EndTime = DateTime.Now
+
+                    timePassed = EndTime - Starttime
+                    Console.WriteLine("eqDoubleCBXB_50per4010 time:" & timePassed.ToString)
+
+                Else
+                    If chosenGarage.apply_equation2 Or chosenGarage.apply_equation4 Then
+                        Starttime = DateTime.Now
+                        formulaColorTab = eqDoubleCBXB_50per4010Extended(formulaColorTab, specificConString)
+                        EndTime = DateTime.Now
+
+                        timePassed = EndTime - Starttime
+                        Console.WriteLine("eqDoubleCBXB_50per4010Extended time:" & timePassed.ToString)
+
+                        If chosenGarage.apply_equation4 Then
+                            Starttime = DateTime.Now
+                            formulaColorTab = extendedOptimization(formulaColorTab, couche, specificConString)
+                            EndTime = DateTime.Now
+
+                            timePassed = EndTime - Starttime
+                            Console.WriteLine("extendedOptimization time:" & timePassed.ToString)
+                        End If
+                    Else
+                        If chosenGarage.apply_equation3 Then
+                            Dim Starttime0 As DateTime = DateTime.Now
+                            formulaColorTab = eqDoubleCBXB_50per4010_no4581_no4091(formulaColorTab, specificConString)
+                            Dim EndTime0 As DateTime = DateTime.Now
+
+                            timePassed = EndTime0 - Starttime0
+                            Console.WriteLine("eqDoubleCBXB_50per4010_no4581_no4091 time:" & timePassed.ToString)
+                        End If
+                    End If
+                End If
+            End If
+            Starttime = DateTime.Now
+            Dim qty4201 As Double = findQuantityOfColorInformula(formulaColorTab, "4201", specificConString)
+            EndTime = DateTime.Now
+
+            timePassed = EndTime - Starttime
+            Console.WriteLine("findQuantityOfColorInformula time:" & timePassed.ToString)
+
+            If chosenGarage.apply_equation5 And qty4201 >= 180 And formula.isEquation4201_180 Then
+                Starttime = DateTime.Now
+                formulaColorTab = eqDivedBy2If4201BigThenOrEq180(formulaColorTab, specificConString)
+                EndTime = DateTime.Now
+
+                timePassed = EndTime - Starttime
+                Console.WriteLine("eqDivedBy2If4201BigThenOrEq180 time:" & timePassed.ToString)
+            End If
+
+            If chosenGarage.apply_equation6 Then
+                Starttime = DateTime.Now
+                formulaColorTab = eq4080_4082_4060(formulaColorTab, specificConString)
+                EndTime = DateTime.Now
+
+                timePassed = EndTime - Starttime
+                Console.WriteLine("eq4080_4082_4060 time:" & timePassed.ToString)
+            End If
+
+            'reapply the sorting in case it was corrupted with the other eq
+
+            If typeFormula = "BC" Then
+                Starttime = DateTime.Now
+                formulaColorTab = applyEquationBC(formulaColorTab, "4002", "4110", specificConString)
+                EndTime = DateTime.Now
+
+                timePassed = EndTime - Starttime
+                Console.WriteLine("applyEquationBC 2 time:" & timePassed.ToString)
+            End If
+
+            If formulaColorTab.Length > 0 Then
+                Starttime = DateTime.Now
+                deleteFromFormulaColorSpecificDB(formula.id_formula, specificConString)
+                'formulaIdToDeleteArray.Add(formula.id_formula)
+                EndTime = DateTime.Now
+                timePassed = EndTime - Starttime
+                Console.WriteLine("deleteFromFormulaColorSpecificDB time:" & timePassed.ToString)
+                Starttime = DateTime.Now
+                For i = 0 To formulaColorTab.Length - 1
+                    newId_formulaColor += 1
+                    If Not insertIntoFormulaColorSpecificDB(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, specificConString) Then
+                        MsgBox("problem setting color '" & formulaColorTab(i).id_color & "' to formula '" & formulaColorTab(i).id_formula & "'")
+                        Me.Enabled = True
+                        Exit Sub
+                    End If
+
+                Next
+                EndTime = DateTime.Now
+
+                timePassed = EndTime - Starttime
+                Console.WriteLine("insertIntoFormulaColorSpecificDB all time:" & timePassed.ToString)
+            End If
+
+        Next
+
+        'delete formula colors
+        ' For Each formulaId In formulaIdToDeleteArray
+        'deleteFromFormulaColorSpecificDB(formulaId, specificConString)
+        ' Next
+        MsgBox("HQ successfully generated at:" & vbNewLine & txtHqDirectory.Text, MsgBoxStyle.Information)
+        Me.Enabled = True
+    End Sub
+    Public Function startHqConversionProcess(ByVal dbFileLocation As String) As Boolean
+
+        convertToHqThread = New System.Threading.Thread(AddressOf startHqConversionProcessThread)
+        convertToHqThread.Start(dbFileLocation)
+
+    End Function
+#End Region
     Private Sub butInstall_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles butInstall.Click
 
         If lbIdGarageForm.Text < 0 Then
@@ -3865,5 +4078,4 @@ Public Class HeadQHome
 
     End Sub
 
-    
 End Class

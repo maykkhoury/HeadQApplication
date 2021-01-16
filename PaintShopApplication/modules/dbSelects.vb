@@ -16,6 +16,7 @@ Module dbSelects
 
         If openSpecificConnection(specificConString) Then
             Try
+
                 Dim DR As OleDb.OleDbDataReader = selectQuerySpecificDB("Select * FROM [color] ")
                 Dim i As Integer = 0
 
@@ -902,6 +903,20 @@ Module dbSelects
             MsgBox("selectQuery=" & query & vbNewLine & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
         End Try
     End Function
+
+    Public Function selectQuerySpecificDB(ByVal query) As OleDb.OleDbDataReader
+        Try
+            Dim DR As OleDb.OleDbDataReader
+            Dim DBC As New OleDb.OleDbCommand
+            DBC.Connection = specifDB
+            DBC.CommandText = query
+            DR = DBC.ExecuteReader
+            Return DR
+        Catch ex As Exception
+            MsgBox("selectQuery=" & query & vbNewLine & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
+        End Try
+    End Function
+
 #End Region
 
 #Region "beansBinding"
@@ -990,9 +1005,12 @@ Module dbSelects
 
     Public Function getColors() As Color()
         Dim MyArray As New ArrayList
+
         If openConnection() Then
             Try
                 Dim DR As OleDb.OleDbDataReader = selectQuery("Select * FROM [color]")
+
+
                 Dim i As Integer = 0
 
                 While DR.Read
@@ -1422,7 +1440,67 @@ Module dbSelects
     End Function
 
 
-    Public Function getFormulaColorsByIdFormula(ByVal formulaId As Integer, ByVal typeFormula As String, Optional ignoreEq As Boolean = False) As FormulaColor()
+    Public Function getFormulaColorsByIdFormulaForHqConversion(ByVal formulaId As Integer, ByVal specificConnection As String) As FormulaColor()
+
+        Dim MyArray As New ArrayList
+        If openSpecificConnection(specificConnection) Then
+            Try
+                Dim DR As OleDb.OleDbDataReader = selectQuerySpecificDB("Select * FROM [FormulaColor] WHERE id_formula =" & formulaId)
+                Dim i As Integer = 0
+
+                While DR.Read
+                    Dim newFormulaColor As New FormulaColor
+                    newFormulaColor.id_formulaColor = DR.Item("id_formulaColor")
+                    If Not DR.Item("id_color") Is DBNull.Value Then
+                        newFormulaColor.id_color = DR.Item("id_color")
+                    End If
+                    newFormulaColor.id_formula = DR.Item("id_formula")
+                    If Not DR.Item("id_Unit") Is DBNull.Value Then
+                        newFormulaColor.id_Unit = DR.Item("id_Unit")
+                    End If
+
+                    Dim dbQuantity As String = ""
+                    If Not DR.Item("quantite") Is DBNull.Value Then
+                        dbQuantity = DR.Item("quantite")
+                    End If
+                    If Not DR.Item("encrypted") Is DBNull.Value Then
+                        newFormulaColor.encryptedStr = DR.Item("encrypted")
+                        If DR.Item("encrypted") = 1 Then
+                            newFormulaColor.encrypted = True
+
+                        End If
+                    End If
+
+                    If newFormulaColor.encrypted Then
+                        'decrypt
+                        newFormulaColor.quantite = decryptQuantity(dbQuantity, newFormulaColor.id_formulaColor)
+                        '''''
+                    Else
+                        newFormulaColor.quantite = dbQuantity
+                    End If
+
+                    newFormulaColor.id_carStr = newFormulaColor.id_car
+                    newFormulaColor.id_formulaColorStr = newFormulaColor.id_formulaColor
+                    newFormulaColor.id_colorStr = newFormulaColor.id_color
+                    newFormulaColor.id_formulaStr = newFormulaColor.id_formula
+                    newFormulaColor.quantiteStr = newFormulaColor.quantite
+
+                    MyArray.Add(newFormulaColor)
+
+                End While
+                DR.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message.ToString & ": " & vbNewLine & ex.StackTrace & ": " & vbNewLine & ex.StackTrace)
+            End Try
+        End If
+        closeSpecificConnection()
+        Dim formulaColorTab() As FormulaColor = DirectCast(MyArray.ToArray(GetType(FormulaColor)), FormulaColor())
+        Return formulaColorTab
+
+    End Function
+
+
+    Public Function getFormulaColorsByIdFormula(ByVal formulaId As Integer, ByVal typeFormula As String, Optional ByVal ignoreEq As Boolean = False) As FormulaColor()
 
         Dim MyArray As New ArrayList
         If openConnection() Then
@@ -1547,11 +1625,11 @@ Module dbSelects
 
         Return formulaColorTab
     End Function
-    Private Function findIndexOfColorToUse(ByVal formulaColorTab As FormulaColor(), ByVal listOfColorCodeToUse As String) As Integer
+    Public Function findIndexOfColorToUse(ByVal formulaColorTab As FormulaColor(), ByVal listOfColorCodeToUse As String, Optional ByVal specificConString As String = Nothing) As Integer
         Dim index As Integer = -1
         Dim i As Integer
         For i = 0 To formulaColorTab.Length - 1
-            Dim curColor As Color = getColorById(formulaColorTab(i).id_color)
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
             If curColor.colorCode.Trim = listOfColorCodeToUse.Trim Then
                 index = i
                 Exit For
@@ -1559,6 +1637,18 @@ Module dbSelects
         Next
         Return index
     End Function
+
+    
+    Public Function findQuantityOfColorInformula(ByVal formulaColorTab As FormulaColor(), ByVal colorCode As String, ByVal specificConString As String) As Double
+        Dim indexColor As Integer = findIndexOfColorToUse(formulaColorTab, colorCode, specificConString)
+        If indexColor = -1 Then
+            Return 0
+        End If
+        Dim qty As Double = formulaColorTab(indexColor).quantite
+
+        Return qty
+    End Function
+
     Public Function getNegativeQtyFormulas() As Formula()
         Dim allNegativeFormulaColors As FormulaColor() = getAllFormulaColors(True)
 
@@ -1589,11 +1679,24 @@ Module dbSelects
 
         Return allNegativeFormulas
     End Function
-    Public Function getFormulas(ByVal whereStr As String) As Formula()
+    Public Function getFormulas(ByVal whereStr As String, Optional ByVal specificConnection As String = Nothing) As Formula()
         Dim MyArray As New ArrayList
-        If openConnection() Then
+        Dim connectionOpened As Boolean = False
+        If specificConnection Is Nothing Then
+            connectionOpened = openConnection()
+        Else
+            connectionOpened = openSpecificConnection(specificConnection)
+        End If
+
+        If connectionOpened Then
             Try
-                Dim DR As OleDb.OleDbDataReader = selectQuery("Select car.id_car,car.carName,id_otherCurreny, [version],name_formula,type,id_otherUnit,id_formula,formulaImgPath,otherPrice,variant,duplicate,colorCode,colorRGB,c_year,cardNumber,id_formulaX,id_formulaY,id_formulaZ,id_formulaXp,id_formulaX2p,id_formulaYp,id_formulaY2p,id_formulaZp,id_formulaZ2p,isEquation15perc4201,date_cre_mod,noEquation4201_180,modified_once FROM [formula],[car] WHERE formula.id_car=car.id_car " & whereStr & " ORDER BY colorCode,[version] ")
+                Dim DR As OleDb.OleDbDataReader
+                If specificConnection Is Nothing Then
+                    DR = selectQuery("Select car.id_car,car.carName,id_otherCurreny, [version],name_formula,type,id_otherUnit,id_formula,formulaImgPath,otherPrice,variant,duplicate,colorCode,colorRGB,c_year,cardNumber,id_formulaX,id_formulaY,id_formulaZ,id_formulaXp,id_formulaX2p,id_formulaYp,id_formulaY2p,id_formulaZp,id_formulaZ2p,isEquation15perc4201,date_cre_mod,noEquation4201_180,modified_once FROM [formula],[car] WHERE formula.id_car=car.id_car " & whereStr & " ORDER BY colorCode,[version] ")
+                Else
+                    DR = selectQuerySpecificDB("Select car.id_car,car.carName,id_otherCurreny, [version],name_formula,type,id_otherUnit,id_formula,formulaImgPath,otherPrice,variant,duplicate,colorCode,colorRGB,c_year,cardNumber,id_formulaX,id_formulaY,id_formulaZ,id_formulaXp,id_formulaX2p,id_formulaYp,id_formulaY2p,id_formulaZp,id_formulaZ2p,isEquation15perc4201,date_cre_mod,noEquation4201_180,modified_once FROM [formula],[car] WHERE formula.id_car=car.id_car " & whereStr & " ORDER BY colorCode,[version] ")
+
+                End If
                 Dim i As Integer = 0
 
                 While DR.Read
@@ -1756,7 +1859,13 @@ Module dbSelects
                 MsgBox("whereStr=" & whereStr & vbNewLine & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
             End Try
         End If
-        closeConnection()
+
+        If specificConnection Is Nothing Then
+            closeConnection()
+        Else
+            closeSpecificConnection()
+        End If
+
         Return DirectCast(MyArray.ToArray(GetType(Formula)), Formula())
     End Function
 
@@ -1866,7 +1975,7 @@ Module dbSelects
         Return iFormula
     End Function
 
-    Public Function applyEquationBC(ByVal formulaColorTab As FormulaColor(), ByVal colorCodeToFirst As String, ByVal colorCodeToLast As String) As FormulaColor()
+    Public Function applyEquationBC(ByVal formulaColorTab As FormulaColor(), ByVal colorCodeToFirst As String, ByVal colorCodeToLast As String, Optional ByVal specificConString As String = nothing) As FormulaColor()
         If formulaColorTab Is Nothing Then
             MsgBox("Formula is empty!", MsgBoxStyle.Exclamation)
             Return Nothing
@@ -1878,8 +1987,8 @@ Module dbSelects
 
 
 
-        Dim indexOfBC_first As Integer = findIndexOfColorToUse(formulaColorTab, colorCodeToFirst)
-        Dim indexOfBC_last As Integer = findIndexOfColorToUse(formulaColorTab, colorCodeToLast)
+        Dim indexOfBC_first As Integer = findIndexOfColorToUse(formulaColorTab, colorCodeToFirst, specificConString)
+        Dim indexOfBC_last As Integer = findIndexOfColorToUse(formulaColorTab, colorCodeToLast, specificConString)
 
         Dim MyArray2 As New ArrayList
         Dim MyArrayIdFormulas As New ArrayList
@@ -1895,18 +2004,19 @@ Module dbSelects
 
         While MyArray2.Count < lengthTarget
             'find max
-            Dim min As Decimal = 999999999999999999
-            Dim indexMin As Integer = -1
+            Dim max As Decimal = 0
+            Dim indexMax As Integer = -1
             For i = 0 To formulaColorTab.Length - 1
-                If formulaColorTab(i).quantite < min And Not MyArrayIdFormulas.Contains(formulaColorTab(i).id_formulaColor) And i <> indexOfBC_first And i <> indexOfBC_last Then
-                    min = formulaColorTab(i).quantite
-                    indexMin = i
+                If (formulaColorTab(i).quantite > max) And Not MyArrayIdFormulas.Contains(formulaColorTab(i).id_formulaColor) And i <> indexOfBC_first And i <> indexOfBC_last Then
+                    max = formulaColorTab(i).quantite
+
+                    indexMax = i
                 End If
             Next
-            If indexMin <> -1 Then
-                MyArray2.Add(formulaColorTab(indexMin))
+            If indexMax <> -1 Then
+                MyArray2.Add(formulaColorTab(indexMax))
                 'formulaColorTab(indexMin).id_formula = -1
-                MyArrayIdFormulas.Add(formulaColorTab(indexMin).id_formulaColor)
+                MyArrayIdFormulas.Add(formulaColorTab(indexMax).id_formulaColor)
             End If
         End While
 
@@ -1921,7 +2031,7 @@ Module dbSelects
         Return formulaColorTab
     End Function
 
-    Public Function applyEquationLS(ByVal formulaColorTab As FormulaColor(), ByVal colorCodeToSpread As String) As FormulaColor()
+    Public Function applyEquationLS(ByVal formulaColorTab As FormulaColor(), ByVal colorCodeToSpread As String, Optional ByVal specificConString As String = Nothing) As FormulaColor()
         If formulaColorTab Is Nothing Then
             MsgBox("Formula is empty!", MsgBoxStyle.Exclamation)
             Return Nothing
@@ -1939,7 +2049,7 @@ Module dbSelects
         Dim clrSpreadQty As Decimal = 0
         For i = 0 To formulaColorTab.Length - 1
             originalTotal = originalTotal + formulaColorTab(i).quantite
-            Dim curColor As Color = getColorById(formulaColorTab(i).id_color)
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
             If curColor.colorCode = colorCodeToSpread Then
                 clrSpreadQty = clrSpreadQty + formulaColorTab(i).quantite
             Else
@@ -2034,6 +2144,406 @@ Module dbSelects
 
         formulaColorTab = DirectCast(MyArray2.ToArray(GetType(FormulaColor)), FormulaColor())
         ''''''''''''''''''''''''''''''
+
+        Return formulaColorTab
+    End Function
+
+    Public Function eqDoubleCBXB_50per4010(ByVal formulaColorTab As FormulaColor(), ByVal specificConString As String) As FormulaColor()
+        Dim initTotalQty As Double = 0
+        Dim i As Integer
+        For i = 0 To formulaColorTab.Length - 1
+            initTotalQty += formulaColorTab(i).quantite
+        Next
+
+
+
+        'decrease 50% 4010
+        Dim index4010 As Integer = findIndexOfColorToUse(formulaColorTab, "4010", specificConString)
+        If index4010 <> -1 Then
+            formulaColorTab(index4010).quantite = formulaColorTab(index4010).quantite / 2
+        End If
+        ''''''''''''''''''''''''''''''''''''''''
+
+        'multiply *2 all the color below if they exist
+        Dim listOfColorCode As String()
+        ReDim listOfColorCode(21)
+        listOfColorCode(0) = "4091"
+        listOfColorCode(1) = "4101"
+        listOfColorCode(2) = "4206"
+        listOfColorCode(3) = "4581"
+        'listOfColorCode(4) = "4704"
+        listOfColorCode(4) = "4705"
+        listOfColorCode(5) = "4107"
+        listOfColorCode(6) = "4306"
+        listOfColorCode(7) = "4307"
+        listOfColorCode(8) = "4308"
+        listOfColorCode(9) = "4403"
+        listOfColorCode(10) = "4405"
+        listOfColorCode(11) = "4407"
+        listOfColorCode(12) = "4504"
+        listOfColorCode(13) = "4507"
+        listOfColorCode(14) = "4508"
+        listOfColorCode(15) = "4605"
+        listOfColorCode(16) = "4606"
+        listOfColorCode(17) = "4607"
+        listOfColorCode(18) = "4707"
+        listOfColorCode(19) = "4708"
+        listOfColorCode(20) = "4805"
+
+
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            '' if color 4002 divide the qty by 2
+            If curColor.colorCode = "4002" Then
+                formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
+            End If
+
+            'test if exist in listOfColorCode
+            Dim j As Integer
+            For j = 0 To listOfColorCode.Length - 1
+                If listOfColorCode(j) = curColor.colorCode.Trim Then
+                    formulaColorTab(i).quantite = formulaColorTab(i).quantite * 2
+                    Exit For
+                End If
+            Next
+        Next
+
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+        Dim finalTotalQty As Double = 0
+        For i = 0 To formulaColorTab.Length - 1
+            finalTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'regle de trois
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curQty As Double = formulaColorTab(i).quantite
+            formulaColorTab(i).quantite = curQty * initTotalQty / finalTotalQty
+        Next
+
+        Return formulaColorTab
+    End Function
+
+    Public Function eqDoubleCBXB_50per4010Extended(ByVal formulaColorTab As FormulaColor(), ByVal specificConString As String) As FormulaColor()
+
+        Dim initTotalQty As Double = 0
+        Dim i As Integer
+        For i = 0 To formulaColorTab.Length - 1
+            initTotalQty += formulaColorTab(i).quantite
+        Next
+
+
+
+        'decrease 50% 4010
+        Dim index4010 As Integer = findIndexOfColorToUse(formulaColorTab, "4010", specificConString)
+        If index4010 <> -1 Then
+            formulaColorTab(index4010).quantite = formulaColorTab(index4010).quantite / 2
+        End If
+        ''''''''''''''''''''''''''''''''''''''''
+
+        'multiply *2 all the color below if they exist
+        Dim listOfColorCode As String()
+        ReDim listOfColorCode(33)
+        listOfColorCode(0) = "4091"
+        listOfColorCode(1) = "4101"
+        listOfColorCode(2) = "4206"
+        listOfColorCode(3) = "4581"
+        'listOfColorCode(4) = "4704"
+        listOfColorCode(4) = "4705"
+        listOfColorCode(5) = "4107"
+        listOfColorCode(6) = "4306"
+        listOfColorCode(7) = "4307"
+        listOfColorCode(8) = "4308"
+        listOfColorCode(9) = "4403"
+        listOfColorCode(10) = "4405"
+        listOfColorCode(11) = "4407"
+        listOfColorCode(12) = "4504"
+        listOfColorCode(13) = "4507"
+        listOfColorCode(14) = "4508"
+        listOfColorCode(15) = "4605"
+        listOfColorCode(16) = "4606"
+        listOfColorCode(17) = "4607"
+        listOfColorCode(18) = "4707"
+        listOfColorCode(19) = "4708"
+        listOfColorCode(20) = "4805"
+        listOfColorCode(21) = "4111"
+        listOfColorCode(22) = "4211"
+        listOfColorCode(23) = "4411"
+        listOfColorCode(24) = "4425"
+        listOfColorCode(25) = "4436"
+        listOfColorCode(26) = "4511"
+        listOfColorCode(27) = "4525"
+        listOfColorCode(28) = "4526"
+        listOfColorCode(29) = "4528"
+        listOfColorCode(30) = "4711"
+        listOfColorCode(31) = "4811"
+        listOfColorCode(32) = "4910"
+
+
+
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            '' if color 4002 divide the qty by 2
+            If curColor.colorCode = "4002" Then
+                formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
+            End If
+
+            'test if exist in listOfColorCode
+            Dim j As Integer
+            For j = 0 To listOfColorCode.Length - 1
+                If listOfColorCode(j) = curColor.colorCode.Trim Then
+                    formulaColorTab(i).quantite = formulaColorTab(i).quantite * 2
+                    Exit For
+                End If
+            Next
+        Next
+
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+        Dim finalTotalQty As Double = 0
+        For i = 0 To formulaColorTab.Length - 1
+            finalTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'regle de trois
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curQty As Double = formulaColorTab(i).quantite
+            formulaColorTab(i).quantite = curQty * initTotalQty / finalTotalQty
+        Next
+
+        Return formulaColorTab
+    End Function
+
+    Public Function extendedOptimization(ByVal formulaColorTab As FormulaColor(), ByVal isCouche As Boolean, ByVal specificConString As String) As FormulaColor()
+
+        Dim initTotalQty As Double = 0
+        Dim i As Integer
+        For i = 0 To formulaColorTab.Length - 1
+            initTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'remove 4002
+        Dim MyArray As New ArrayList
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If Not curColor.colorCode.Trim = "4002" Then
+                MyArray.Add(formulaColorTab(i))
+            End If
+        Next
+        formulaColorTab = DirectCast(MyArray.ToArray(GetType(FormulaColor)), FormulaColor())
+
+        'decrease 50% 4010 in case it wasn't couche
+        Dim index4010 As Integer = findIndexOfColorToUse(formulaColorTab, "4010", specificConString)
+        If index4010 <> -1 And Not isCouche Then
+            formulaColorTab(index4010).quantite = formulaColorTab(index4010).quantite / 2
+        End If
+        ''''''''''''''''''''''''''''''''''''''''
+
+
+        Dim finalTotalQty As Double = 0
+        For i = 0 To formulaColorTab.Length - 1
+            finalTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'regle de trois
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curQty As Double = formulaColorTab(i).quantite
+            formulaColorTab(i).quantite = curQty * initTotalQty / finalTotalQty
+        Next
+
+        Return formulaColorTab
+    End Function
+
+    Public Function eqDoubleCBXB_50per4010_no4581_no4091(ByVal formulaColorTab As FormulaColor(), ByVal specificConString As String) As FormulaColor()
+
+        Dim initTotalQty As Double = 0
+        Dim i As Integer
+        For i = 0 To formulaColorTab.Length - 1
+            initTotalQty += formulaColorTab(i).quantite
+        Next
+
+
+
+        'decrease 50% 4010
+        Dim index4010 As Integer = findIndexOfColorToUse(formulaColorTab, "4010", specificConString)
+        If index4010 <> -1 Then
+            formulaColorTab(index4010).quantite = formulaColorTab(index4010).quantite / 2
+        End If
+        ''''''''''''''''''''''''''''''''''''''''
+
+        'multiply *2 all the color below if they exist
+        Dim listOfColorCode As String()
+        ReDim listOfColorCode(19)
+        'listOfColorCode(0) = "4091"
+        listOfColorCode(0) = "4101"
+        listOfColorCode(1) = "4206"
+        'listOfColorCode(3) = "4581"
+        'listOfColorCode(4) = "4704"
+        listOfColorCode(2) = "4705"
+        listOfColorCode(3) = "4107"
+        listOfColorCode(4) = "4306"
+        listOfColorCode(5) = "4307"
+        listOfColorCode(6) = "4308"
+        listOfColorCode(7) = "4403"
+        listOfColorCode(8) = "4405"
+        listOfColorCode(9) = "4407"
+        listOfColorCode(10) = "4504"
+        listOfColorCode(11) = "4507"
+        listOfColorCode(12) = "4508"
+        listOfColorCode(13) = "4605"
+        listOfColorCode(14) = "4606"
+        listOfColorCode(15) = "4607"
+        listOfColorCode(16) = "4707"
+        listOfColorCode(17) = "4708"
+        listOfColorCode(18) = "4805"
+
+
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            '' if color 4002 divide the qty by 2
+            If curColor.colorCode = "4002" Then
+                formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
+            End If
+
+            'test if exist in listOfColorCode
+            Dim j As Integer
+            For j = 0 To listOfColorCode.Length - 1
+                If listOfColorCode(j) = curColor.colorCode.Trim Then
+                    formulaColorTab(i).quantite = formulaColorTab(i).quantite * 2
+                    Exit For
+                End If
+            Next
+        Next
+
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+        Dim finalTotalQty As Double = 0
+        For i = 0 To formulaColorTab.Length - 1
+            finalTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'regle de trois
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curQty As Double = formulaColorTab(i).quantite
+            formulaColorTab(i).quantite = curQty * initTotalQty / finalTotalQty
+        Next
+
+        Return formulaColorTab
+    End Function
+
+    Public Function eqDivedBy2If4201BigThenOrEq180(ByVal formulaColorTab As FormulaColor(), ByVal specificConString As String) As FormulaColor()
+
+        ''''' checking the existance and the quanty of 4201 is done before
+        ''''''''''''''''''''''''''''''''''''''''
+
+        Dim initTotalQty As Double = 0
+        Dim i As Integer
+        For i = 0 To formulaColorTab.Length - 1
+            initTotalQty += formulaColorTab(i).quantite
+        Next
+
+
+
+        'dived by 2 all the color below if they exist
+        Dim listOfColorCode As String()
+        ReDim listOfColorCode(11)
+        listOfColorCode(0) = "4025"
+        listOfColorCode(1) = "4640"
+        listOfColorCode(2) = "4440"
+        listOfColorCode(3) = "4047"
+        listOfColorCode(4) = "4041"
+        listOfColorCode(5) = "4188"
+        listOfColorCode(6) = "4084"
+        listOfColorCode(7) = "4082"
+        listOfColorCode(8) = "4030"
+        listOfColorCode(9) = "4985"
+        listOfColorCode(10) = "4934"
+
+
+
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+
+            'test if exist in listOfColorCode
+            Dim j As Integer
+            For j = 0 To listOfColorCode.Length - 1
+                If listOfColorCode(j) = curColor.colorCode.Trim Then
+                    formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
+                    Exit For
+                End If
+            Next
+        Next
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+        Dim finalTotalQty As Double = 0
+        For i = 0 To formulaColorTab.Length - 1
+            finalTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'regle de trois
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curQty As Double = formulaColorTab(i).quantite
+            formulaColorTab(i).quantite = curQty * initTotalQty / finalTotalQty
+        Next
+
+        Return formulaColorTab
+    End Function
+
+    Public Function eq4080_4082_4060(ByVal formulaColorTab As FormulaColor(), ByVal specificConString As String) As FormulaColor()
+
+        ''''' checking the existance and the quanty of 4201 is done before
+        ''''''''''''''''''''''''''''''''''''''''
+
+        Dim initTotalQty As Double = 0
+        Dim i As Integer
+        For i = 0 To formulaColorTab.Length - 1
+            initTotalQty += formulaColorTab(i).quantite
+        Next
+
+
+
+        'multiply by 1.25 all the color below if they exist
+        Dim listOfColorCode As String()
+        ReDim listOfColorCode(11)
+        listOfColorCode(0) = "4080"
+        listOfColorCode(1) = "4082"
+        listOfColorCode(2) = "4060"
+
+
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+
+            'test if exist in listOfColorCode
+            Dim j As Integer
+            For j = 0 To listOfColorCode.Length - 1
+                If listOfColorCode(j) = curColor.colorCode.Trim Then
+                    formulaColorTab(i).quantite = formulaColorTab(i).quantite * 1.25
+                    Exit For
+                End If
+            Next
+        Next
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+
+        Dim finalTotalQty As Double = 0
+        For i = 0 To formulaColorTab.Length - 1
+            finalTotalQty += formulaColorTab(i).quantite
+        Next
+
+        'regle de trois
+        For i = 0 To formulaColorTab.Length - 1
+            Dim curQty As Double = formulaColorTab(i).quantite
+            formulaColorTab(i).quantite = curQty * initTotalQty / finalTotalQty
+        Next
 
         Return formulaColorTab
     End Function
@@ -2333,10 +2843,22 @@ Module dbSelects
         Return DirectCast(MyArray.ToArray(GetType(Garage)), Garage())
     End Function
 
-    Public Function getChosenGarage() As Garage
-        If openConnection() Then
+    Public Function getChosenGarage(Optional ByVal specificConnection As String = Nothing) As Garage
+        Dim connectionOpened As Boolean = False
+        If specificConnection Is Nothing Then
+            connectionOpened = openConnection()
+        Else
+            connectionOpened = openSpecificConnection(specificConnection)
+        End If
+
+        If connectionOpened Then
             Try
-                Dim DR As OleDb.OleDbDataReader = selectQuery("Select * FROM [Garage] where chosen='1'")
+                Dim DR As OleDb.OleDbDataReader
+                If specificConnection Is Nothing Then
+                    DR = selectQuery("Select * FROM [Garage] where chosen='1'")
+                Else
+                    DR = selectQuerySpecificDB("Select * FROM [Garage] where chosen='1'")
+                End If
                 Dim i As Integer = 0
 
                 If DR.Read Then
@@ -2455,7 +2977,11 @@ Module dbSelects
                 MsgBox(ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
             End Try
         End If
-        closeConnection()
+        If specificConnection Is Nothing Then
+            closeConnection()
+        Else
+            closeSpecificConnection()
+        End If
     End Function
 
 #End Region
@@ -2520,11 +3046,23 @@ Module dbSelects
         End If
         closeConnection()
     End Function
-    Public Function getColors(ByVal whereStr As String) As Color()
+    Public Function getColors(ByVal whereStr As String, Optional ByVal specificConString As String = Nothing) As Color()
         Dim MyArray As New ArrayList
-        If openConnection() Then
+        Dim connectionOpened As Boolean = False
+        If specificConString Is Nothing Then
+            connectionOpened = openConnection()
+        Else
+            connectionOpened = openSpecificConnection(specificConString)
+        End If
+        If connectionOpened Then
             Try
-                Dim DR As OleDb.OleDbDataReader = selectQuery("Select * FROM [color] " & whereStr)
+                Dim DR As OleDb.OleDbDataReader
+                If specificConString Is Nothing Then
+                    DR = selectQuery("Select * FROM [color] " & whereStr)
+                Else
+                    DR = selectQuerySpecificDB("Select * FROM [color] " & whereStr)
+                End If
+
                 Dim i As Integer = 0
 
                 While DR.Read
@@ -2581,7 +3119,12 @@ Module dbSelects
                 MsgBox(ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
             End Try
         End If
-        closeConnection()
+        If specificConString Is Nothing Then
+            closeConnection()
+        Else
+            closeSpecificConnection()
+        End If
+
         Return DirectCast(MyArray.ToArray(GetType(Color)), Color())
     End Function
 #End Region
