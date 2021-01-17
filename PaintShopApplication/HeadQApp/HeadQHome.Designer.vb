@@ -29,14 +29,12 @@ Partial Class HeadQHome
         Me.grpFormulas = New System.Windows.Forms.GroupBox()
         Me.butNegativeQty = New System.Windows.Forms.Button()
         Me.lbAttention = New System.Windows.Forms.Label()
-        Me.txtBasicColor = New HeadQApplication.MyTextBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.butExcel = New System.Windows.Forms.Button()
         Me.lbCountFormulas = New System.Windows.Forms.Label()
         Me.butClear = New System.Windows.Forms.Button()
         Me.butDelete = New System.Windows.Forms.Button()
         Me.chkCardNumber = New System.Windows.Forms.CheckBox()
-        Me.txtCardNumber = New HeadQApplication.MyTextBox()
         Me.lbCardNumber = New System.Windows.Forms.Label()
         Me.grpXY = New System.Windows.Forms.GroupBox()
         Me.butAssignZ2p = New System.Windows.Forms.Button()
@@ -57,11 +55,8 @@ Partial Class HeadQHome
         Me.butAssignX = New System.Windows.Forms.Button()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.txtYearSpec = New HeadQApplication.MyTextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtYearMax = New HeadQApplication.MyTextBox()
-        Me.txtYearMin = New HeadQApplication.MyTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.rdLS = New System.Windows.Forms.RadioButton()
@@ -71,46 +66,29 @@ Partial Class HeadQHome
         Me.cmbCarNameSearch = New System.Windows.Forms.ComboBox()
         Me.lbCarIdSearch = New System.Windows.Forms.Label()
         Me.butEditColor = New System.Windows.Forms.Button()
-        Me.lsvFamily = New HeadQApplication.MyListView()
-        Me.cformulaId = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cctype = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccarname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccode = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cyear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cversion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccardNbr = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label23 = New System.Windows.Forms.Label()
         Me.chkColorCode = New System.Windows.Forms.CheckBox()
-        Me.txtColorCode = New HeadQApplication.MyTextBox()
         Me.lbColorCode = New System.Windows.Forms.Label()
         Me.butAddNewFormula = New System.Windows.Forms.Button()
         Me.lbCurrencyDetailsValue = New System.Windows.Forms.Label()
         Me.lbCurrencyDetails = New System.Windows.Forms.Label()
         Me.chkFormulaName = New System.Windows.Forms.CheckBox()
-        Me.txtFormulaName = New HeadQApplication.MyTextBox()
         Me.lbFormulaName = New System.Windows.Forms.Label()
         Me.butGo = New System.Windows.Forms.Button()
         Me.tbCars = New System.Windows.Forms.TabPage()
         Me.grpCars = New System.Windows.Forms.GroupBox()
         Me.butClearCars = New System.Windows.Forms.Button()
         Me.cclCar = New System.Windows.Forms.Button()
-        Me.txtfnamehideen = New HeadQApplication.MyTextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.pctCarImg = New System.Windows.Forms.PictureBox()
         Me.butFindCarImg = New System.Windows.Forms.Button()
-        Me.txtCarImgPath = New HeadQApplication.MyTextBox()
         Me.lbCarImgPath = New System.Windows.Forms.Label()
         Me.butDeleteCarForm = New System.Windows.Forms.Button()
         Me.lbIdCarForm = New System.Windows.Forms.Label()
         Me.butEditCarForm = New System.Windows.Forms.Button()
         Me.butAddCar = New System.Windows.Forms.Button()
         Me.chkCarFormName = New System.Windows.Forms.CheckBox()
-        Me.txtCarNameForm = New HeadQApplication.MyTextBox()
         Me.lbCarNameForm = New System.Windows.Forms.Label()
-        Me.lsvCars = New HeadQApplication.MyListView()
-        Me.cidcar = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.butSearchCarForm = New System.Windows.Forms.Button()
         Me.tbLanguage = New System.Windows.Forms.TabPage()
         Me.grpLanguageForm = New System.Windows.Forms.GroupBox()
@@ -119,27 +97,20 @@ Partial Class HeadQHome
         Me.lbIdLanguageForm = New System.Windows.Forms.Label()
         Me.butEditLangForm = New System.Windows.Forms.Button()
         Me.chkLanguageLabelForm = New System.Windows.Forms.CheckBox()
-        Me.txtLanguageLabelForm = New HeadQApplication.MyTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.butAddLang = New System.Windows.Forms.Button()
         Me.chkLanguageFormCode = New System.Windows.Forms.CheckBox()
-        Me.txtLanguageCodeForm = New HeadQApplication.MyTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.lsvLanguage = New HeadQApplication.MyListView()
-        Me.cidLang = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.butSearchLangForm = New System.Windows.Forms.Button()
         Me.tbGarages = New System.Windows.Forms.TabPage()
         Me.grpGarageForm = New System.Windows.Forms.GroupBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.lbHqConversionProgress = New System.Windows.Forms.Label()
         Me.butBrowseHqDirectory = New System.Windows.Forms.Button()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.txtHqDirectory = New HeadQApplication.MyTextBox()
         Me.butConvertToHQ = New System.Windows.Forms.Button()
         Me.chkApply6 = New System.Windows.Forms.CheckBox()
         Me.chkUsername = New System.Windows.Forms.CheckBox()
-        Me.txtusername = New HeadQApplication.MyTextBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.rdShowAltNone = New System.Windows.Forms.RadioButton()
@@ -151,20 +122,16 @@ Partial Class HeadQHome
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.butBrowseDb = New System.Windows.Forms.Button()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.txtDBDirectory = New HeadQApplication.MyTextBox()
         Me.butInstallMobile = New System.Windows.Forms.Button()
         Me.chkkey = New System.Windows.Forms.CheckBox()
-        Me.txtkey = New HeadQApplication.MyTextBox()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.chktel = New System.Windows.Forms.CheckBox()
-        Me.txttel = New HeadQApplication.MyTextBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.rdGarage2k = New System.Windows.Forms.RadioButton()
         Me.rdGarageLS = New System.Windows.Forms.RadioButton()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.chkversion = New System.Windows.Forms.CheckBox()
-        Me.txtversion = New HeadQApplication.MyTextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.grpradio = New System.Windows.Forms.GroupBox()
         Me.rdApply4 = New System.Windows.Forms.RadioButton()
@@ -175,71 +142,46 @@ Partial Class HeadQHome
         Me.butClearGarage = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.butFindGarageImg = New System.Windows.Forms.Button()
-        Me.txtGarageImgPath = New HeadQApplication.MyTextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.txtfnamegaragehidden = New HeadQApplication.MyTextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.pctGarageImg = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.butBrowse = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtGarageDirectory = New HeadQApplication.MyTextBox()
         Me.butInstall = New System.Windows.Forms.Button()
         Me.butFindLang = New System.Windows.Forms.Button()
         Me.lbIdLanguage = New System.Windows.Forms.Label()
-        Me.txtLanguage = New HeadQApplication.MyTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.chkGarageRespForm = New System.Windows.Forms.CheckBox()
-        Me.txtGarageRespform = New HeadQApplication.MyTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.butDeleteGarageForm = New System.Windows.Forms.Button()
         Me.lbIdGarageForm = New System.Windows.Forms.Label()
         Me.butEditGarageForm = New System.Windows.Forms.Button()
         Me.chkGarageLocationForm = New System.Windows.Forms.CheckBox()
-        Me.txtGarageLocationForm = New HeadQApplication.MyTextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.butAddGarage = New System.Windows.Forms.Button()
         Me.chkGarageFormCode = New System.Windows.Forms.CheckBox()
-        Me.txtGarageNameForm = New HeadQApplication.MyTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.lsvGarage = New HeadQApplication.MyListView()
-        Me.cidGarage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cidlanggarage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cappequation = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cgversion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cgcoat = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.butSearchGarageForm = New System.Windows.Forms.Button()
         Me.tbColors = New System.Windows.Forms.TabPage()
         Me.grpBColors = New System.Windows.Forms.GroupBox()
         Me.chkBColorFormNameAlt2 = New System.Windows.Forms.CheckBox()
-        Me.txtBColorNameFormAlt2 = New HeadQApplication.MyTextBox()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.pctBColorRGB = New System.Windows.Forms.PictureBox()
-        Me.txtMasseVolumiqueExt = New HeadQApplication.MyTextBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.chkBColorFormNameAlt = New System.Windows.Forms.CheckBox()
-        Me.txtBColorNameFormAlt = New HeadQApplication.MyTextBox()
         Me.lbBColorNameFormAlt = New System.Windows.Forms.Label()
         Me.butReportAll = New System.Windows.Forms.Button()
         Me.butClearBColor = New System.Windows.Forms.Button()
-        Me.txtMasseVolumique = New HeadQApplication.MyTextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.cmbUnit = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.chkBColorFormCode = New System.Windows.Forms.CheckBox()
-        Me.txtBColorCodeForm = New HeadQApplication.MyTextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.txtfnamehideenColor = New HeadQApplication.MyTextBox()
         Me.butFindBColorImg = New System.Windows.Forms.Button()
-        Me.txtBColorImgPath = New HeadQApplication.MyTextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.pctBColorImg = New System.Windows.Forms.PictureBox()
-        Me.txtPriceBcolorForm = New HeadQApplication.MyTextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.lbCurrencyDetailsValue2 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -248,24 +190,13 @@ Partial Class HeadQHome
         Me.butEditBColorForm = New System.Windows.Forms.Button()
         Me.butAddBColor = New System.Windows.Forms.Button()
         Me.chkBColorFormName = New System.Windows.Forms.CheckBox()
-        Me.txtBColorNameForm = New HeadQApplication.MyTextBox()
         Me.lbBColorNameForm = New System.Windows.Forms.Label()
-        Me.lsvBColors = New HeadQApplication.MyListView()
-        Me.cidBColor = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.butSearchBColorForm = New System.Windows.Forms.Button()
         Me.tbUpdate = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.butClearUpdate = New System.Windows.Forms.Button()
         Me.butBrowseUpdate = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtUpdatePath = New HeadQApplication.MyTextBox()
         Me.butUpdateFile = New System.Windows.Forms.Button()
         Me.butExit = New System.Windows.Forms.Button()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
@@ -283,7 +214,76 @@ Partial Class HeadQHome
         Me.fldExcelDialog = New System.Windows.Forms.FolderBrowserDialog()
         Me.prgBar = New System.Windows.Forms.ProgressBar()
         Me.dlgBasicColorDialog = New System.Windows.Forms.ColorDialog()
-        Me.lbHqConversionProgress = New System.Windows.Forms.Label()
+        Me.txtBasicColor = New HeadQApplication.MyTextBox()
+        Me.txtCardNumber = New HeadQApplication.MyTextBox()
+        Me.txtYearSpec = New HeadQApplication.MyTextBox()
+        Me.txtYearMax = New HeadQApplication.MyTextBox()
+        Me.txtYearMin = New HeadQApplication.MyTextBox()
+        Me.lsvFamily = New HeadQApplication.MyListView()
+        Me.cformulaId = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cctype = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ccarname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ccode = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ccname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cyear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cversion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ccardNbr = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txtColorCode = New HeadQApplication.MyTextBox()
+        Me.txtFormulaName = New HeadQApplication.MyTextBox()
+        Me.txtfnamehideen = New HeadQApplication.MyTextBox()
+        Me.txtCarImgPath = New HeadQApplication.MyTextBox()
+        Me.txtCarNameForm = New HeadQApplication.MyTextBox()
+        Me.lsvCars = New HeadQApplication.MyListView()
+        Me.cidcar = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txtLanguageLabelForm = New HeadQApplication.MyTextBox()
+        Me.txtLanguageCodeForm = New HeadQApplication.MyTextBox()
+        Me.lsvLanguage = New HeadQApplication.MyListView()
+        Me.cidLang = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txtHqDirectory = New HeadQApplication.MyTextBox()
+        Me.txtusername = New HeadQApplication.MyTextBox()
+        Me.txtDBDirectory = New HeadQApplication.MyTextBox()
+        Me.txtkey = New HeadQApplication.MyTextBox()
+        Me.txttel = New HeadQApplication.MyTextBox()
+        Me.txtversion = New HeadQApplication.MyTextBox()
+        Me.txtGarageImgPath = New HeadQApplication.MyTextBox()
+        Me.txtfnamegaragehidden = New HeadQApplication.MyTextBox()
+        Me.txtGarageDirectory = New HeadQApplication.MyTextBox()
+        Me.txtLanguage = New HeadQApplication.MyTextBox()
+        Me.txtGarageRespform = New HeadQApplication.MyTextBox()
+        Me.txtGarageLocationForm = New HeadQApplication.MyTextBox()
+        Me.txtGarageNameForm = New HeadQApplication.MyTextBox()
+        Me.lsvGarage = New HeadQApplication.MyListView()
+        Me.cidGarage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cidlanggarage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cappequation = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cgversion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cgcoat = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txtBColorNameFormAlt2 = New HeadQApplication.MyTextBox()
+        Me.txtMasseVolumiqueExt = New HeadQApplication.MyTextBox()
+        Me.txtBColorNameFormAlt = New HeadQApplication.MyTextBox()
+        Me.txtMasseVolumique = New HeadQApplication.MyTextBox()
+        Me.txtBColorCodeForm = New HeadQApplication.MyTextBox()
+        Me.txtfnamehideenColor = New HeadQApplication.MyTextBox()
+        Me.txtBColorImgPath = New HeadQApplication.MyTextBox()
+        Me.txtPriceBcolorForm = New HeadQApplication.MyTextBox()
+        Me.txtBColorNameForm = New HeadQApplication.MyTextBox()
+        Me.lsvBColors = New HeadQApplication.MyListView()
+        Me.cidBColor = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txtUpdatePath = New HeadQApplication.MyTextBox()
         Me.tbTabs.SuspendLayout()
         Me.tbFormulas.SuspendLayout()
         Me.grpFormulas.SuspendLayout()
@@ -415,13 +415,6 @@ Partial Class HeadQHome
         Me.lbAttention.Text = "Attention!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Linked to a" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "multicolored"
         Me.lbAttention.Visible = False
         '
-        'txtBasicColor
-        '
-        Me.txtBasicColor.Location = New System.Drawing.Point(420, 165)
-        Me.txtBasicColor.Name = "txtBasicColor"
-        Me.txtBasicColor.Size = New System.Drawing.Size(97, 23)
-        Me.txtBasicColor.TabIndex = 153
-        '
         'Label26
         '
         Me.Label26.AutoSize = True
@@ -492,13 +485,6 @@ Partial Class HeadQHome
         Me.chkCardNumber.TabIndex = 148
         Me.chkCardNumber.Text = "Contains"
         Me.chkCardNumber.UseVisualStyleBackColor = True
-        '
-        'txtCardNumber
-        '
-        Me.txtCardNumber.Location = New System.Drawing.Point(126, 130)
-        Me.txtCardNumber.Name = "txtCardNumber"
-        Me.txtCardNumber.Size = New System.Drawing.Size(187, 23)
-        Me.txtCardNumber.TabIndex = 146
         '
         'lbCardNumber
         '
@@ -703,14 +689,6 @@ Partial Class HeadQHome
         Me.Label22.TabIndex = 0
         Me.Label22.Text = "Formula X:"
         '
-        'txtYearSpec
-        '
-        Me.txtYearSpec.Location = New System.Drawing.Point(126, 165)
-        Me.txtYearSpec.MaxLength = 11
-        Me.txtYearSpec.Name = "txtYearSpec"
-        Me.txtYearSpec.Size = New System.Drawing.Size(187, 23)
-        Me.txtYearSpec.TabIndex = 144
-        '
         'Label15
         '
         Me.Label15.AutoSize = True
@@ -732,24 +710,6 @@ Partial Class HeadQHome
         Me.Label3.TabIndex = 142
         Me.Label3.Text = "-"
         Me.Label3.Visible = False
-        '
-        'txtYearMax
-        '
-        Me.txtYearMax.Location = New System.Drawing.Point(528, 39)
-        Me.txtYearMax.MaxLength = 5
-        Me.txtYearMax.Name = "txtYearMax"
-        Me.txtYearMax.Size = New System.Drawing.Size(45, 23)
-        Me.txtYearMax.TabIndex = 3
-        Me.txtYearMax.Visible = False
-        '
-        'txtYearMin
-        '
-        Me.txtYearMin.Location = New System.Drawing.Point(528, 71)
-        Me.txtYearMin.MaxLength = 5
-        Me.txtYearMin.Name = "txtYearMin"
-        Me.txtYearMin.Size = New System.Drawing.Size(45, 23)
-        Me.txtYearMin.TabIndex = 2
-        Me.txtYearMin.Visible = False
         '
         'Label1
         '
@@ -856,75 +816,6 @@ Partial Class HeadQHome
         Me.butEditColor.Text = "Edit Color"
         Me.butEditColor.UseVisualStyleBackColor = False
         '
-        'lsvFamily
-        '
-        Me.lsvFamily.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lsvFamily.BackColor = System.Drawing.Color.White
-        Me.lsvFamily.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cformulaId, Me.cctype, Me.ccarname, Me.ccode, Me.ccname, Me.cyear, Me.cversion, Me.ccardNbr})
-        Me.lsvFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvFamily.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lsvFamily.FullRowSelect = True
-        Me.lsvFamily.GridLines = True
-        Me.lsvFamily.HideSelection = False
-        Me.lsvFamily.Location = New System.Drawing.Point(12, 247)
-        Me.lsvFamily.Name = "lsvFamily"
-        Me.lsvFamily.Size = New System.Drawing.Size(1153, 392)
-        Me.lsvFamily.TabIndex = 55
-        Me.lsvFamily.UseCompatibleStateImageBehavior = False
-        Me.lsvFamily.View = System.Windows.Forms.View.Details
-        '
-        'cformulaId
-        '
-        Me.cformulaId.Tag = "cformulaId"
-        Me.cformulaId.Text = "id"
-        Me.cformulaId.Width = 0
-        '
-        'cctype
-        '
-        Me.cctype.Tag = "cctype"
-        Me.cctype.Text = "Type"
-        Me.cctype.Width = 69
-        '
-        'ccarname
-        '
-        Me.ccarname.Tag = "ccarname"
-        Me.ccarname.Text = "Car"
-        Me.ccarname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ccarname.Width = 117
-        '
-        'ccode
-        '
-        Me.ccode.Tag = "ccode"
-        Me.ccode.Text = "Code"
-        Me.ccode.Width = 86
-        '
-        'ccname
-        '
-        Me.ccname.Tag = "ccname"
-        Me.ccname.Text = "Name"
-        Me.ccname.Width = 129
-        '
-        'cyear
-        '
-        Me.cyear.Tag = "cyear"
-        Me.cyear.Text = "Year"
-        Me.cyear.Width = 103
-        '
-        'cversion
-        '
-        Me.cversion.Tag = "cversion"
-        Me.cversion.Text = "Hue"
-        Me.cversion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.cversion.Width = 99
-        '
-        'ccardNbr
-        '
-        Me.ccardNbr.Tag = "ccardNbr"
-        Me.ccardNbr.Text = "Card Number"
-        Me.ccardNbr.Width = 105
-        '
         'Label23
         '
         Me.Label23.AutoSize = True
@@ -946,13 +837,6 @@ Partial Class HeadQHome
         Me.chkColorCode.TabIndex = 110
         Me.chkColorCode.Text = "Contains"
         Me.chkColorCode.UseVisualStyleBackColor = True
-        '
-        'txtColorCode
-        '
-        Me.txtColorCode.Location = New System.Drawing.Point(126, 59)
-        Me.txtColorCode.Name = "txtColorCode"
-        Me.txtColorCode.Size = New System.Drawing.Size(187, 23)
-        Me.txtColorCode.TabIndex = 0
         '
         'lbColorCode
         '
@@ -1014,13 +898,6 @@ Partial Class HeadQHome
         Me.chkFormulaName.TabIndex = 70
         Me.chkFormulaName.Text = "Contains"
         Me.chkFormulaName.UseVisualStyleBackColor = True
-        '
-        'txtFormulaName
-        '
-        Me.txtFormulaName.Location = New System.Drawing.Point(126, 95)
-        Me.txtFormulaName.Name = "txtFormulaName"
-        Me.txtFormulaName.Size = New System.Drawing.Size(187, 23)
-        Me.txtFormulaName.TabIndex = 1
         '
         'lbFormulaName
         '
@@ -1112,14 +989,6 @@ Partial Class HeadQHome
         Me.cclCar.Text = "Color Code Locator"
         Me.cclCar.UseVisualStyleBackColor = False
         '
-        'txtfnamehideen
-        '
-        Me.txtfnamehideen.Location = New System.Drawing.Point(233, 90)
-        Me.txtfnamehideen.Name = "txtfnamehideen"
-        Me.txtfnamehideen.ReadOnly = True
-        Me.txtfnamehideen.Size = New System.Drawing.Size(101, 23)
-        Me.txtfnamehideen.TabIndex = 83
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -1155,14 +1024,6 @@ Partial Class HeadQHome
         Me.butFindCarImg.TabIndex = 80
         Me.butFindCarImg.Text = " -- "
         Me.butFindCarImg.UseVisualStyleBackColor = False
-        '
-        'txtCarImgPath
-        '
-        Me.txtCarImgPath.Location = New System.Drawing.Point(126, 58)
-        Me.txtCarImgPath.Name = "txtCarImgPath"
-        Me.txtCarImgPath.ReadOnly = True
-        Me.txtCarImgPath.Size = New System.Drawing.Size(161, 23)
-        Me.txtCarImgPath.TabIndex = 79
         '
         'lbCarImgPath
         '
@@ -1237,13 +1098,6 @@ Partial Class HeadQHome
         Me.chkCarFormName.Text = "Contains"
         Me.chkCarFormName.UseVisualStyleBackColor = True
         '
-        'txtCarNameForm
-        '
-        Me.txtCarNameForm.Location = New System.Drawing.Point(126, 25)
-        Me.txtCarNameForm.Name = "txtCarNameForm"
-        Me.txtCarNameForm.Size = New System.Drawing.Size(187, 23)
-        Me.txtCarNameForm.TabIndex = 69
-        '
         'lbCarNameForm
         '
         Me.lbCarNameForm.AutoSize = True
@@ -1254,33 +1108,6 @@ Partial Class HeadQHome
         Me.lbCarNameForm.Size = New System.Drawing.Size(73, 15)
         Me.lbCarNameForm.TabIndex = 68
         Me.lbCarNameForm.Text = "Car name:"
-        '
-        'lsvCars
-        '
-        Me.lsvCars.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lsvCars.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidcar, Me.ColumnHeader1})
-        Me.lsvCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvCars.FullRowSelect = True
-        Me.lsvCars.GridLines = True
-        Me.lsvCars.HideSelection = False
-        Me.lsvCars.Location = New System.Drawing.Point(10, 181)
-        Me.lsvCars.MultiSelect = False
-        Me.lsvCars.Name = "lsvCars"
-        Me.lsvCars.Size = New System.Drawing.Size(1134, 443)
-        Me.lsvCars.TabIndex = 55
-        Me.lsvCars.UseCompatibleStateImageBehavior = False
-        Me.lsvCars.View = System.Windows.Forms.View.Details
-        '
-        'cidcar
-        '
-        Me.cidcar.Tag = "cidcar"
-        Me.cidcar.Width = 0
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Car Name"
-        Me.ColumnHeader1.Width = 400
         '
         'butSearchCarForm
         '
@@ -1396,13 +1223,6 @@ Partial Class HeadQHome
         Me.chkLanguageLabelForm.Text = "Contains"
         Me.chkLanguageLabelForm.UseVisualStyleBackColor = True
         '
-        'txtLanguageLabelForm
-        '
-        Me.txtLanguageLabelForm.Location = New System.Drawing.Point(126, 75)
-        Me.txtLanguageLabelForm.Name = "txtLanguageLabelForm"
-        Me.txtLanguageLabelForm.Size = New System.Drawing.Size(187, 23)
-        Me.txtLanguageLabelForm.TabIndex = 73
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -1440,13 +1260,6 @@ Partial Class HeadQHome
         Me.chkLanguageFormCode.Text = "Contains"
         Me.chkLanguageFormCode.UseVisualStyleBackColor = True
         '
-        'txtLanguageCodeForm
-        '
-        Me.txtLanguageCodeForm.Location = New System.Drawing.Point(126, 25)
-        Me.txtLanguageCodeForm.Name = "txtLanguageCodeForm"
-        Me.txtLanguageCodeForm.Size = New System.Drawing.Size(187, 23)
-        Me.txtLanguageCodeForm.TabIndex = 69
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -1457,38 +1270,6 @@ Partial Class HeadQHome
         Me.Label5.Size = New System.Drawing.Size(40, 15)
         Me.Label5.TabIndex = 68
         Me.Label5.Text = "Code"
-        '
-        'lsvLanguage
-        '
-        Me.lsvLanguage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lsvLanguage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidLang, Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.lsvLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvLanguage.FullRowSelect = True
-        Me.lsvLanguage.GridLines = True
-        Me.lsvLanguage.HideSelection = False
-        Me.lsvLanguage.Location = New System.Drawing.Point(10, 139)
-        Me.lsvLanguage.MultiSelect = False
-        Me.lsvLanguage.Name = "lsvLanguage"
-        Me.lsvLanguage.Size = New System.Drawing.Size(1101, 523)
-        Me.lsvLanguage.TabIndex = 55
-        Me.lsvLanguage.UseCompatibleStateImageBehavior = False
-        Me.lsvLanguage.View = System.Windows.Forms.View.Details
-        '
-        'cidLang
-        '
-        Me.cidLang.Tag = "cidLang"
-        Me.cidLang.Width = 0
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Code"
-        Me.ColumnHeader3.Width = 400
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Label"
-        Me.ColumnHeader4.Width = 300
         '
         'butSearchLangForm
         '
@@ -1591,6 +1372,14 @@ Partial Class HeadQHome
         Me.GroupBox7.TabIndex = 89
         Me.GroupBox7.TabStop = False
         '
+        'lbHqConversionProgress
+        '
+        Me.lbHqConversionProgress.AutoSize = True
+        Me.lbHqConversionProgress.Location = New System.Drawing.Point(16, 44)
+        Me.lbHqConversionProgress.Name = "lbHqConversionProgress"
+        Me.lbHqConversionProgress.Size = New System.Drawing.Size(0, 17)
+        Me.lbHqConversionProgress.TabIndex = 89
+        '
         'butBrowseHqDirectory
         '
         Me.butBrowseHqDirectory.BackColor = System.Drawing.SystemColors.Control
@@ -1613,14 +1402,6 @@ Partial Class HeadQHome
         Me.Label36.Size = New System.Drawing.Size(85, 15)
         Me.Label36.TabIndex = 87
         Me.Label36.Text = "Folder Path:"
-        '
-        'txtHqDirectory
-        '
-        Me.txtHqDirectory.Location = New System.Drawing.Point(104, 18)
-        Me.txtHqDirectory.Name = "txtHqDirectory"
-        Me.txtHqDirectory.ReadOnly = True
-        Me.txtHqDirectory.Size = New System.Drawing.Size(84, 23)
-        Me.txtHqDirectory.TabIndex = 86
         '
         'butConvertToHQ
         '
@@ -1659,13 +1440,6 @@ Partial Class HeadQHome
         Me.chkUsername.TabIndex = 174
         Me.chkUsername.Text = "Contains"
         Me.chkUsername.UseVisualStyleBackColor = True
-        '
-        'txtusername
-        '
-        Me.txtusername.Location = New System.Drawing.Point(126, 203)
-        Me.txtusername.Name = "txtusername"
-        Me.txtusername.Size = New System.Drawing.Size(136, 23)
-        Me.txtusername.TabIndex = 7
         '
         'Label35
         '
@@ -1801,14 +1575,6 @@ Partial Class HeadQHome
         Me.Label32.TabIndex = 87
         Me.Label32.Text = "Folder Path:"
         '
-        'txtDBDirectory
-        '
-        Me.txtDBDirectory.Location = New System.Drawing.Point(104, 18)
-        Me.txtDBDirectory.Name = "txtDBDirectory"
-        Me.txtDBDirectory.ReadOnly = True
-        Me.txtDBDirectory.Size = New System.Drawing.Size(83, 23)
-        Me.txtDBDirectory.TabIndex = 86
-        '
         'butInstallMobile
         '
         Me.butInstallMobile.BackColor = System.Drawing.SystemColors.Control
@@ -1835,13 +1601,6 @@ Partial Class HeadQHome
         Me.chkkey.Text = "Contains"
         Me.chkkey.UseVisualStyleBackColor = True
         '
-        'txtkey
-        '
-        Me.txtkey.Location = New System.Drawing.Point(126, 174)
-        Me.txtkey.Name = "txtkey"
-        Me.txtkey.Size = New System.Drawing.Size(136, 23)
-        Me.txtkey.TabIndex = 6
-        '
         'Label31
         '
         Me.Label31.AutoSize = True
@@ -1866,13 +1625,6 @@ Partial Class HeadQHome
         Me.chktel.TabIndex = 165
         Me.chktel.Text = "Contains"
         Me.chktel.UseVisualStyleBackColor = True
-        '
-        'txttel
-        '
-        Me.txttel.Location = New System.Drawing.Point(126, 145)
-        Me.txttel.Name = "txttel"
-        Me.txttel.Size = New System.Drawing.Size(136, 23)
-        Me.txttel.TabIndex = 5
         '
         'Label30
         '
@@ -1945,13 +1697,6 @@ Partial Class HeadQHome
         Me.chkversion.TabIndex = 159
         Me.chkversion.Text = "Contains"
         Me.chkversion.UseVisualStyleBackColor = True
-        '
-        'txtversion
-        '
-        Me.txtversion.Location = New System.Drawing.Point(126, 115)
-        Me.txtversion.Name = "txtversion"
-        Me.txtversion.Size = New System.Drawing.Size(136, 23)
-        Me.txtversion.TabIndex = 4
         '
         'Label27
         '
@@ -2078,15 +1823,6 @@ Partial Class HeadQHome
         Me.butFindGarageImg.Text = " -- "
         Me.butFindGarageImg.UseVisualStyleBackColor = False
         '
-        'txtGarageImgPath
-        '
-        Me.txtGarageImgPath.Location = New System.Drawing.Point(638, 348)
-        Me.txtGarageImgPath.Name = "txtGarageImgPath"
-        Me.txtGarageImgPath.ReadOnly = True
-        Me.txtGarageImgPath.Size = New System.Drawing.Size(161, 23)
-        Me.txtGarageImgPath.TabIndex = 125
-        Me.txtGarageImgPath.Visible = False
-        '
         'Label19
         '
         Me.Label19.AutoSize = True
@@ -2097,15 +1833,6 @@ Partial Class HeadQHome
         Me.Label19.Size = New System.Drawing.Size(43, 15)
         Me.Label19.TabIndex = 124
         Me.Label19.Text = "Logo:"
-        '
-        'txtfnamegaragehidden
-        '
-        Me.txtfnamegaragehidden.Location = New System.Drawing.Point(563, 400)
-        Me.txtfnamegaragehidden.Name = "txtfnamegaragehidden"
-        Me.txtfnamegaragehidden.ReadOnly = True
-        Me.txtfnamegaragehidden.Size = New System.Drawing.Size(101, 23)
-        Me.txtfnamegaragehidden.TabIndex = 123
-        Me.txtfnamegaragehidden.Visible = False
         '
         'Label18
         '
@@ -2165,14 +1892,6 @@ Partial Class HeadQHome
         Me.Label10.TabIndex = 87
         Me.Label10.Text = "Folder Path:"
         '
-        'txtGarageDirectory
-        '
-        Me.txtGarageDirectory.Location = New System.Drawing.Point(104, 18)
-        Me.txtGarageDirectory.Name = "txtGarageDirectory"
-        Me.txtGarageDirectory.ReadOnly = True
-        Me.txtGarageDirectory.Size = New System.Drawing.Size(84, 23)
-        Me.txtGarageDirectory.TabIndex = 86
-        '
         'butInstall
         '
         Me.butInstall.BackColor = System.Drawing.SystemColors.Control
@@ -2209,14 +1928,6 @@ Partial Class HeadQHome
         Me.lbIdLanguage.Text = "-1"
         Me.lbIdLanguage.Visible = False
         '
-        'txtLanguage
-        '
-        Me.txtLanguage.Location = New System.Drawing.Point(126, 321)
-        Me.txtLanguage.Name = "txtLanguage"
-        Me.txtLanguage.ReadOnly = True
-        Me.txtLanguage.Size = New System.Drawing.Size(136, 23)
-        Me.txtLanguage.TabIndex = 82
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -2241,13 +1952,6 @@ Partial Class HeadQHome
         Me.chkGarageRespForm.TabIndex = 80
         Me.chkGarageRespForm.Text = "Contains"
         Me.chkGarageRespForm.UseVisualStyleBackColor = True
-        '
-        'txtGarageRespform
-        '
-        Me.txtGarageRespform.Location = New System.Drawing.Point(126, 86)
-        Me.txtGarageRespform.Name = "txtGarageRespform"
-        Me.txtGarageRespform.Size = New System.Drawing.Size(136, 23)
-        Me.txtGarageRespform.TabIndex = 3
         '
         'Label7
         '
@@ -2310,13 +2014,6 @@ Partial Class HeadQHome
         Me.chkGarageLocationForm.Text = "Contains"
         Me.chkGarageLocationForm.UseVisualStyleBackColor = True
         '
-        'txtGarageLocationForm
-        '
-        Me.txtGarageLocationForm.Location = New System.Drawing.Point(126, 57)
-        Me.txtGarageLocationForm.Name = "txtGarageLocationForm"
-        Me.txtGarageLocationForm.Size = New System.Drawing.Size(136, 23)
-        Me.txtGarageLocationForm.TabIndex = 2
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -2354,13 +2051,6 @@ Partial Class HeadQHome
         Me.chkGarageFormCode.Text = "Contains"
         Me.chkGarageFormCode.UseVisualStyleBackColor = True
         '
-        'txtGarageNameForm
-        '
-        Me.txtGarageNameForm.Location = New System.Drawing.Point(126, 25)
-        Me.txtGarageNameForm.Name = "txtGarageNameForm"
-        Me.txtGarageNameForm.Size = New System.Drawing.Size(136, 23)
-        Me.txtGarageNameForm.TabIndex = 1
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -2371,68 +2061,6 @@ Partial Class HeadQHome
         Me.Label9.Size = New System.Drawing.Size(45, 15)
         Me.Label9.TabIndex = 68
         Me.Label9.Text = "Name"
-        '
-        'lsvGarage
-        '
-        Me.lsvGarage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lsvGarage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidGarage, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.cidlanggarage, Me.cappequation, Me.cgversion, Me.cgcoat})
-        Me.lsvGarage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvGarage.FullRowSelect = True
-        Me.lsvGarage.GridLines = True
-        Me.lsvGarage.HideSelection = False
-        Me.lsvGarage.Location = New System.Drawing.Point(10, 455)
-        Me.lsvGarage.MultiSelect = False
-        Me.lsvGarage.Name = "lsvGarage"
-        Me.lsvGarage.Size = New System.Drawing.Size(1159, 203)
-        Me.lsvGarage.TabIndex = 99999999
-        Me.lsvGarage.UseCompatibleStateImageBehavior = False
-        Me.lsvGarage.View = System.Windows.Forms.View.Details
-        '
-        'cidGarage
-        '
-        Me.cidGarage.Tag = "cidGarage"
-        Me.cidGarage.Width = 0
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "name"
-        Me.ColumnHeader5.Width = 250
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "location"
-        Me.ColumnHeader6.Width = 185
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "Responsible"
-        Me.ColumnHeader7.Width = 178
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Text = "Language"
-        Me.ColumnHeader8.Width = 90
-        '
-        'cidlanggarage
-        '
-        Me.cidlanggarage.Tag = "cidlanggarage"
-        Me.cidlanggarage.Width = 0
-        '
-        'cappequation
-        '
-        Me.cappequation.Tag = "cappequation"
-        Me.cappequation.Text = "Apply Equation"
-        Me.cappequation.Width = 135
-        '
-        'cgversion
-        '
-        Me.cgversion.Text = "Version"
-        Me.cgversion.Width = 238
-        '
-        'cgcoat
-        '
-        Me.cgcoat.Text = "Coat"
         '
         'butSearchGarageForm
         '
@@ -2523,13 +2151,6 @@ Partial Class HeadQHome
         Me.chkBColorFormNameAlt2.Text = "Contains"
         Me.chkBColorFormNameAlt2.UseVisualStyleBackColor = True
         '
-        'txtBColorNameFormAlt2
-        '
-        Me.txtBColorNameFormAlt2.Location = New System.Drawing.Point(170, 130)
-        Me.txtBColorNameFormAlt2.Name = "txtBColorNameFormAlt2"
-        Me.txtBColorNameFormAlt2.Size = New System.Drawing.Size(187, 23)
-        Me.txtBColorNameFormAlt2.TabIndex = 162
-        '
         'Label34
         '
         Me.Label34.AutoSize = True
@@ -2552,13 +2173,6 @@ Partial Class HeadQHome
         Me.pctBColorRGB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctBColorRGB.TabIndex = 161
         Me.pctBColorRGB.TabStop = False
-        '
-        'txtMasseVolumiqueExt
-        '
-        Me.txtMasseVolumiqueExt.Location = New System.Drawing.Point(170, 235)
-        Me.txtMasseVolumiqueExt.Name = "txtMasseVolumiqueExt"
-        Me.txtMasseVolumiqueExt.Size = New System.Drawing.Size(187, 23)
-        Me.txtMasseVolumiqueExt.TabIndex = 159
         '
         'Label29
         '
@@ -2584,13 +2198,6 @@ Partial Class HeadQHome
         Me.chkBColorFormNameAlt.TabIndex = 158
         Me.chkBColorFormNameAlt.Text = "Contains"
         Me.chkBColorFormNameAlt.UseVisualStyleBackColor = True
-        '
-        'txtBColorNameFormAlt
-        '
-        Me.txtBColorNameFormAlt.Location = New System.Drawing.Point(170, 101)
-        Me.txtBColorNameFormAlt.Name = "txtBColorNameFormAlt"
-        Me.txtBColorNameFormAlt.Size = New System.Drawing.Size(187, 23)
-        Me.txtBColorNameFormAlt.TabIndex = 156
         '
         'lbBColorNameFormAlt
         '
@@ -2627,13 +2234,6 @@ Partial Class HeadQHome
         Me.butClearBColor.TabIndex = 154
         Me.butClearBColor.Text = "Clear"
         Me.butClearBColor.UseVisualStyleBackColor = False
-        '
-        'txtMasseVolumique
-        '
-        Me.txtMasseVolumique.Location = New System.Drawing.Point(170, 201)
-        Me.txtMasseVolumique.Name = "txtMasseVolumique"
-        Me.txtMasseVolumique.Size = New System.Drawing.Size(187, 23)
-        Me.txtMasseVolumique.TabIndex = 131
         '
         'Label25
         '
@@ -2680,13 +2280,6 @@ Partial Class HeadQHome
         Me.chkBColorFormCode.Text = "Contains"
         Me.chkBColorFormCode.UseVisualStyleBackColor = True
         '
-        'txtBColorCodeForm
-        '
-        Me.txtBColorCodeForm.Location = New System.Drawing.Point(170, 43)
-        Me.txtBColorCodeForm.Name = "txtBColorCodeForm"
-        Me.txtBColorCodeForm.Size = New System.Drawing.Size(187, 23)
-        Me.txtBColorCodeForm.TabIndex = 10
-        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -2697,15 +2290,6 @@ Partial Class HeadQHome
         Me.Label21.Size = New System.Drawing.Size(89, 15)
         Me.Label21.TabIndex = 119
         Me.Label21.Text = "BColor code:"
-        '
-        'txtfnamehideenColor
-        '
-        Me.txtfnamehideenColor.Location = New System.Drawing.Point(343, 270)
-        Me.txtfnamehideenColor.Name = "txtfnamehideenColor"
-        Me.txtfnamehideenColor.ReadOnly = True
-        Me.txtfnamehideenColor.Size = New System.Drawing.Size(101, 23)
-        Me.txtfnamehideenColor.TabIndex = 118
-        Me.txtfnamehideenColor.Visible = False
         '
         'butFindBColorImg
         '
@@ -2718,14 +2302,6 @@ Partial Class HeadQHome
         Me.butFindBColorImg.TabIndex = 117
         Me.butFindBColorImg.Text = " -- "
         Me.butFindBColorImg.UseVisualStyleBackColor = False
-        '
-        'txtBColorImgPath
-        '
-        Me.txtBColorImgPath.Location = New System.Drawing.Point(138, 270)
-        Me.txtBColorImgPath.Name = "txtBColorImgPath"
-        Me.txtBColorImgPath.ReadOnly = True
-        Me.txtBColorImgPath.Size = New System.Drawing.Size(154, 23)
-        Me.txtBColorImgPath.TabIndex = 116
         '
         'Label17
         '
@@ -2759,13 +2335,6 @@ Partial Class HeadQHome
         Me.pctBColorImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctBColorImg.TabIndex = 113
         Me.pctBColorImg.TabStop = False
-        '
-        'txtPriceBcolorForm
-        '
-        Me.txtPriceBcolorForm.Location = New System.Drawing.Point(170, 162)
-        Me.txtPriceBcolorForm.Name = "txtPriceBcolorForm"
-        Me.txtPriceBcolorForm.Size = New System.Drawing.Size(149, 23)
-        Me.txtPriceBcolorForm.TabIndex = 12
         '
         'Label11
         '
@@ -2866,13 +2435,6 @@ Partial Class HeadQHome
         Me.chkBColorFormName.Text = "Contains"
         Me.chkBColorFormName.UseVisualStyleBackColor = True
         '
-        'txtBColorNameForm
-        '
-        Me.txtBColorNameForm.Location = New System.Drawing.Point(170, 72)
-        Me.txtBColorNameForm.Name = "txtBColorNameForm"
-        Me.txtBColorNameForm.Size = New System.Drawing.Size(187, 23)
-        Me.txtBColorNameForm.TabIndex = 11
-        '
         'lbBColorNameForm
         '
         Me.lbBColorNameForm.AutoSize = True
@@ -2883,64 +2445,6 @@ Partial Class HeadQHome
         Me.lbBColorNameForm.Size = New System.Drawing.Size(94, 15)
         Me.lbBColorNameForm.TabIndex = 68
         Me.lbBColorNameForm.Text = "BColor name:"
-        '
-        'lsvBColors
-        '
-        Me.lsvBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lsvBColors.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidBColor, Me.ColumnHeader2, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader9, Me.ColumnHeader14})
-        Me.lsvBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvBColors.FullRowSelect = True
-        Me.lsvBColors.GridLines = True
-        Me.lsvBColors.HideSelection = False
-        Me.lsvBColors.Location = New System.Drawing.Point(8, 395)
-        Me.lsvBColors.MultiSelect = False
-        Me.lsvBColors.Name = "lsvBColors"
-        Me.lsvBColors.Size = New System.Drawing.Size(1145, 250)
-        Me.lsvBColors.TabIndex = 55
-        Me.lsvBColors.UseCompatibleStateImageBehavior = False
-        Me.lsvBColors.View = System.Windows.Forms.View.Details
-        '
-        'cidBColor
-        '
-        Me.cidBColor.Tag = "cidBColor"
-        Me.cidBColor.Width = 0
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Code"
-        Me.ColumnHeader2.Width = 104
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "Name"
-        Me.ColumnHeader10.Width = 206
-        '
-        'ColumnHeader11
-        '
-        Me.ColumnHeader11.Text = "Price"
-        Me.ColumnHeader11.Width = 300
-        '
-        'ColumnHeader12
-        '
-        Me.ColumnHeader12.Text = "Currency"
-        Me.ColumnHeader12.Width = 94
-        '
-        'ColumnHeader13
-        '
-        Me.ColumnHeader13.Text = "Unit"
-        Me.ColumnHeader13.Width = 91
-        '
-        'ColumnHeader9
-        '
-        Me.ColumnHeader9.Text = "Masse Volumique"
-        Me.ColumnHeader9.Width = 147
-        '
-        'ColumnHeader14
-        '
-        Me.ColumnHeader14.Text = "Masse Volumique ext"
-        Me.ColumnHeader14.Width = 190
         '
         'butSearchBColorForm
         '
@@ -3017,15 +2521,6 @@ Partial Class HeadQHome
         Me.Label12.Size = New System.Drawing.Size(85, 15)
         Me.Label12.TabIndex = 87
         Me.Label12.Text = "Folder Path:"
-        '
-        'txtUpdatePath
-        '
-        Me.txtUpdatePath.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtUpdatePath.Location = New System.Drawing.Point(104, 18)
-        Me.txtUpdatePath.Name = "txtUpdatePath"
-        Me.txtUpdatePath.ReadOnly = True
-        Me.txtUpdatePath.Size = New System.Drawing.Size(549, 23)
-        Me.txtUpdatePath.TabIndex = 86
         '
         'butUpdateFile
         '
@@ -3108,13 +2603,519 @@ Partial Class HeadQHome
         Me.prgBar.TabIndex = 63
         Me.prgBar.Visible = False
         '
-        'lbHqConversionProgress
+        'txtBasicColor
         '
-        Me.lbHqConversionProgress.AutoSize = True
-        Me.lbHqConversionProgress.Location = New System.Drawing.Point(16, 44)
-        Me.lbHqConversionProgress.Name = "lbHqConversionProgress"
-        Me.lbHqConversionProgress.Size = New System.Drawing.Size(0, 17)
-        Me.lbHqConversionProgress.TabIndex = 89
+        Me.txtBasicColor.Location = New System.Drawing.Point(420, 165)
+        Me.txtBasicColor.Name = "txtBasicColor"
+        Me.txtBasicColor.Size = New System.Drawing.Size(97, 23)
+        Me.txtBasicColor.TabIndex = 153
+        '
+        'txtCardNumber
+        '
+        Me.txtCardNumber.Location = New System.Drawing.Point(126, 130)
+        Me.txtCardNumber.Name = "txtCardNumber"
+        Me.txtCardNumber.Size = New System.Drawing.Size(187, 23)
+        Me.txtCardNumber.TabIndex = 146
+        '
+        'txtYearSpec
+        '
+        Me.txtYearSpec.Location = New System.Drawing.Point(126, 165)
+        Me.txtYearSpec.MaxLength = 11
+        Me.txtYearSpec.Name = "txtYearSpec"
+        Me.txtYearSpec.Size = New System.Drawing.Size(187, 23)
+        Me.txtYearSpec.TabIndex = 144
+        '
+        'txtYearMax
+        '
+        Me.txtYearMax.Location = New System.Drawing.Point(528, 39)
+        Me.txtYearMax.MaxLength = 5
+        Me.txtYearMax.Name = "txtYearMax"
+        Me.txtYearMax.Size = New System.Drawing.Size(45, 23)
+        Me.txtYearMax.TabIndex = 3
+        Me.txtYearMax.Visible = False
+        '
+        'txtYearMin
+        '
+        Me.txtYearMin.Location = New System.Drawing.Point(528, 71)
+        Me.txtYearMin.MaxLength = 5
+        Me.txtYearMin.Name = "txtYearMin"
+        Me.txtYearMin.Size = New System.Drawing.Size(45, 23)
+        Me.txtYearMin.TabIndex = 2
+        Me.txtYearMin.Visible = False
+        '
+        'lsvFamily
+        '
+        Me.lsvFamily.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvFamily.BackColor = System.Drawing.Color.White
+        Me.lsvFamily.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cformulaId, Me.cctype, Me.ccarname, Me.ccode, Me.ccname, Me.cyear, Me.cversion, Me.ccardNbr})
+        Me.lsvFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsvFamily.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lsvFamily.FullRowSelect = True
+        Me.lsvFamily.GridLines = True
+        Me.lsvFamily.HideSelection = False
+        Me.lsvFamily.Location = New System.Drawing.Point(12, 247)
+        Me.lsvFamily.Name = "lsvFamily"
+        Me.lsvFamily.Size = New System.Drawing.Size(1153, 392)
+        Me.lsvFamily.TabIndex = 55
+        Me.lsvFamily.UseCompatibleStateImageBehavior = False
+        Me.lsvFamily.View = System.Windows.Forms.View.Details
+        '
+        'cformulaId
+        '
+        Me.cformulaId.Tag = "cformulaId"
+        Me.cformulaId.Text = "id"
+        Me.cformulaId.Width = 0
+        '
+        'cctype
+        '
+        Me.cctype.Tag = "cctype"
+        Me.cctype.Text = "Type"
+        Me.cctype.Width = 69
+        '
+        'ccarname
+        '
+        Me.ccarname.Tag = "ccarname"
+        Me.ccarname.Text = "Car"
+        Me.ccarname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ccarname.Width = 117
+        '
+        'ccode
+        '
+        Me.ccode.Tag = "ccode"
+        Me.ccode.Text = "Code"
+        Me.ccode.Width = 86
+        '
+        'ccname
+        '
+        Me.ccname.Tag = "ccname"
+        Me.ccname.Text = "Name"
+        Me.ccname.Width = 129
+        '
+        'cyear
+        '
+        Me.cyear.Tag = "cyear"
+        Me.cyear.Text = "Year"
+        Me.cyear.Width = 103
+        '
+        'cversion
+        '
+        Me.cversion.Tag = "cversion"
+        Me.cversion.Text = "Hue"
+        Me.cversion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.cversion.Width = 99
+        '
+        'ccardNbr
+        '
+        Me.ccardNbr.Tag = "ccardNbr"
+        Me.ccardNbr.Text = "Card Number"
+        Me.ccardNbr.Width = 105
+        '
+        'txtColorCode
+        '
+        Me.txtColorCode.Location = New System.Drawing.Point(126, 59)
+        Me.txtColorCode.Name = "txtColorCode"
+        Me.txtColorCode.Size = New System.Drawing.Size(187, 23)
+        Me.txtColorCode.TabIndex = 0
+        '
+        'txtFormulaName
+        '
+        Me.txtFormulaName.Location = New System.Drawing.Point(126, 95)
+        Me.txtFormulaName.Name = "txtFormulaName"
+        Me.txtFormulaName.Size = New System.Drawing.Size(187, 23)
+        Me.txtFormulaName.TabIndex = 1
+        '
+        'txtfnamehideen
+        '
+        Me.txtfnamehideen.Location = New System.Drawing.Point(233, 90)
+        Me.txtfnamehideen.Name = "txtfnamehideen"
+        Me.txtfnamehideen.ReadOnly = True
+        Me.txtfnamehideen.Size = New System.Drawing.Size(101, 23)
+        Me.txtfnamehideen.TabIndex = 83
+        '
+        'txtCarImgPath
+        '
+        Me.txtCarImgPath.Location = New System.Drawing.Point(126, 58)
+        Me.txtCarImgPath.Name = "txtCarImgPath"
+        Me.txtCarImgPath.ReadOnly = True
+        Me.txtCarImgPath.Size = New System.Drawing.Size(161, 23)
+        Me.txtCarImgPath.TabIndex = 79
+        '
+        'txtCarNameForm
+        '
+        Me.txtCarNameForm.Location = New System.Drawing.Point(126, 25)
+        Me.txtCarNameForm.Name = "txtCarNameForm"
+        Me.txtCarNameForm.Size = New System.Drawing.Size(187, 23)
+        Me.txtCarNameForm.TabIndex = 69
+        '
+        'lsvCars
+        '
+        Me.lsvCars.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvCars.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidcar, Me.ColumnHeader1})
+        Me.lsvCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsvCars.FullRowSelect = True
+        Me.lsvCars.GridLines = True
+        Me.lsvCars.HideSelection = False
+        Me.lsvCars.Location = New System.Drawing.Point(10, 181)
+        Me.lsvCars.MultiSelect = False
+        Me.lsvCars.Name = "lsvCars"
+        Me.lsvCars.Size = New System.Drawing.Size(1134, 443)
+        Me.lsvCars.TabIndex = 55
+        Me.lsvCars.UseCompatibleStateImageBehavior = False
+        Me.lsvCars.View = System.Windows.Forms.View.Details
+        '
+        'cidcar
+        '
+        Me.cidcar.Tag = "cidcar"
+        Me.cidcar.Width = 0
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Car Name"
+        Me.ColumnHeader1.Width = 400
+        '
+        'txtLanguageLabelForm
+        '
+        Me.txtLanguageLabelForm.Location = New System.Drawing.Point(126, 75)
+        Me.txtLanguageLabelForm.Name = "txtLanguageLabelForm"
+        Me.txtLanguageLabelForm.Size = New System.Drawing.Size(187, 23)
+        Me.txtLanguageLabelForm.TabIndex = 73
+        '
+        'txtLanguageCodeForm
+        '
+        Me.txtLanguageCodeForm.Location = New System.Drawing.Point(126, 25)
+        Me.txtLanguageCodeForm.Name = "txtLanguageCodeForm"
+        Me.txtLanguageCodeForm.Size = New System.Drawing.Size(187, 23)
+        Me.txtLanguageCodeForm.TabIndex = 69
+        '
+        'lsvLanguage
+        '
+        Me.lsvLanguage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvLanguage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidLang, Me.ColumnHeader3, Me.ColumnHeader4})
+        Me.lsvLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsvLanguage.FullRowSelect = True
+        Me.lsvLanguage.GridLines = True
+        Me.lsvLanguage.HideSelection = False
+        Me.lsvLanguage.Location = New System.Drawing.Point(10, 139)
+        Me.lsvLanguage.MultiSelect = False
+        Me.lsvLanguage.Name = "lsvLanguage"
+        Me.lsvLanguage.Size = New System.Drawing.Size(1101, 523)
+        Me.lsvLanguage.TabIndex = 55
+        Me.lsvLanguage.UseCompatibleStateImageBehavior = False
+        Me.lsvLanguage.View = System.Windows.Forms.View.Details
+        '
+        'cidLang
+        '
+        Me.cidLang.Tag = "cidLang"
+        Me.cidLang.Width = 0
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Code"
+        Me.ColumnHeader3.Width = 400
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Label"
+        Me.ColumnHeader4.Width = 300
+        '
+        'txtHqDirectory
+        '
+        Me.txtHqDirectory.Location = New System.Drawing.Point(104, 18)
+        Me.txtHqDirectory.Name = "txtHqDirectory"
+        Me.txtHqDirectory.ReadOnly = True
+        Me.txtHqDirectory.Size = New System.Drawing.Size(84, 23)
+        Me.txtHqDirectory.TabIndex = 86
+        '
+        'txtusername
+        '
+        Me.txtusername.Location = New System.Drawing.Point(126, 203)
+        Me.txtusername.Name = "txtusername"
+        Me.txtusername.Size = New System.Drawing.Size(136, 23)
+        Me.txtusername.TabIndex = 7
+        '
+        'txtDBDirectory
+        '
+        Me.txtDBDirectory.Location = New System.Drawing.Point(104, 18)
+        Me.txtDBDirectory.Name = "txtDBDirectory"
+        Me.txtDBDirectory.ReadOnly = True
+        Me.txtDBDirectory.Size = New System.Drawing.Size(83, 23)
+        Me.txtDBDirectory.TabIndex = 86
+        '
+        'txtkey
+        '
+        Me.txtkey.Location = New System.Drawing.Point(126, 174)
+        Me.txtkey.Name = "txtkey"
+        Me.txtkey.Size = New System.Drawing.Size(136, 23)
+        Me.txtkey.TabIndex = 6
+        '
+        'txttel
+        '
+        Me.txttel.Location = New System.Drawing.Point(126, 145)
+        Me.txttel.Name = "txttel"
+        Me.txttel.Size = New System.Drawing.Size(136, 23)
+        Me.txttel.TabIndex = 5
+        '
+        'txtversion
+        '
+        Me.txtversion.Location = New System.Drawing.Point(126, 115)
+        Me.txtversion.Name = "txtversion"
+        Me.txtversion.Size = New System.Drawing.Size(136, 23)
+        Me.txtversion.TabIndex = 4
+        '
+        'txtGarageImgPath
+        '
+        Me.txtGarageImgPath.Location = New System.Drawing.Point(638, 348)
+        Me.txtGarageImgPath.Name = "txtGarageImgPath"
+        Me.txtGarageImgPath.ReadOnly = True
+        Me.txtGarageImgPath.Size = New System.Drawing.Size(161, 23)
+        Me.txtGarageImgPath.TabIndex = 125
+        Me.txtGarageImgPath.Visible = False
+        '
+        'txtfnamegaragehidden
+        '
+        Me.txtfnamegaragehidden.Location = New System.Drawing.Point(563, 400)
+        Me.txtfnamegaragehidden.Name = "txtfnamegaragehidden"
+        Me.txtfnamegaragehidden.ReadOnly = True
+        Me.txtfnamegaragehidden.Size = New System.Drawing.Size(101, 23)
+        Me.txtfnamegaragehidden.TabIndex = 123
+        Me.txtfnamegaragehidden.Visible = False
+        '
+        'txtGarageDirectory
+        '
+        Me.txtGarageDirectory.Location = New System.Drawing.Point(104, 18)
+        Me.txtGarageDirectory.Name = "txtGarageDirectory"
+        Me.txtGarageDirectory.ReadOnly = True
+        Me.txtGarageDirectory.Size = New System.Drawing.Size(84, 23)
+        Me.txtGarageDirectory.TabIndex = 86
+        '
+        'txtLanguage
+        '
+        Me.txtLanguage.Location = New System.Drawing.Point(126, 321)
+        Me.txtLanguage.Name = "txtLanguage"
+        Me.txtLanguage.ReadOnly = True
+        Me.txtLanguage.Size = New System.Drawing.Size(136, 23)
+        Me.txtLanguage.TabIndex = 82
+        '
+        'txtGarageRespform
+        '
+        Me.txtGarageRespform.Location = New System.Drawing.Point(126, 86)
+        Me.txtGarageRespform.Name = "txtGarageRespform"
+        Me.txtGarageRespform.Size = New System.Drawing.Size(136, 23)
+        Me.txtGarageRespform.TabIndex = 3
+        '
+        'txtGarageLocationForm
+        '
+        Me.txtGarageLocationForm.Location = New System.Drawing.Point(126, 57)
+        Me.txtGarageLocationForm.Name = "txtGarageLocationForm"
+        Me.txtGarageLocationForm.Size = New System.Drawing.Size(136, 23)
+        Me.txtGarageLocationForm.TabIndex = 2
+        '
+        'txtGarageNameForm
+        '
+        Me.txtGarageNameForm.Location = New System.Drawing.Point(126, 25)
+        Me.txtGarageNameForm.Name = "txtGarageNameForm"
+        Me.txtGarageNameForm.Size = New System.Drawing.Size(136, 23)
+        Me.txtGarageNameForm.TabIndex = 1
+        '
+        'lsvGarage
+        '
+        Me.lsvGarage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvGarage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidGarage, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.cidlanggarage, Me.cappequation, Me.cgversion, Me.cgcoat})
+        Me.lsvGarage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsvGarage.FullRowSelect = True
+        Me.lsvGarage.GridLines = True
+        Me.lsvGarage.HideSelection = False
+        Me.lsvGarage.Location = New System.Drawing.Point(10, 455)
+        Me.lsvGarage.MultiSelect = False
+        Me.lsvGarage.Name = "lsvGarage"
+        Me.lsvGarage.Size = New System.Drawing.Size(1159, 203)
+        Me.lsvGarage.TabIndex = 99999999
+        Me.lsvGarage.UseCompatibleStateImageBehavior = False
+        Me.lsvGarage.View = System.Windows.Forms.View.Details
+        '
+        'cidGarage
+        '
+        Me.cidGarage.Tag = "cidGarage"
+        Me.cidGarage.Width = 0
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "name"
+        Me.ColumnHeader5.Width = 250
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "location"
+        Me.ColumnHeader6.Width = 185
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "Responsible"
+        Me.ColumnHeader7.Width = 178
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "Language"
+        Me.ColumnHeader8.Width = 90
+        '
+        'cidlanggarage
+        '
+        Me.cidlanggarage.Tag = "cidlanggarage"
+        Me.cidlanggarage.Width = 0
+        '
+        'cappequation
+        '
+        Me.cappequation.Tag = "cappequation"
+        Me.cappequation.Text = "Apply Equation"
+        Me.cappequation.Width = 135
+        '
+        'cgversion
+        '
+        Me.cgversion.Text = "Version"
+        Me.cgversion.Width = 238
+        '
+        'cgcoat
+        '
+        Me.cgcoat.Text = "Coat"
+        '
+        'txtBColorNameFormAlt2
+        '
+        Me.txtBColorNameFormAlt2.Location = New System.Drawing.Point(170, 130)
+        Me.txtBColorNameFormAlt2.Name = "txtBColorNameFormAlt2"
+        Me.txtBColorNameFormAlt2.Size = New System.Drawing.Size(187, 23)
+        Me.txtBColorNameFormAlt2.TabIndex = 162
+        '
+        'txtMasseVolumiqueExt
+        '
+        Me.txtMasseVolumiqueExt.Location = New System.Drawing.Point(170, 235)
+        Me.txtMasseVolumiqueExt.Name = "txtMasseVolumiqueExt"
+        Me.txtMasseVolumiqueExt.Size = New System.Drawing.Size(187, 23)
+        Me.txtMasseVolumiqueExt.TabIndex = 159
+        '
+        'txtBColorNameFormAlt
+        '
+        Me.txtBColorNameFormAlt.Location = New System.Drawing.Point(170, 101)
+        Me.txtBColorNameFormAlt.Name = "txtBColorNameFormAlt"
+        Me.txtBColorNameFormAlt.Size = New System.Drawing.Size(187, 23)
+        Me.txtBColorNameFormAlt.TabIndex = 156
+        '
+        'txtMasseVolumique
+        '
+        Me.txtMasseVolumique.Location = New System.Drawing.Point(170, 201)
+        Me.txtMasseVolumique.Name = "txtMasseVolumique"
+        Me.txtMasseVolumique.Size = New System.Drawing.Size(187, 23)
+        Me.txtMasseVolumique.TabIndex = 131
+        '
+        'txtBColorCodeForm
+        '
+        Me.txtBColorCodeForm.Location = New System.Drawing.Point(170, 43)
+        Me.txtBColorCodeForm.Name = "txtBColorCodeForm"
+        Me.txtBColorCodeForm.Size = New System.Drawing.Size(187, 23)
+        Me.txtBColorCodeForm.TabIndex = 10
+        '
+        'txtfnamehideenColor
+        '
+        Me.txtfnamehideenColor.Location = New System.Drawing.Point(343, 270)
+        Me.txtfnamehideenColor.Name = "txtfnamehideenColor"
+        Me.txtfnamehideenColor.ReadOnly = True
+        Me.txtfnamehideenColor.Size = New System.Drawing.Size(101, 23)
+        Me.txtfnamehideenColor.TabIndex = 118
+        Me.txtfnamehideenColor.Visible = False
+        '
+        'txtBColorImgPath
+        '
+        Me.txtBColorImgPath.Location = New System.Drawing.Point(138, 270)
+        Me.txtBColorImgPath.Name = "txtBColorImgPath"
+        Me.txtBColorImgPath.ReadOnly = True
+        Me.txtBColorImgPath.Size = New System.Drawing.Size(154, 23)
+        Me.txtBColorImgPath.TabIndex = 116
+        '
+        'txtPriceBcolorForm
+        '
+        Me.txtPriceBcolorForm.Location = New System.Drawing.Point(170, 162)
+        Me.txtPriceBcolorForm.Name = "txtPriceBcolorForm"
+        Me.txtPriceBcolorForm.Size = New System.Drawing.Size(149, 23)
+        Me.txtPriceBcolorForm.TabIndex = 12
+        '
+        'txtBColorNameForm
+        '
+        Me.txtBColorNameForm.Location = New System.Drawing.Point(170, 72)
+        Me.txtBColorNameForm.Name = "txtBColorNameForm"
+        Me.txtBColorNameForm.Size = New System.Drawing.Size(187, 23)
+        Me.txtBColorNameForm.TabIndex = 11
+        '
+        'lsvBColors
+        '
+        Me.lsvBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvBColors.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidBColor, Me.ColumnHeader2, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader9, Me.ColumnHeader14})
+        Me.lsvBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsvBColors.FullRowSelect = True
+        Me.lsvBColors.GridLines = True
+        Me.lsvBColors.HideSelection = False
+        Me.lsvBColors.Location = New System.Drawing.Point(8, 395)
+        Me.lsvBColors.MultiSelect = False
+        Me.lsvBColors.Name = "lsvBColors"
+        Me.lsvBColors.Size = New System.Drawing.Size(1145, 250)
+        Me.lsvBColors.TabIndex = 55
+        Me.lsvBColors.UseCompatibleStateImageBehavior = False
+        Me.lsvBColors.View = System.Windows.Forms.View.Details
+        '
+        'cidBColor
+        '
+        Me.cidBColor.Tag = "cidBColor"
+        Me.cidBColor.Width = 0
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Code"
+        Me.ColumnHeader2.Width = 104
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Name"
+        Me.ColumnHeader10.Width = 206
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "Price"
+        Me.ColumnHeader11.Width = 300
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Currency"
+        Me.ColumnHeader12.Width = 94
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "Unit"
+        Me.ColumnHeader13.Width = 91
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "Masse Volumique"
+        Me.ColumnHeader9.Width = 147
+        '
+        'ColumnHeader14
+        '
+        Me.ColumnHeader14.Text = "Masse Volumique ext"
+        Me.ColumnHeader14.Width = 190
+        '
+        'txtUpdatePath
+        '
+        Me.txtUpdatePath.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtUpdatePath.Location = New System.Drawing.Point(104, 18)
+        Me.txtUpdatePath.Name = "txtUpdatePath"
+        Me.txtUpdatePath.ReadOnly = True
+        Me.txtUpdatePath.Size = New System.Drawing.Size(549, 23)
+        Me.txtUpdatePath.TabIndex = 86
         '
         'HeadQHome
         '

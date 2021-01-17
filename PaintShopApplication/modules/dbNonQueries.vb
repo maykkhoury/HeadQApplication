@@ -550,6 +550,50 @@ Module dbNonQueries
         End Try
     End Function
 
+    Public Function deleteFromFormulaColorSpecificDBDAO(ByVal idFormulas As String, ByVal specificDBPath As String) As Boolean
+        Dim Dbe As DAO.DBEngine
+        Dim Db As DAO.Database = Nothing
+        Try
+            Dbe = New DAO.DBEngine()
+            Db = Dbe.OpenDatabase(specificDBPath, False, False, "MS Access;PWD=A!mA@HaP#pYZ$o")
+            Dim SQLstr As String = String.Format("DELETE FROM [formulaColor] WHERE id_formula in {0} ", idFormulas)
+            Db.Execute(SQLstr)
+
+            deleteFromFormulaColorSpecificDBDAO = True
+            Db.Close()
+        Catch ex As Exception
+            If Not Db Is Nothing Then
+                Db.Close()
+            End If
+            deleteFromFormulaColorSpecificDBDAO = False
+            MessageBox.Show("could not delete records:" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
+        End Try
+    End Function
+
+    Public Function insertIntoFormulaColorSpecificDBDAO(ByVal newId_formulaColor, ByVal id_formula, ByVal id_color, ByVal quantite, ByVal id_unit, ByVal specificDBPath) As Boolean
+        Dim Dbe As DAO.DBEngine
+        Dim Db As DAO.Database = Nothing
+
+        Try
+            Dim encQuantity As String = encryptQuantity(quantite, newId_formulaColor)
+            Dbe = New DAO.DBEngine()
+            Db = Dbe.OpenDatabase(specificDBPath, False, False, "MS Access;PWD=A!mA@HaP#pYZ$o")
+            Dim SQLstr As String
+            SQLstr = String.Format("INSERT INTO [formulaColor] (id_formulaColor, id_formula,id_color,quantite,id_unit,state, encrypted) VALUES({0},{1},{2},'{3}',{4},'I',{5})", newId_formulaColor, id_formula, id_color, encQuantity, id_unit, encryptionActive)
+
+            Db.Execute(SQLstr)
+            insertIntoFormulaColorSpecificDBDAO = True
+
+            Db.Close()
+        Catch ex As Exception
+            If Not Db Is Nothing Then
+                Db.Close()
+            End If
+
+            insertIntoFormulaColorSpecificDBDAO = False
+            MessageBox.Show("could not insert record:" & ex.Message.ToString & ": " & vbNewLine & ex.StackTrace)
+        End Try
+    End Function
 
 
     Public Function insertIntoFormulaColorSpecificDB(ByVal newId_formulaColor, ByVal id_formula, ByVal id_color, ByVal quantite, ByVal id_unit, ByVal specificConString) As Boolean
@@ -679,7 +723,7 @@ Module dbNonQueries
             Dim idFormula As Integer = -1
             For i = 0 To formulaColor.Length - 1
                 idFormula = formulaColor(i).id_formula
-             
+
                 If Not insertIntoFormulaColor(formulaColor(i).id_formula, formulaColor(i).id_color, formulaColor(i).quantite, formulaColor(i).id_Unit) Then
                     updateFormulaTable = False
                     MsgBox("problem setting color '" & formulaColor(i).id_color & "' to formula '" & formulaColor(i).id_formula & "'")

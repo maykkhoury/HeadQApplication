@@ -2358,6 +2358,10 @@ Public Class HeadQHome
         Dim indexFormula As Integer = 0
         For Each formula In allFormulas
             indexFormula += 1
+            If indexFormula > 50 Then
+                'Exit For
+
+            End If
             lbHqConversionProgress.Text = indexFormula & " of " & allFormulas.Length
 
             Console.WriteLine(indexFormula & " of " & allFormulas.Length)
@@ -2367,6 +2371,10 @@ Public Class HeadQHome
             Dim timePassed As TimeSpan
             Dim Starttime As DateTime
             Dim EndTime As DateTime
+
+            Dim timePassedAll As TimeSpan
+            Dim StarttimeAll As DateTime = DateTime.Now
+            Dim EndTimeAll As DateTime
 
             If typeFormula = "LS" Then
                 'sort descending
@@ -2464,15 +2472,17 @@ Public Class HeadQHome
 
             If formulaColorTab.Length > 0 Then
                 Starttime = DateTime.Now
-                deleteFromFormulaColorSpecificDB(formula.id_formula, specificConString)
-                'formulaIdToDeleteArray.Add(formula.id_formula)
+                'deleteFromFormulaColorSpecificDB(formula.id_formula, specificConString)
+                'deleteFromFormulaColorSpecificDBDAO(formula.id_formula, dbFileLocation)
+                formulaIdToDeleteArray.Add(formula.id_formula)
                 EndTime = DateTime.Now
                 timePassed = EndTime - Starttime
                 Console.WriteLine("deleteFromFormulaColorSpecificDB time:" & timePassed.ToString)
                 Starttime = DateTime.Now
                 For i = 0 To formulaColorTab.Length - 1
                     newId_formulaColor += 1
-                    If Not insertIntoFormulaColorSpecificDB(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, specificConString) Then
+                    If Not insertIntoFormulaColorSpecificDBDAO(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, dbFileLocation) Then
+                        'If Not insertIntoFormulaColorSpecificDB(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, specificConString) Then
                         MsgBox("problem setting color '" & formulaColorTab(i).id_color & "' to formula '" & formulaColorTab(i).id_formula & "'")
                         Me.Enabled = True
                         Exit Sub
@@ -2482,15 +2492,43 @@ Public Class HeadQHome
                 EndTime = DateTime.Now
 
                 timePassed = EndTime - Starttime
-                Console.WriteLine("insertIntoFormulaColorSpecificDB all time:" & timePassed.ToString)
+                Console.WriteLine("insertIntoFormulaColorSpecificDB all time:" & timePassed.ToString & " for formula id " & formula.id_formula)
             End If
 
+            EndTimeAll = DateTime.Now
+
+            timePassedAll = EndTimeAll - StarttimeAll
+            Console.WriteLine("-------------All time:" & timePassedAll.ToString)
         Next
 
         'delete formula colors
-        ' For Each formulaId In formulaIdToDeleteArray
-        'deleteFromFormulaColorSpecificDB(formulaId, specificConString)
-        ' Next
+        Dim inSql As String = ""
+        Dim inSqlIndex As Integer = 0
+        For Each formulaId In formulaIdToDeleteArray
+            If inSqlIndex = 0 Then
+                inSql = "("
+            End If
+            inSql = inSql & formulaId
+
+            If inSqlIndex < formulaIdToDeleteArray.Count - 1 Then
+                inSql = inSql & ","
+            Else
+                inSql = inSql & ")"
+            End If
+
+            inSqlIndex += 1
+        Next
+        Dim timePassedDelete As TimeSpan
+        Dim StarttimeDelete As DateTime = DateTime.Now
+        Dim EndTimeDelete As DateTime
+
+
+        StarttimeDelete = DateTime.Now
+        deleteFromFormulaColorSpecificDBDAO(inSql, dbFileLocation)
+        EndTimeDelete = DateTime.Now
+
+        timePassedDelete = EndTimeDelete - StarttimeDelete
+        Console.WriteLine("-------------delete time:" & timePassedDelete.ToString)
         MsgBox("HQ successfully generated at:" & vbNewLine & txtHqDirectory.Text, MsgBoxStyle.Information)
         Me.Enabled = True
     End Sub
@@ -4077,5 +4115,6 @@ Public Class HeadQHome
         End If
 
     End Sub
+
 
 End Class

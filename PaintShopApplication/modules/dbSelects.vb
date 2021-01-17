@@ -1630,6 +1630,9 @@ Module dbSelects
         Dim i As Integer
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If curColor Is Nothing Then
+                Continue For
+            End If
             If curColor.colorCode.Trim = listOfColorCodeToUse.Trim Then
                 index = i
                 Exit For
@@ -2050,6 +2053,10 @@ Module dbSelects
         For i = 0 To formulaColorTab.Length - 1
             originalTotal = originalTotal + formulaColorTab(i).quantite
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If curColor Is Nothing Then
+                Continue For
+            End If
+
             If curColor.colorCode = colorCodeToSpread Then
                 clrSpreadQty = clrSpreadQty + formulaColorTab(i).quantite
             Else
@@ -2193,6 +2200,9 @@ Module dbSelects
 
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If curColor Is Nothing Then
+                Continue For
+            End If
             '' if color 4002 divide the qty by 2
             If curColor.colorCode = "4002" Then
                 formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
@@ -2285,6 +2295,9 @@ Module dbSelects
 
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If curColor Is Nothing Then
+                Continue For
+            End If
             '' if color 4002 divide the qty by 2
             If curColor.colorCode = "4002" Then
                 formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
@@ -2330,6 +2343,9 @@ Module dbSelects
         Dim MyArray As New ArrayList
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If curColor Is Nothing Then
+                Continue For
+            End If
             If Not curColor.colorCode.Trim = "4002" Then
                 MyArray.Add(formulaColorTab(i))
             End If
@@ -2404,6 +2420,9 @@ Module dbSelects
 
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
+            If curColor Is Nothing Then
+                Continue For
+            End If
             '' if color 4002 divide the qty by 2
             If curColor.colorCode = "4002" Then
                 formulaColorTab(i).quantite = formulaColorTab(i).quantite / 2
@@ -2469,7 +2488,9 @@ Module dbSelects
 
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
-
+            If curColor Is Nothing Then
+                Continue For
+            End If
             'test if exist in listOfColorCode
             Dim j As Integer
             For j = 0 To listOfColorCode.Length - 1
@@ -2520,7 +2541,9 @@ Module dbSelects
 
         For i = 0 To formulaColorTab.Length - 1
             Dim curColor As Color = getColorByIdFromArray(formulaColorTab(i).id_color, specificConString)
-
+            If curColor Is Nothing Then
+                Continue For
+            End If
             'test if exist in listOfColorCode
             Dim j As Integer
             For j = 0 To listOfColorCode.Length - 1
