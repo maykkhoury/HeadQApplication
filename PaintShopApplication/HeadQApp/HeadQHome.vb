@@ -344,6 +344,12 @@ Public Class HeadQHome
                 lsvFamily.Items(i).SubItems.Add(formulaTab(i).name_car)
                 lsvFamily.Items(i).SubItems.Add(formulaTab(i).colorCode)
                 lsvFamily.Items(i).SubItems.Add(formulaTab(i).name_formula)
+                If formulaTab(i).Date_cre_mod.Trim = "" Or formulaTab(i).Date_cre_mod.Trim = "1:1:1:0:0:0" Then
+                    lsvFamily.Items(i).SubItems.Add("")
+                Else
+                    lsvFamily.Items(i).SubItems.Add(formulaTab(i).dateCreMod)
+                End If
+
                 lsvFamily.Items(i).SubItems.Add(formulaTab(i).c_year)
                 lsvFamily.Items(i).SubItems.Add(formulaTab(i).version)
                 lsvFamily.Items(i).SubItems.Add(formulaTab(i).cardNumber)
