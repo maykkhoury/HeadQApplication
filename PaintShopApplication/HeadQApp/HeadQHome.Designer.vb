@@ -72,14 +72,15 @@ Partial Class HeadQHome
         Me.lbCarIdSearch = New System.Windows.Forms.Label()
         Me.butEditColor = New System.Windows.Forms.Button()
         Me.lsvFamily = New HeadQApplication.MyListView()
-        Me.cformulaId = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cctype = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccarname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccode = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cyear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cversion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ccardNbr = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cformulaId = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cctype = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ccarname = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ccode = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ccname = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cmodcredate = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cyear = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cversion = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ccardNbr = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
         Me.Label23 = New System.Windows.Forms.Label()
         Me.chkColorCode = New System.Windows.Forms.CheckBox()
         Me.txtColorCode = New HeadQApplication.MyTextBox()
@@ -109,8 +110,8 @@ Partial Class HeadQHome
         Me.txtCarNameForm = New HeadQApplication.MyTextBox()
         Me.lbCarNameForm = New System.Windows.Forms.Label()
         Me.lsvCars = New HeadQApplication.MyListView()
-        Me.cidcar = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cidcar = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
         Me.butSearchCarForm = New System.Windows.Forms.Button()
         Me.tbLanguage = New System.Windows.Forms.TabPage()
         Me.grpLanguageForm = New System.Windows.Forms.GroupBox()
@@ -126,9 +127,9 @@ Partial Class HeadQHome
         Me.txtLanguageCodeForm = New HeadQApplication.MyTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lsvLanguage = New HeadQApplication.MyListView()
-        Me.cidLang = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cidLang = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
         Me.butSearchLangForm = New System.Windows.Forms.Button()
         Me.tbGarages = New System.Windows.Forms.TabPage()
         Me.grpGarageForm = New System.Windows.Forms.GroupBox()
@@ -138,7 +139,6 @@ Partial Class HeadQHome
         Me.Label36 = New System.Windows.Forms.Label()
         Me.txtHqDirectory = New HeadQApplication.MyTextBox()
         Me.butConvertToHQ = New System.Windows.Forms.Button()
-        Me.chkApply6 = New System.Windows.Forms.CheckBox()
         Me.chkUsername = New System.Windows.Forms.CheckBox()
         Me.txtusername = New HeadQApplication.MyTextBox()
         Me.Label35 = New System.Windows.Forms.Label()
@@ -146,7 +146,6 @@ Partial Class HeadQHome
         Me.rdShowAltNone = New System.Windows.Forms.RadioButton()
         Me.rdShowAlternative = New System.Windows.Forms.RadioButton()
         Me.rdShowAlternative2 = New System.Windows.Forms.RadioButton()
-        Me.chkApply5 = New System.Windows.Forms.CheckBox()
         Me.pctThemeColor = New System.Windows.Forms.PictureBox()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
@@ -168,11 +167,7 @@ Partial Class HeadQHome
         Me.txtversion = New HeadQApplication.MyTextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.grpradio = New System.Windows.Forms.GroupBox()
-        Me.rdApply4 = New System.Windows.Forms.RadioButton()
-        Me.rdApply3 = New System.Windows.Forms.RadioButton()
         Me.rdApply0 = New System.Windows.Forms.RadioButton()
-        Me.rdApply1 = New System.Windows.Forms.RadioButton()
-        Me.rdApply2 = New System.Windows.Forms.RadioButton()
         Me.butClearGarage = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.butFindGarageImg = New System.Windows.Forms.Button()
@@ -204,15 +199,15 @@ Partial Class HeadQHome
         Me.txtGarageNameForm = New HeadQApplication.MyTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lsvGarage = New HeadQApplication.MyListView()
-        Me.cidGarage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cidlanggarage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cappequation = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cgversion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.cgcoat = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cidGarage = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cidlanggarage = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cappequation = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cgversion = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.cgcoat = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
         Me.butSearchGarageForm = New System.Windows.Forms.Button()
         Me.tbColors = New System.Windows.Forms.TabPage()
         Me.grpBColors = New System.Windows.Forms.GroupBox()
@@ -252,14 +247,14 @@ Partial Class HeadQHome
         Me.txtBColorNameForm = New HeadQApplication.MyTextBox()
         Me.lbBColorNameForm = New System.Windows.Forms.Label()
         Me.lsvBColors = New HeadQApplication.MyListView()
-        Me.cidBColor = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.cidBColor = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(),System.Windows.Forms.ColumnHeader)
         Me.butSearchBColorForm = New System.Windows.Forms.Button()
         Me.tbUpdate = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -284,48 +279,48 @@ Partial Class HeadQHome
         Me.fldExcelDialog = New System.Windows.Forms.FolderBrowserDialog()
         Me.prgBar = New System.Windows.Forms.ProgressBar()
         Me.dlgBasicColorDialog = New System.Windows.Forms.ColorDialog()
-        Me.cmodcredate = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.tbTabs.SuspendLayout()
-        Me.tbFormulas.SuspendLayout()
-        Me.grpFormulas.SuspendLayout()
-        Me.grpXY.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.tbCars.SuspendLayout()
-        Me.grpCars.SuspendLayout()
-        CType(Me.pctCarImg, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tbLanguage.SuspendLayout()
-        Me.grpLanguageForm.SuspendLayout()
-        Me.tbGarages.SuspendLayout()
-        Me.grpGarageForm.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        CType(Me.pctThemeColor, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.grpradio.SuspendLayout()
-        CType(Me.pctGarageImg, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        Me.tbColors.SuspendLayout()
-        Me.grpBColors.SuspendLayout()
-        CType(Me.pctBColorRGB, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pctBColorImg, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tbUpdate.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.MenuStrip2.SuspendLayout()
-        Me.SuspendLayout()
+        Me.rdApply1 = New System.Windows.Forms.RadioButton()
+        Me.tbTabs.SuspendLayout
+        Me.tbFormulas.SuspendLayout
+        Me.grpFormulas.SuspendLayout
+        Me.grpXY.SuspendLayout
+        Me.GroupBox1.SuspendLayout
+        Me.tbCars.SuspendLayout
+        Me.grpCars.SuspendLayout
+        CType(Me.pctCarImg,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.tbLanguage.SuspendLayout
+        Me.grpLanguageForm.SuspendLayout
+        Me.tbGarages.SuspendLayout
+        Me.grpGarageForm.SuspendLayout
+        Me.GroupBox7.SuspendLayout
+        Me.GroupBox6.SuspendLayout
+        CType(Me.pctThemeColor,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox5.SuspendLayout
+        Me.GroupBox4.SuspendLayout
+        Me.grpradio.SuspendLayout
+        CType(Me.pctGarageImg,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox2.SuspendLayout
+        Me.tbColors.SuspendLayout
+        Me.grpBColors.SuspendLayout
+        CType(Me.pctBColorRGB,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.pctBColorImg,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.tbUpdate.SuspendLayout
+        Me.GroupBox3.SuspendLayout
+        Me.MenuStrip2.SuspendLayout
+        Me.SuspendLayout
         '
         'tbTabs
         '
-        Me.tbTabs.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tbTabs.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.tbTabs.Controls.Add(Me.tbFormulas)
         Me.tbTabs.Controls.Add(Me.tbCars)
         Me.tbTabs.Controls.Add(Me.tbLanguage)
         Me.tbTabs.Controls.Add(Me.tbGarages)
         Me.tbTabs.Controls.Add(Me.tbColors)
         Me.tbTabs.Controls.Add(Me.tbUpdate)
-        Me.tbTabs.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbTabs.Font = New System.Drawing.Font("Microsoft Sans Serif", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.tbTabs.Location = New System.Drawing.Point(12, 27)
         Me.tbTabs.Name = "tbTabs"
         Me.tbTabs.SelectedIndex = 0
@@ -341,13 +336,13 @@ Partial Class HeadQHome
         Me.tbFormulas.Size = New System.Drawing.Size(1187, 657)
         Me.tbFormulas.TabIndex = 0
         Me.tbFormulas.Text = "Formulas"
-        Me.tbFormulas.UseVisualStyleBackColor = True
+        Me.tbFormulas.UseVisualStyleBackColor = true
         '
         'grpFormulas
         '
-        Me.grpFormulas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpFormulas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.grpFormulas.BackColor = System.Drawing.Color.Transparent
         Me.grpFormulas.Controls.Add(Me.butNegativeQty)
         Me.grpFormulas.Controls.Add(Me.lbAttention)
@@ -383,38 +378,38 @@ Partial Class HeadQHome
         Me.grpFormulas.Controls.Add(Me.txtFormulaName)
         Me.grpFormulas.Controls.Add(Me.lbFormulaName)
         Me.grpFormulas.Controls.Add(Me.butGo)
-        Me.grpFormulas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpFormulas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.grpFormulas.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.grpFormulas.Location = New System.Drawing.Point(6, 6)
         Me.grpFormulas.Name = "grpFormulas"
         Me.grpFormulas.Size = New System.Drawing.Size(1175, 645)
         Me.grpFormulas.TabIndex = 63
-        Me.grpFormulas.TabStop = False
+        Me.grpFormulas.TabStop = false
         Me.grpFormulas.Text = "Formulas"
         '
         'butNegativeQty
         '
         Me.butNegativeQty.BackColor = System.Drawing.SystemColors.Control
-        Me.butNegativeQty.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butNegativeQty.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butNegativeQty.ForeColor = System.Drawing.Color.Red
         Me.butNegativeQty.Location = New System.Drawing.Point(526, 100)
         Me.butNegativeQty.Name = "butNegativeQty"
         Me.butNegativeQty.Size = New System.Drawing.Size(84, 44)
         Me.butNegativeQty.TabIndex = 157
         Me.butNegativeQty.Text = "Negative quantity"
-        Me.butNegativeQty.UseVisualStyleBackColor = False
+        Me.butNegativeQty.UseVisualStyleBackColor = false
         '
         'lbAttention
         '
-        Me.lbAttention.AutoSize = True
-        Me.lbAttention.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbAttention.AutoSize = true
+        Me.lbAttention.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbAttention.ForeColor = System.Drawing.Color.Red
         Me.lbAttention.Location = New System.Drawing.Point(523, 159)
         Me.lbAttention.Name = "lbAttention"
         Me.lbAttention.Size = New System.Drawing.Size(87, 45)
         Me.lbAttention.TabIndex = 155
-        Me.lbAttention.Text = "Attention!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Linked to a" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "multicolored"
-        Me.lbAttention.Visible = False
+        Me.lbAttention.Text = "Attention!"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Linked to a"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"multicolored"
+        Me.lbAttention.Visible = false
         '
         'txtBasicColor
         '
@@ -425,8 +420,8 @@ Partial Class HeadQHome
         '
         'Label26
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.AutoSize = true
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label26.Location = New System.Drawing.Point(324, 165)
         Me.Label26.Name = "Label26"
@@ -437,19 +432,19 @@ Partial Class HeadQHome
         'butExcel
         '
         Me.butExcel.BackColor = System.Drawing.SystemColors.Control
-        Me.butExcel.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.butExcel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.butExcel.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.butExcel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.butExcel.Location = New System.Drawing.Point(528, 212)
         Me.butExcel.Name = "butExcel"
         Me.butExcel.Size = New System.Drawing.Size(84, 26)
         Me.butExcel.TabIndex = 152
         Me.butExcel.Text = "Excel"
-        Me.butExcel.UseVisualStyleBackColor = False
+        Me.butExcel.UseVisualStyleBackColor = false
         '
         'lbCountFormulas
         '
-        Me.lbCountFormulas.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbCountFormulas.AutoSize = True
+        Me.lbCountFormulas.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lbCountFormulas.AutoSize = true
         Me.lbCountFormulas.Location = New System.Drawing.Point(1069, 227)
         Me.lbCountFormulas.Name = "lbCountFormulas"
         Me.lbCountFormulas.Size = New System.Drawing.Size(32, 17)
@@ -459,40 +454,40 @@ Partial Class HeadQHome
         'butClear
         '
         Me.butClear.BackColor = System.Drawing.SystemColors.Control
-        Me.butClear.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butClear.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butClear.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butClear.Location = New System.Drawing.Point(400, 98)
         Me.butClear.Name = "butClear"
         Me.butClear.Size = New System.Drawing.Size(113, 48)
         Me.butClear.TabIndex = 150
         Me.butClear.Text = "Clear"
-        Me.butClear.UseVisualStyleBackColor = False
+        Me.butClear.UseVisualStyleBackColor = false
         '
         'butDelete
         '
         Me.butDelete.BackColor = System.Drawing.SystemColors.Control
-        Me.butDelete.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butDelete.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butDelete.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butDelete.Location = New System.Drawing.Point(420, 212)
         Me.butDelete.Name = "butDelete"
         Me.butDelete.Size = New System.Drawing.Size(84, 26)
         Me.butDelete.TabIndex = 149
         Me.butDelete.Text = "Delete"
-        Me.butDelete.UseVisualStyleBackColor = False
+        Me.butDelete.UseVisualStyleBackColor = false
         '
         'chkCardNumber
         '
-        Me.chkCardNumber.AutoSize = True
-        Me.chkCardNumber.Checked = True
+        Me.chkCardNumber.AutoSize = true
+        Me.chkCardNumber.Checked = true
         Me.chkCardNumber.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkCardNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkCardNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkCardNumber.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkCardNumber.Location = New System.Drawing.Point(319, 132)
         Me.chkCardNumber.Name = "chkCardNumber"
         Me.chkCardNumber.Size = New System.Drawing.Size(75, 17)
         Me.chkCardNumber.TabIndex = 148
         Me.chkCardNumber.Text = "Contains"
-        Me.chkCardNumber.UseVisualStyleBackColor = True
+        Me.chkCardNumber.UseVisualStyleBackColor = true
         '
         'txtCardNumber
         '
@@ -503,8 +498,8 @@ Partial Class HeadQHome
         '
         'lbCardNumber
         '
-        Me.lbCardNumber.AutoSize = True
-        Me.lbCardNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCardNumber.AutoSize = true
+        Me.lbCardNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbCardNumber.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbCardNumber.Location = New System.Drawing.Point(16, 130)
         Me.lbCardNumber.Name = "lbCardNumber"
@@ -536,9 +531,9 @@ Partial Class HeadQHome
         Me.grpXY.Name = "grpXY"
         Me.grpXY.Size = New System.Drawing.Size(445, 225)
         Me.grpXY.TabIndex = 145
-        Me.grpXY.TabStop = False
+        Me.grpXY.TabStop = false
         Me.grpXY.Text = "X + Y + Z"
-        Me.grpXY.Visible = False
+        Me.grpXY.Visible = false
         '
         'butAssignZ2p
         '
@@ -547,7 +542,7 @@ Partial Class HeadQHome
         Me.butAssignZ2p.Size = New System.Drawing.Size(150, 23)
         Me.butAssignZ2p.TabIndex = 17
         Me.butAssignZ2p.Text = "Z''"
-        Me.butAssignZ2p.UseVisualStyleBackColor = True
+        Me.butAssignZ2p.UseVisualStyleBackColor = true
         '
         'butAssignZp
         '
@@ -556,7 +551,7 @@ Partial Class HeadQHome
         Me.butAssignZp.Size = New System.Drawing.Size(150, 23)
         Me.butAssignZp.TabIndex = 16
         Me.butAssignZp.Text = "Z'"
-        Me.butAssignZp.UseVisualStyleBackColor = True
+        Me.butAssignZp.UseVisualStyleBackColor = true
         '
         'butAssignY2p
         '
@@ -565,7 +560,7 @@ Partial Class HeadQHome
         Me.butAssignY2p.Size = New System.Drawing.Size(150, 23)
         Me.butAssignY2p.TabIndex = 15
         Me.butAssignY2p.Text = "Y''"
-        Me.butAssignY2p.UseVisualStyleBackColor = True
+        Me.butAssignY2p.UseVisualStyleBackColor = true
         '
         'butAssignYp
         '
@@ -574,7 +569,7 @@ Partial Class HeadQHome
         Me.butAssignYp.Size = New System.Drawing.Size(150, 23)
         Me.butAssignYp.TabIndex = 14
         Me.butAssignYp.Text = "Y'"
-        Me.butAssignYp.UseVisualStyleBackColor = True
+        Me.butAssignYp.UseVisualStyleBackColor = true
         '
         'butAssignX2p
         '
@@ -583,7 +578,7 @@ Partial Class HeadQHome
         Me.butAssignX2p.Size = New System.Drawing.Size(150, 23)
         Me.butAssignX2p.TabIndex = 13
         Me.butAssignX2p.Text = "X''"
-        Me.butAssignX2p.UseVisualStyleBackColor = True
+        Me.butAssignX2p.UseVisualStyleBackColor = true
         '
         'butAssignXp
         '
@@ -592,7 +587,7 @@ Partial Class HeadQHome
         Me.butAssignXp.Size = New System.Drawing.Size(150, 23)
         Me.butAssignXp.TabIndex = 12
         Me.butAssignXp.Text = "X'"
-        Me.butAssignXp.UseVisualStyleBackColor = True
+        Me.butAssignXp.UseVisualStyleBackColor = true
         '
         'butCancelZ
         '
@@ -601,7 +596,7 @@ Partial Class HeadQHome
         Me.butCancelZ.Size = New System.Drawing.Size(150, 23)
         Me.butCancelZ.TabIndex = 11
         Me.butCancelZ.Text = "Cancel"
-        Me.butCancelZ.UseVisualStyleBackColor = True
+        Me.butCancelZ.UseVisualStyleBackColor = true
         '
         'butAssignZ
         '
@@ -610,11 +605,11 @@ Partial Class HeadQHome
         Me.butAssignZ.Size = New System.Drawing.Size(150, 23)
         Me.butAssignZ.TabIndex = 10
         Me.butAssignZ.Text = "Z"
-        Me.butAssignZ.UseVisualStyleBackColor = True
+        Me.butAssignZ.UseVisualStyleBackColor = true
         '
         'lbformulaZ
         '
-        Me.lbformulaZ.AutoSize = True
+        Me.lbformulaZ.AutoSize = true
         Me.lbformulaZ.Location = New System.Drawing.Point(9, 146)
         Me.lbformulaZ.Name = "lbformulaZ"
         Me.lbformulaZ.Size = New System.Drawing.Size(86, 17)
@@ -623,14 +618,14 @@ Partial Class HeadQHome
         '
         'butCancelAss
         '
-        Me.butCancelAss.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butCancelAss.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butCancelAss.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butCancelAss.Location = New System.Drawing.Point(410, 16)
         Me.butCancelAss.Name = "butCancelAss"
         Me.butCancelAss.Size = New System.Drawing.Size(29, 27)
         Me.butCancelAss.TabIndex = 8
         Me.butCancelAss.Text = "X"
-        Me.butCancelAss.UseVisualStyleBackColor = True
+        Me.butCancelAss.UseVisualStyleBackColor = true
         '
         'butCancelY
         '
@@ -639,7 +634,7 @@ Partial Class HeadQHome
         Me.butCancelY.Size = New System.Drawing.Size(150, 23)
         Me.butCancelY.TabIndex = 7
         Me.butCancelY.Text = "Cancel"
-        Me.butCancelY.UseVisualStyleBackColor = True
+        Me.butCancelY.UseVisualStyleBackColor = true
         '
         'butCancelX
         '
@@ -648,11 +643,11 @@ Partial Class HeadQHome
         Me.butCancelX.Size = New System.Drawing.Size(150, 23)
         Me.butCancelX.TabIndex = 6
         Me.butCancelX.Text = "Cancel"
-        Me.butCancelX.UseVisualStyleBackColor = True
+        Me.butCancelX.UseVisualStyleBackColor = true
         '
         'lbSelectedXYZ
         '
-        Me.lbSelectedXYZ.AutoSize = True
+        Me.lbSelectedXYZ.AutoSize = true
         Me.lbSelectedXYZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbSelectedXYZ.Location = New System.Drawing.Point(106, 195)
         Me.lbSelectedXYZ.Name = "lbSelectedXYZ"
@@ -666,7 +661,7 @@ Partial Class HeadQHome
         Me.butSaveAssign.Size = New System.Drawing.Size(75, 23)
         Me.butSaveAssign.TabIndex = 4
         Me.butSaveAssign.Text = "Save"
-        Me.butSaveAssign.UseVisualStyleBackColor = True
+        Me.butSaveAssign.UseVisualStyleBackColor = true
         '
         'butAssignY
         '
@@ -675,7 +670,7 @@ Partial Class HeadQHome
         Me.butAssignY.Size = New System.Drawing.Size(150, 23)
         Me.butAssignY.TabIndex = 3
         Me.butAssignY.Text = "Y"
-        Me.butAssignY.UseVisualStyleBackColor = True
+        Me.butAssignY.UseVisualStyleBackColor = true
         '
         'butAssignX
         '
@@ -684,11 +679,11 @@ Partial Class HeadQHome
         Me.butAssignX.Size = New System.Drawing.Size(150, 23)
         Me.butAssignX.TabIndex = 2
         Me.butAssignX.Text = "X"
-        Me.butAssignX.UseVisualStyleBackColor = True
+        Me.butAssignX.UseVisualStyleBackColor = true
         '
         'Label24
         '
-        Me.Label24.AutoSize = True
+        Me.Label24.AutoSize = true
         Me.Label24.Location = New System.Drawing.Point(9, 88)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(86, 17)
@@ -697,7 +692,7 @@ Partial Class HeadQHome
         '
         'Label22
         '
-        Me.Label22.AutoSize = True
+        Me.Label22.AutoSize = true
         Me.Label22.Location = New System.Drawing.Point(9, 26)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(86, 17)
@@ -714,25 +709,25 @@ Partial Class HeadQHome
         '
         'Label15
         '
-        Me.Label15.AutoSize = True
+        Me.Label15.AutoSize = true
         Me.Label15.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label15.Location = New System.Drawing.Point(525, 19)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(70, 17)
         Me.Label15.TabIndex = 143
         Me.Label15.Text = "Specific:"
-        Me.Label15.Visible = False
+        Me.Label15.Visible = false
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label3.Location = New System.Drawing.Point(579, 42)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(14, 17)
         Me.Label3.TabIndex = 142
         Me.Label3.Text = "-"
-        Me.Label3.Visible = False
+        Me.Label3.Visible = false
         '
         'txtYearMax
         '
@@ -741,7 +736,7 @@ Partial Class HeadQHome
         Me.txtYearMax.Name = "txtYearMax"
         Me.txtYearMax.Size = New System.Drawing.Size(45, 23)
         Me.txtYearMax.TabIndex = 3
-        Me.txtYearMax.Visible = False
+        Me.txtYearMax.Visible = false
         '
         'txtYearMin
         '
@@ -750,11 +745,11 @@ Partial Class HeadQHome
         Me.txtYearMin.Name = "txtYearMin"
         Me.txtYearMin.Size = New System.Drawing.Size(45, 23)
         Me.txtYearMin.TabIndex = 2
-        Me.txtYearMin.Visible = False
+        Me.txtYearMin.Visible = false
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(19, 171)
         Me.Label1.Name = "Label1"
@@ -772,62 +767,62 @@ Partial Class HeadQHome
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(211, 35)
         Me.GroupBox1.TabIndex = 82
-        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.TabStop = false
         '
         'rdLS
         '
-        Me.rdLS.AutoSize = True
-        Me.rdLS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdLS.AutoSize = true
+        Me.rdLS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdLS.ForeColor = System.Drawing.SystemColors.ControlText
         Me.rdLS.Location = New System.Drawing.Point(92, 12)
         Me.rdLS.Name = "rdLS"
         Me.rdLS.Size = New System.Drawing.Size(40, 17)
         Me.rdLS.TabIndex = 81
         Me.rdLS.Text = "LS"
-        Me.rdLS.UseVisualStyleBackColor = True
+        Me.rdLS.UseVisualStyleBackColor = true
         '
         'rdAny
         '
-        Me.rdAny.AutoSize = True
-        Me.rdAny.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdAny.AutoSize = true
+        Me.rdAny.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdAny.ForeColor = System.Drawing.SystemColors.ControlText
         Me.rdAny.Location = New System.Drawing.Point(151, 11)
         Me.rdAny.Name = "rdAny"
         Me.rdAny.Size = New System.Drawing.Size(46, 17)
         Me.rdAny.TabIndex = 80
         Me.rdAny.Text = "Any"
-        Me.rdAny.UseVisualStyleBackColor = True
+        Me.rdAny.UseVisualStyleBackColor = true
         '
         'rdBC
         '
-        Me.rdBC.AutoSize = True
-        Me.rdBC.Checked = True
-        Me.rdBC.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdBC.AutoSize = true
+        Me.rdBC.Checked = true
+        Me.rdBC.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdBC.ForeColor = System.Drawing.SystemColors.ControlText
         Me.rdBC.Location = New System.Drawing.Point(45, 12)
         Me.rdBC.Name = "rdBC"
         Me.rdBC.Size = New System.Drawing.Size(41, 17)
         Me.rdBC.TabIndex = 79
-        Me.rdBC.TabStop = True
+        Me.rdBC.TabStop = true
         Me.rdBC.Text = "BC"
-        Me.rdBC.UseVisualStyleBackColor = True
+        Me.rdBC.UseVisualStyleBackColor = true
         '
         'rd2k
         '
-        Me.rd2k.AutoSize = True
-        Me.rd2k.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rd2k.AutoSize = true
+        Me.rd2k.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rd2k.ForeColor = System.Drawing.SystemColors.ControlText
         Me.rd2k.Location = New System.Drawing.Point(4, 11)
         Me.rd2k.Name = "rd2k"
         Me.rd2k.Size = New System.Drawing.Size(40, 17)
         Me.rd2k.TabIndex = 78
         Me.rd2k.Text = "2K"
-        Me.rd2k.UseVisualStyleBackColor = True
+        Me.rd2k.UseVisualStyleBackColor = true
         '
         'cmbCarNameSearch
         '
         Me.cmbCarNameSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbCarNameSearch.FormattingEnabled = True
+        Me.cmbCarNameSearch.FormattingEnabled = true
         Me.cmbCarNameSearch.Location = New System.Drawing.Point(126, 16)
         Me.cmbCarNameSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbCarNameSearch.Name = "cmbCarNameSearch"
@@ -836,44 +831,44 @@ Partial Class HeadQHome
         '
         'lbCarIdSearch
         '
-        Me.lbCarIdSearch.AutoSize = True
+        Me.lbCarIdSearch.AutoSize = true
         Me.lbCarIdSearch.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbCarIdSearch.Location = New System.Drawing.Point(90, 22)
         Me.lbCarIdSearch.Name = "lbCarIdSearch"
         Me.lbCarIdSearch.Size = New System.Drawing.Size(23, 17)
         Me.lbCarIdSearch.TabIndex = 137
         Me.lbCarIdSearch.Text = "-1"
-        Me.lbCarIdSearch.Visible = False
+        Me.lbCarIdSearch.Visible = false
         '
         'butEditColor
         '
         Me.butEditColor.BackColor = System.Drawing.SystemColors.Control
-        Me.butEditColor.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butEditColor.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butEditColor.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butEditColor.Location = New System.Drawing.Point(239, 212)
         Me.butEditColor.Name = "butEditColor"
         Me.butEditColor.Size = New System.Drawing.Size(90, 26)
         Me.butEditColor.TabIndex = 111
         Me.butEditColor.Text = "Edit Color"
-        Me.butEditColor.UseVisualStyleBackColor = False
+        Me.butEditColor.UseVisualStyleBackColor = false
         '
         'lsvFamily
         '
-        Me.lsvFamily.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvFamily.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lsvFamily.BackColor = System.Drawing.Color.White
         Me.lsvFamily.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cformulaId, Me.cctype, Me.ccarname, Me.ccode, Me.ccname, Me.cmodcredate, Me.cyear, Me.cversion, Me.ccardNbr})
-        Me.lsvFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsvFamily.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lsvFamily.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lsvFamily.FullRowSelect = True
-        Me.lsvFamily.GridLines = True
-        Me.lsvFamily.HideSelection = False
+        Me.lsvFamily.FullRowSelect = true
+        Me.lsvFamily.GridLines = true
+        Me.lsvFamily.HideSelection = false
         Me.lsvFamily.Location = New System.Drawing.Point(12, 247)
         Me.lsvFamily.Name = "lsvFamily"
         Me.lsvFamily.Size = New System.Drawing.Size(1153, 392)
         Me.lsvFamily.TabIndex = 55
-        Me.lsvFamily.UseCompatibleStateImageBehavior = False
+        Me.lsvFamily.UseCompatibleStateImageBehavior = false
         Me.lsvFamily.View = System.Windows.Forms.View.Details
         '
         'cformulaId
@@ -907,6 +902,11 @@ Partial Class HeadQHome
         Me.ccname.Text = "Name"
         Me.ccname.Width = 119
         '
+        'cmodcredate
+        '
+        Me.cmodcredate.Text = "Mod/Cre. Date"
+        Me.cmodcredate.Width = 114
+        '
         'cyear
         '
         Me.cyear.Tag = "cyear"
@@ -928,7 +928,7 @@ Partial Class HeadQHome
         '
         'Label23
         '
-        Me.Label23.AutoSize = True
+        Me.Label23.AutoSize = true
         Me.Label23.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label23.Location = New System.Drawing.Point(19, 19)
         Me.Label23.Name = "Label23"
@@ -938,15 +938,15 @@ Partial Class HeadQHome
         '
         'chkColorCode
         '
-        Me.chkColorCode.AutoSize = True
-        Me.chkColorCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkColorCode.AutoSize = true
+        Me.chkColorCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkColorCode.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkColorCode.Location = New System.Drawing.Point(319, 61)
         Me.chkColorCode.Name = "chkColorCode"
         Me.chkColorCode.Size = New System.Drawing.Size(75, 17)
         Me.chkColorCode.TabIndex = 110
         Me.chkColorCode.Text = "Contains"
-        Me.chkColorCode.UseVisualStyleBackColor = True
+        Me.chkColorCode.UseVisualStyleBackColor = true
         '
         'txtColorCode
         '
@@ -957,8 +957,8 @@ Partial Class HeadQHome
         '
         'lbColorCode
         '
-        Me.lbColorCode.AutoSize = True
-        Me.lbColorCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbColorCode.AutoSize = true
+        Me.lbColorCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbColorCode.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbColorCode.Location = New System.Drawing.Point(16, 59)
         Me.lbColorCode.Name = "lbColorCode"
@@ -969,20 +969,20 @@ Partial Class HeadQHome
         'butAddNewFormula
         '
         Me.butAddNewFormula.BackColor = System.Drawing.SystemColors.Control
-        Me.butAddNewFormula.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butAddNewFormula.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butAddNewFormula.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butAddNewFormula.Location = New System.Drawing.Point(335, 212)
         Me.butAddNewFormula.Name = "butAddNewFormula"
         Me.butAddNewFormula.Size = New System.Drawing.Size(79, 26)
         Me.butAddNewFormula.TabIndex = 107
         Me.butAddNewFormula.Text = "Add New"
-        Me.butAddNewFormula.UseVisualStyleBackColor = False
+        Me.butAddNewFormula.UseVisualStyleBackColor = false
         '
         'lbCurrencyDetailsValue
         '
-        Me.lbCurrencyDetailsValue.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbCurrencyDetailsValue.AutoSize = True
-        Me.lbCurrencyDetailsValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCurrencyDetailsValue.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lbCurrencyDetailsValue.AutoSize = true
+        Me.lbCurrencyDetailsValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbCurrencyDetailsValue.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.lbCurrencyDetailsValue.Location = New System.Drawing.Point(1139, 25)
         Me.lbCurrencyDetailsValue.Name = "lbCurrencyDetailsValue"
@@ -992,9 +992,9 @@ Partial Class HeadQHome
         '
         'lbCurrencyDetails
         '
-        Me.lbCurrencyDetails.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbCurrencyDetails.AutoSize = True
-        Me.lbCurrencyDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCurrencyDetails.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lbCurrencyDetails.AutoSize = true
+        Me.lbCurrencyDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbCurrencyDetails.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbCurrencyDetails.Location = New System.Drawing.Point(1069, 25)
         Me.lbCurrencyDetails.Name = "lbCurrencyDetails"
@@ -1004,17 +1004,17 @@ Partial Class HeadQHome
         '
         'chkFormulaName
         '
-        Me.chkFormulaName.AutoSize = True
-        Me.chkFormulaName.Checked = True
+        Me.chkFormulaName.AutoSize = true
+        Me.chkFormulaName.Checked = true
         Me.chkFormulaName.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkFormulaName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkFormulaName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkFormulaName.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkFormulaName.Location = New System.Drawing.Point(319, 97)
         Me.chkFormulaName.Name = "chkFormulaName"
         Me.chkFormulaName.Size = New System.Drawing.Size(75, 17)
         Me.chkFormulaName.TabIndex = 70
         Me.chkFormulaName.Text = "Contains"
-        Me.chkFormulaName.UseVisualStyleBackColor = True
+        Me.chkFormulaName.UseVisualStyleBackColor = true
         '
         'txtFormulaName
         '
@@ -1025,8 +1025,8 @@ Partial Class HeadQHome
         '
         'lbFormulaName
         '
-        Me.lbFormulaName.AutoSize = True
-        Me.lbFormulaName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbFormulaName.AutoSize = true
+        Me.lbFormulaName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbFormulaName.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbFormulaName.Location = New System.Drawing.Point(16, 95)
         Me.lbFormulaName.Name = "lbFormulaName"
@@ -1037,14 +1037,14 @@ Partial Class HeadQHome
         'butGo
         '
         Me.butGo.BackColor = System.Drawing.SystemColors.Control
-        Me.butGo.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butGo.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butGo.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butGo.Location = New System.Drawing.Point(400, 16)
         Me.butGo.Name = "butGo"
         Me.butGo.Size = New System.Drawing.Size(113, 78)
         Me.butGo.TabIndex = 9
         Me.butGo.Text = "Go"
-        Me.butGo.UseVisualStyleBackColor = False
+        Me.butGo.UseVisualStyleBackColor = false
         '
         'tbCars
         '
@@ -1055,13 +1055,13 @@ Partial Class HeadQHome
         Me.tbCars.Size = New System.Drawing.Size(1187, 657)
         Me.tbCars.TabIndex = 1
         Me.tbCars.Text = "Cars"
-        Me.tbCars.UseVisualStyleBackColor = True
+        Me.tbCars.UseVisualStyleBackColor = true
         '
         'grpCars
         '
-        Me.grpCars.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpCars.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.grpCars.BackColor = System.Drawing.Color.Transparent
         Me.grpCars.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.grpCars.Controls.Add(Me.butClearCars)
@@ -1081,26 +1081,26 @@ Partial Class HeadQHome
         Me.grpCars.Controls.Add(Me.lbCarNameForm)
         Me.grpCars.Controls.Add(Me.lsvCars)
         Me.grpCars.Controls.Add(Me.butSearchCarForm)
-        Me.grpCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.grpCars.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.grpCars.Location = New System.Drawing.Point(20, 19)
         Me.grpCars.Name = "grpCars"
         Me.grpCars.Size = New System.Drawing.Size(1150, 630)
         Me.grpCars.TabIndex = 65
-        Me.grpCars.TabStop = False
+        Me.grpCars.TabStop = false
         Me.grpCars.Text = "Cars"
         '
         'butClearCars
         '
         Me.butClearCars.BackColor = System.Drawing.SystemColors.Control
-        Me.butClearCars.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butClearCars.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butClearCars.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butClearCars.Location = New System.Drawing.Point(756, 104)
         Me.butClearCars.Name = "butClearCars"
         Me.butClearCars.Size = New System.Drawing.Size(113, 79)
         Me.butClearCars.TabIndex = 151
         Me.butClearCars.Text = "Clear"
-        Me.butClearCars.UseVisualStyleBackColor = False
+        Me.butClearCars.UseVisualStyleBackColor = false
         '
         'cclCar
         '
@@ -1111,20 +1111,20 @@ Partial Class HeadQHome
         Me.cclCar.Size = New System.Drawing.Size(113, 79)
         Me.cclCar.TabIndex = 86
         Me.cclCar.Text = "Color Code Locator"
-        Me.cclCar.UseVisualStyleBackColor = False
+        Me.cclCar.UseVisualStyleBackColor = false
         '
         'txtfnamehideen
         '
         Me.txtfnamehideen.Location = New System.Drawing.Point(233, 90)
         Me.txtfnamehideen.Name = "txtfnamehideen"
-        Me.txtfnamehideen.ReadOnly = True
+        Me.txtfnamehideen.ReadOnly = true
         Me.txtfnamehideen.Size = New System.Drawing.Size(101, 23)
         Me.txtfnamehideen.TabIndex = 83
         '
         'Label14
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.AutoSize = true
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label14.Location = New System.Drawing.Point(16, 98)
         Me.Label14.Name = "Label14"
@@ -1134,8 +1134,8 @@ Partial Class HeadQHome
         '
         'pctCarImg
         '
-        Me.pctCarImg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.pctCarImg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left),System.Windows.Forms.AnchorStyles)
         Me.pctCarImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pctCarImg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pctCarImg.Location = New System.Drawing.Point(126, 87)
@@ -1143,32 +1143,32 @@ Partial Class HeadQHome
         Me.pctCarImg.Size = New System.Drawing.Size(101, 72)
         Me.pctCarImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctCarImg.TabIndex = 81
-        Me.pctCarImg.TabStop = False
+        Me.pctCarImg.TabStop = false
         '
         'butFindCarImg
         '
         Me.butFindCarImg.BackColor = System.Drawing.SystemColors.Control
-        Me.butFindCarImg.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butFindCarImg.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butFindCarImg.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butFindCarImg.Location = New System.Drawing.Point(299, 58)
         Me.butFindCarImg.Name = "butFindCarImg"
         Me.butFindCarImg.Size = New System.Drawing.Size(35, 23)
         Me.butFindCarImg.TabIndex = 80
         Me.butFindCarImg.Text = " -- "
-        Me.butFindCarImg.UseVisualStyleBackColor = False
+        Me.butFindCarImg.UseVisualStyleBackColor = false
         '
         'txtCarImgPath
         '
         Me.txtCarImgPath.Location = New System.Drawing.Point(126, 58)
         Me.txtCarImgPath.Name = "txtCarImgPath"
-        Me.txtCarImgPath.ReadOnly = True
+        Me.txtCarImgPath.ReadOnly = true
         Me.txtCarImgPath.Size = New System.Drawing.Size(161, 23)
         Me.txtCarImgPath.TabIndex = 79
         '
         'lbCarImgPath
         '
-        Me.lbCarImgPath.AutoSize = True
-        Me.lbCarImgPath.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCarImgPath.AutoSize = true
+        Me.lbCarImgPath.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbCarImgPath.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbCarImgPath.Location = New System.Drawing.Point(16, 58)
         Me.lbCarImgPath.Name = "lbCarImgPath"
@@ -1179,64 +1179,64 @@ Partial Class HeadQHome
         'butDeleteCarForm
         '
         Me.butDeleteCarForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butDeleteCarForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butDeleteCarForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butDeleteCarForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butDeleteCarForm.Location = New System.Drawing.Point(637, 20)
         Me.butDeleteCarForm.Name = "butDeleteCarForm"
         Me.butDeleteCarForm.Size = New System.Drawing.Size(113, 78)
         Me.butDeleteCarForm.TabIndex = 77
         Me.butDeleteCarForm.Text = "Delete Selected"
-        Me.butDeleteCarForm.UseVisualStyleBackColor = False
+        Me.butDeleteCarForm.UseVisualStyleBackColor = false
         '
         'lbIdCarForm
         '
-        Me.lbIdCarForm.AutoSize = True
-        Me.lbIdCarForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbIdCarForm.AutoSize = true
+        Me.lbIdCarForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbIdCarForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbIdCarForm.Location = New System.Drawing.Point(16, 171)
         Me.lbIdCarForm.Name = "lbIdCarForm"
         Me.lbIdCarForm.Size = New System.Drawing.Size(20, 15)
         Me.lbIdCarForm.TabIndex = 76
         Me.lbIdCarForm.Text = "-1"
-        Me.lbIdCarForm.Visible = False
+        Me.lbIdCarForm.Visible = false
         '
         'butEditCarForm
         '
         Me.butEditCarForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butEditCarForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butEditCarForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butEditCarForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butEditCarForm.Location = New System.Drawing.Point(518, 20)
         Me.butEditCarForm.Name = "butEditCarForm"
         Me.butEditCarForm.Size = New System.Drawing.Size(113, 78)
         Me.butEditCarForm.TabIndex = 75
         Me.butEditCarForm.Text = "Edit Selected"
-        Me.butEditCarForm.UseVisualStyleBackColor = False
+        Me.butEditCarForm.UseVisualStyleBackColor = false
         '
         'butAddCar
         '
         Me.butAddCar.BackColor = System.Drawing.SystemColors.Control
-        Me.butAddCar.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butAddCar.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butAddCar.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butAddCar.Location = New System.Drawing.Point(399, 20)
         Me.butAddCar.Name = "butAddCar"
         Me.butAddCar.Size = New System.Drawing.Size(113, 78)
         Me.butAddCar.TabIndex = 71
         Me.butAddCar.Text = "Add New"
-        Me.butAddCar.UseVisualStyleBackColor = False
+        Me.butAddCar.UseVisualStyleBackColor = false
         '
         'chkCarFormName
         '
-        Me.chkCarFormName.AutoSize = True
-        Me.chkCarFormName.Checked = True
+        Me.chkCarFormName.AutoSize = true
+        Me.chkCarFormName.Checked = true
         Me.chkCarFormName.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkCarFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkCarFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkCarFormName.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkCarFormName.Location = New System.Drawing.Point(319, 27)
         Me.chkCarFormName.Name = "chkCarFormName"
         Me.chkCarFormName.Size = New System.Drawing.Size(75, 17)
         Me.chkCarFormName.TabIndex = 70
         Me.chkCarFormName.Text = "Contains"
-        Me.chkCarFormName.UseVisualStyleBackColor = True
+        Me.chkCarFormName.UseVisualStyleBackColor = true
         '
         'txtCarNameForm
         '
@@ -1247,8 +1247,8 @@ Partial Class HeadQHome
         '
         'lbCarNameForm
         '
-        Me.lbCarNameForm.AutoSize = True
-        Me.lbCarNameForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCarNameForm.AutoSize = true
+        Me.lbCarNameForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbCarNameForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbCarNameForm.Location = New System.Drawing.Point(16, 25)
         Me.lbCarNameForm.Name = "lbCarNameForm"
@@ -1258,19 +1258,19 @@ Partial Class HeadQHome
         '
         'lsvCars
         '
-        Me.lsvCars.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvCars.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lsvCars.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidcar, Me.ColumnHeader1})
-        Me.lsvCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvCars.FullRowSelect = True
-        Me.lsvCars.GridLines = True
-        Me.lsvCars.HideSelection = False
+        Me.lsvCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lsvCars.FullRowSelect = true
+        Me.lsvCars.GridLines = true
+        Me.lsvCars.HideSelection = false
         Me.lsvCars.Location = New System.Drawing.Point(10, 181)
-        Me.lsvCars.MultiSelect = False
+        Me.lsvCars.MultiSelect = false
         Me.lsvCars.Name = "lsvCars"
         Me.lsvCars.Size = New System.Drawing.Size(1134, 443)
         Me.lsvCars.TabIndex = 55
-        Me.lsvCars.UseCompatibleStateImageBehavior = False
+        Me.lsvCars.UseCompatibleStateImageBehavior = false
         Me.lsvCars.View = System.Windows.Forms.View.Details
         '
         'cidcar
@@ -1286,14 +1286,14 @@ Partial Class HeadQHome
         'butSearchCarForm
         '
         Me.butSearchCarForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butSearchCarForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butSearchCarForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butSearchCarForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butSearchCarForm.Location = New System.Drawing.Point(756, 20)
         Me.butSearchCarForm.Name = "butSearchCarForm"
         Me.butSearchCarForm.Size = New System.Drawing.Size(113, 78)
         Me.butSearchCarForm.TabIndex = 9
         Me.butSearchCarForm.Text = "Find"
-        Me.butSearchCarForm.UseVisualStyleBackColor = False
+        Me.butSearchCarForm.UseVisualStyleBackColor = false
         '
         'tbLanguage
         '
@@ -1304,13 +1304,13 @@ Partial Class HeadQHome
         Me.tbLanguage.Size = New System.Drawing.Size(1187, 657)
         Me.tbLanguage.TabIndex = 2
         Me.tbLanguage.Text = "Languages"
-        Me.tbLanguage.UseVisualStyleBackColor = True
+        Me.tbLanguage.UseVisualStyleBackColor = true
         '
         'grpLanguageForm
         '
-        Me.grpLanguageForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpLanguageForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.grpLanguageForm.BackColor = System.Drawing.Color.Transparent
         Me.grpLanguageForm.Controls.Add(Me.butClearLang)
         Me.grpLanguageForm.Controls.Add(Me.butDeleteLangForm)
@@ -1325,77 +1325,77 @@ Partial Class HeadQHome
         Me.grpLanguageForm.Controls.Add(Me.Label5)
         Me.grpLanguageForm.Controls.Add(Me.lsvLanguage)
         Me.grpLanguageForm.Controls.Add(Me.butSearchLangForm)
-        Me.grpLanguageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpLanguageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.grpLanguageForm.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.grpLanguageForm.Location = New System.Drawing.Point(6, 6)
         Me.grpLanguageForm.Name = "grpLanguageForm"
         Me.grpLanguageForm.Size = New System.Drawing.Size(1117, 668)
         Me.grpLanguageForm.TabIndex = 68
-        Me.grpLanguageForm.TabStop = False
+        Me.grpLanguageForm.TabStop = false
         Me.grpLanguageForm.Text = "Languages"
         '
         'butClearLang
         '
-        Me.butClearLang.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.butClearLang.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.butClearLang.BackColor = System.Drawing.SystemColors.Control
-        Me.butClearLang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butClearLang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butClearLang.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butClearLang.Location = New System.Drawing.Point(998, 20)
         Me.butClearLang.Name = "butClearLang"
         Me.butClearLang.Size = New System.Drawing.Size(113, 79)
         Me.butClearLang.TabIndex = 152
         Me.butClearLang.Text = "Clear"
-        Me.butClearLang.UseVisualStyleBackColor = False
+        Me.butClearLang.UseVisualStyleBackColor = false
         '
         'butDeleteLangForm
         '
         Me.butDeleteLangForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butDeleteLangForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butDeleteLangForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butDeleteLangForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butDeleteLangForm.Location = New System.Drawing.Point(651, 20)
         Me.butDeleteLangForm.Name = "butDeleteLangForm"
         Me.butDeleteLangForm.Size = New System.Drawing.Size(113, 78)
         Me.butDeleteLangForm.TabIndex = 77
         Me.butDeleteLangForm.Text = "Delete Selected"
-        Me.butDeleteLangForm.UseVisualStyleBackColor = False
+        Me.butDeleteLangForm.UseVisualStyleBackColor = false
         '
         'lbIdLanguageForm
         '
-        Me.lbIdLanguageForm.AutoSize = True
-        Me.lbIdLanguageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbIdLanguageForm.AutoSize = true
+        Me.lbIdLanguageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbIdLanguageForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbIdLanguageForm.Location = New System.Drawing.Point(16, 109)
         Me.lbIdLanguageForm.Name = "lbIdLanguageForm"
         Me.lbIdLanguageForm.Size = New System.Drawing.Size(20, 15)
         Me.lbIdLanguageForm.TabIndex = 76
         Me.lbIdLanguageForm.Text = "-1"
-        Me.lbIdLanguageForm.Visible = False
+        Me.lbIdLanguageForm.Visible = false
         '
         'butEditLangForm
         '
         Me.butEditLangForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butEditLangForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butEditLangForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butEditLangForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butEditLangForm.Location = New System.Drawing.Point(532, 20)
         Me.butEditLangForm.Name = "butEditLangForm"
         Me.butEditLangForm.Size = New System.Drawing.Size(113, 78)
         Me.butEditLangForm.TabIndex = 75
         Me.butEditLangForm.Text = "Edit Selected"
-        Me.butEditLangForm.UseVisualStyleBackColor = False
+        Me.butEditLangForm.UseVisualStyleBackColor = false
         '
         'chkLanguageLabelForm
         '
-        Me.chkLanguageLabelForm.AutoSize = True
-        Me.chkLanguageLabelForm.Checked = True
+        Me.chkLanguageLabelForm.AutoSize = true
+        Me.chkLanguageLabelForm.Checked = true
         Me.chkLanguageLabelForm.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkLanguageLabelForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkLanguageLabelForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkLanguageLabelForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkLanguageLabelForm.Location = New System.Drawing.Point(319, 77)
         Me.chkLanguageLabelForm.Name = "chkLanguageLabelForm"
         Me.chkLanguageLabelForm.Size = New System.Drawing.Size(75, 17)
         Me.chkLanguageLabelForm.TabIndex = 74
         Me.chkLanguageLabelForm.Text = "Contains"
-        Me.chkLanguageLabelForm.UseVisualStyleBackColor = True
+        Me.chkLanguageLabelForm.UseVisualStyleBackColor = true
         '
         'txtLanguageLabelForm
         '
@@ -1406,8 +1406,8 @@ Partial Class HeadQHome
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.AutoSize = true
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label2.Location = New System.Drawing.Point(16, 75)
         Me.Label2.Name = "Label2"
@@ -1418,28 +1418,28 @@ Partial Class HeadQHome
         'butAddLang
         '
         Me.butAddLang.BackColor = System.Drawing.SystemColors.Control
-        Me.butAddLang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butAddLang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butAddLang.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butAddLang.Location = New System.Drawing.Point(413, 20)
         Me.butAddLang.Name = "butAddLang"
         Me.butAddLang.Size = New System.Drawing.Size(113, 78)
         Me.butAddLang.TabIndex = 71
         Me.butAddLang.Text = "Add New"
-        Me.butAddLang.UseVisualStyleBackColor = False
+        Me.butAddLang.UseVisualStyleBackColor = false
         '
         'chkLanguageFormCode
         '
-        Me.chkLanguageFormCode.AutoSize = True
-        Me.chkLanguageFormCode.Checked = True
+        Me.chkLanguageFormCode.AutoSize = true
+        Me.chkLanguageFormCode.Checked = true
         Me.chkLanguageFormCode.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkLanguageFormCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkLanguageFormCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkLanguageFormCode.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkLanguageFormCode.Location = New System.Drawing.Point(319, 27)
         Me.chkLanguageFormCode.Name = "chkLanguageFormCode"
         Me.chkLanguageFormCode.Size = New System.Drawing.Size(75, 17)
         Me.chkLanguageFormCode.TabIndex = 70
         Me.chkLanguageFormCode.Text = "Contains"
-        Me.chkLanguageFormCode.UseVisualStyleBackColor = True
+        Me.chkLanguageFormCode.UseVisualStyleBackColor = true
         '
         'txtLanguageCodeForm
         '
@@ -1450,8 +1450,8 @@ Partial Class HeadQHome
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.AutoSize = true
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label5.Location = New System.Drawing.Point(16, 25)
         Me.Label5.Name = "Label5"
@@ -1461,19 +1461,19 @@ Partial Class HeadQHome
         '
         'lsvLanguage
         '
-        Me.lsvLanguage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvLanguage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lsvLanguage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidLang, Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.lsvLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvLanguage.FullRowSelect = True
-        Me.lsvLanguage.GridLines = True
-        Me.lsvLanguage.HideSelection = False
+        Me.lsvLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lsvLanguage.FullRowSelect = true
+        Me.lsvLanguage.GridLines = true
+        Me.lsvLanguage.HideSelection = false
         Me.lsvLanguage.Location = New System.Drawing.Point(10, 139)
-        Me.lsvLanguage.MultiSelect = False
+        Me.lsvLanguage.MultiSelect = false
         Me.lsvLanguage.Name = "lsvLanguage"
         Me.lsvLanguage.Size = New System.Drawing.Size(1101, 523)
         Me.lsvLanguage.TabIndex = 55
-        Me.lsvLanguage.UseCompatibleStateImageBehavior = False
+        Me.lsvLanguage.UseCompatibleStateImageBehavior = false
         Me.lsvLanguage.View = System.Windows.Forms.View.Details
         '
         'cidLang
@@ -1494,14 +1494,14 @@ Partial Class HeadQHome
         'butSearchLangForm
         '
         Me.butSearchLangForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butSearchLangForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butSearchLangForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butSearchLangForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butSearchLangForm.Location = New System.Drawing.Point(770, 20)
         Me.butSearchLangForm.Name = "butSearchLangForm"
         Me.butSearchLangForm.Size = New System.Drawing.Size(113, 78)
         Me.butSearchLangForm.TabIndex = 9
         Me.butSearchLangForm.Text = "Find"
-        Me.butSearchLangForm.UseVisualStyleBackColor = False
+        Me.butSearchLangForm.UseVisualStyleBackColor = false
         '
         'tbGarages
         '
@@ -1512,21 +1512,19 @@ Partial Class HeadQHome
         Me.tbGarages.Size = New System.Drawing.Size(1187, 657)
         Me.tbGarages.TabIndex = 3
         Me.tbGarages.Text = "Garages"
-        Me.tbGarages.UseVisualStyleBackColor = True
+        Me.tbGarages.UseVisualStyleBackColor = true
         '
         'grpGarageForm
         '
-        Me.grpGarageForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpGarageForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.grpGarageForm.BackColor = System.Drawing.Color.Transparent
         Me.grpGarageForm.Controls.Add(Me.GroupBox7)
-        Me.grpGarageForm.Controls.Add(Me.chkApply6)
         Me.grpGarageForm.Controls.Add(Me.chkUsername)
         Me.grpGarageForm.Controls.Add(Me.txtusername)
         Me.grpGarageForm.Controls.Add(Me.Label35)
         Me.grpGarageForm.Controls.Add(Me.GroupBox6)
-        Me.grpGarageForm.Controls.Add(Me.chkApply5)
         Me.grpGarageForm.Controls.Add(Me.pctThemeColor)
         Me.grpGarageForm.Controls.Add(Me.Label33)
         Me.grpGarageForm.Controls.Add(Me.GroupBox5)
@@ -1570,13 +1568,13 @@ Partial Class HeadQHome
         Me.grpGarageForm.Controls.Add(Me.Label9)
         Me.grpGarageForm.Controls.Add(Me.lsvGarage)
         Me.grpGarageForm.Controls.Add(Me.butSearchGarageForm)
-        Me.grpGarageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpGarageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.grpGarageForm.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.grpGarageForm.Location = New System.Drawing.Point(6, 6)
         Me.grpGarageForm.Name = "grpGarageForm"
         Me.grpGarageForm.Size = New System.Drawing.Size(1175, 664)
         Me.grpGarageForm.TabIndex = 70
-        Me.grpGarageForm.TabStop = False
+        Me.grpGarageForm.TabStop = false
         Me.grpGarageForm.Text = "Garages"
         '
         'GroupBox7
@@ -1590,11 +1588,11 @@ Partial Class HeadQHome
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(236, 117)
         Me.GroupBox7.TabIndex = 89
-        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.TabStop = false
         '
         'lbHqConversionProgress
         '
-        Me.lbHqConversionProgress.AutoSize = True
+        Me.lbHqConversionProgress.AutoSize = true
         Me.lbHqConversionProgress.Location = New System.Drawing.Point(16, 44)
         Me.lbHqConversionProgress.Name = "lbHqConversionProgress"
         Me.lbHqConversionProgress.Size = New System.Drawing.Size(0, 17)
@@ -1603,19 +1601,19 @@ Partial Class HeadQHome
         'butBrowseHqDirectory
         '
         Me.butBrowseHqDirectory.BackColor = System.Drawing.SystemColors.Control
-        Me.butBrowseHqDirectory.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butBrowseHqDirectory.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butBrowseHqDirectory.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butBrowseHqDirectory.Location = New System.Drawing.Point(194, 16)
         Me.butBrowseHqDirectory.Name = "butBrowseHqDirectory"
         Me.butBrowseHqDirectory.Size = New System.Drawing.Size(37, 26)
         Me.butBrowseHqDirectory.TabIndex = 88
         Me.butBrowseHqDirectory.Text = "--"
-        Me.butBrowseHqDirectory.UseVisualStyleBackColor = False
+        Me.butBrowseHqDirectory.UseVisualStyleBackColor = false
         '
         'Label36
         '
-        Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.AutoSize = true
+        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label36.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label36.Location = New System.Drawing.Point(13, 23)
         Me.Label36.Name = "Label36"
@@ -1627,47 +1625,35 @@ Partial Class HeadQHome
         '
         Me.txtHqDirectory.Location = New System.Drawing.Point(104, 18)
         Me.txtHqDirectory.Name = "txtHqDirectory"
-        Me.txtHqDirectory.ReadOnly = True
+        Me.txtHqDirectory.ReadOnly = true
         Me.txtHqDirectory.Size = New System.Drawing.Size(84, 23)
         Me.txtHqDirectory.TabIndex = 86
         '
         'butConvertToHQ
         '
         Me.butConvertToHQ.BackColor = System.Drawing.SystemColors.Control
-        Me.butConvertToHQ.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butConvertToHQ.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butConvertToHQ.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butConvertToHQ.Location = New System.Drawing.Point(16, 64)
         Me.butConvertToHQ.Name = "butConvertToHQ"
         Me.butConvertToHQ.Size = New System.Drawing.Size(205, 47)
         Me.butConvertToHQ.TabIndex = 85
         Me.butConvertToHQ.Text = "Generate corresponding HQ"
-        Me.butConvertToHQ.UseVisualStyleBackColor = False
-        '
-        'chkApply6
-        '
-        Me.chkApply6.AutoSize = True
-        Me.chkApply6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkApply6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkApply6.Location = New System.Drawing.Point(829, 250)
-        Me.chkApply6.Name = "chkApply6"
-        Me.chkApply6.Size = New System.Drawing.Size(176, 17)
-        Me.chkApply6.TabIndex = 14
-        Me.chkApply6.Text = "Apply Eq. 4080-4082-4060"
-        Me.chkApply6.UseVisualStyleBackColor = True
+        Me.butConvertToHQ.UseVisualStyleBackColor = false
         '
         'chkUsername
         '
-        Me.chkUsername.AutoSize = True
-        Me.chkUsername.Checked = True
+        Me.chkUsername.AutoSize = true
+        Me.chkUsername.Checked = true
         Me.chkUsername.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkUsername.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkUsername.Location = New System.Drawing.Point(272, 208)
         Me.chkUsername.Name = "chkUsername"
         Me.chkUsername.Size = New System.Drawing.Size(75, 17)
         Me.chkUsername.TabIndex = 174
         Me.chkUsername.Text = "Contains"
-        Me.chkUsername.UseVisualStyleBackColor = True
+        Me.chkUsername.UseVisualStyleBackColor = true
         '
         'txtusername
         '
@@ -1678,8 +1664,8 @@ Partial Class HeadQHome
         '
         'Label35
         '
-        Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.AutoSize = true
+        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label35.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label35.Location = New System.Drawing.Point(16, 203)
         Me.Label35.Name = "Label35"
@@ -1696,60 +1682,46 @@ Partial Class HeadQHome
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(495, 38)
         Me.GroupBox6.TabIndex = 159
-        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.TabStop = false
         '
         'rdShowAltNone
         '
-        Me.rdShowAltNone.AutoSize = True
-        Me.rdShowAltNone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdShowAltNone.AutoSize = true
+        Me.rdShowAltNone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdShowAltNone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.rdShowAltNone.Location = New System.Drawing.Point(6, 15)
         Me.rdShowAltNone.Name = "rdShowAltNone"
         Me.rdShowAltNone.Size = New System.Drawing.Size(55, 17)
         Me.rdShowAltNone.TabIndex = 17
-        Me.rdShowAltNone.TabStop = True
+        Me.rdShowAltNone.TabStop = true
         Me.rdShowAltNone.Text = "None"
-        Me.rdShowAltNone.UseVisualStyleBackColor = True
+        Me.rdShowAltNone.UseVisualStyleBackColor = true
         '
         'rdShowAlternative
         '
-        Me.rdShowAlternative.AutoSize = True
-        Me.rdShowAlternative.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdShowAlternative.AutoSize = true
+        Me.rdShowAlternative.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdShowAlternative.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.rdShowAlternative.Location = New System.Drawing.Point(80, 15)
         Me.rdShowAlternative.Name = "rdShowAlternative"
         Me.rdShowAlternative.Size = New System.Drawing.Size(186, 17)
         Me.rdShowAlternative.TabIndex = 18
-        Me.rdShowAlternative.TabStop = True
+        Me.rdShowAlternative.TabStop = true
         Me.rdShowAlternative.Text = "Show alternative color name"
-        Me.rdShowAlternative.UseVisualStyleBackColor = True
+        Me.rdShowAlternative.UseVisualStyleBackColor = true
         '
         'rdShowAlternative2
         '
-        Me.rdShowAlternative2.AutoSize = True
-        Me.rdShowAlternative2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdShowAlternative2.AutoSize = true
+        Me.rdShowAlternative2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdShowAlternative2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.rdShowAlternative2.Location = New System.Drawing.Point(285, 15)
         Me.rdShowAlternative2.Name = "rdShowAlternative2"
         Me.rdShowAlternative2.Size = New System.Drawing.Size(197, 17)
         Me.rdShowAlternative2.TabIndex = 19
-        Me.rdShowAlternative2.TabStop = True
+        Me.rdShowAlternative2.TabStop = true
         Me.rdShowAlternative2.Text = "Show alternative color name 2"
-        Me.rdShowAlternative2.UseVisualStyleBackColor = True
-        '
-        'chkApply5
-        '
-        Me.chkApply5.AutoSize = True
-        Me.chkApply5.Checked = True
-        Me.chkApply5.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkApply5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkApply5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.chkApply5.Location = New System.Drawing.Point(671, 250)
-        Me.chkApply5.Name = "chkApply5"
-        Me.chkApply5.Size = New System.Drawing.Size(152, 17)
-        Me.chkApply5.TabIndex = 13
-        Me.chkApply5.Text = "Apply Eq. 4201 - 180g"
-        Me.chkApply5.UseVisualStyleBackColor = True
+        Me.rdShowAlternative2.UseVisualStyleBackColor = true
         '
         'pctThemeColor
         '
@@ -1762,12 +1734,12 @@ Partial Class HeadQHome
         Me.pctThemeColor.Size = New System.Drawing.Size(161, 25)
         Me.pctThemeColor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctThemeColor.TabIndex = 170
-        Me.pctThemeColor.TabStop = False
+        Me.pctThemeColor.TabStop = false
         '
         'Label33
         '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.AutoSize = true
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label33.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label33.Location = New System.Drawing.Point(16, 351)
         Me.Label33.Name = "Label33"
@@ -1785,24 +1757,24 @@ Partial Class HeadQHome
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(236, 117)
         Me.GroupBox5.TabIndex = 89
-        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.TabStop = false
         '
         'butBrowseDb
         '
         Me.butBrowseDb.BackColor = System.Drawing.SystemColors.Control
-        Me.butBrowseDb.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butBrowseDb.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butBrowseDb.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butBrowseDb.Location = New System.Drawing.Point(193, 16)
         Me.butBrowseDb.Name = "butBrowseDb"
         Me.butBrowseDb.Size = New System.Drawing.Size(37, 26)
         Me.butBrowseDb.TabIndex = 88
         Me.butBrowseDb.Text = "--"
-        Me.butBrowseDb.UseVisualStyleBackColor = False
+        Me.butBrowseDb.UseVisualStyleBackColor = false
         '
         'Label32
         '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.AutoSize = true
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label32.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label32.Location = New System.Drawing.Point(13, 20)
         Me.Label32.Name = "Label32"
@@ -1814,35 +1786,35 @@ Partial Class HeadQHome
         '
         Me.txtDBDirectory.Location = New System.Drawing.Point(104, 18)
         Me.txtDBDirectory.Name = "txtDBDirectory"
-        Me.txtDBDirectory.ReadOnly = True
+        Me.txtDBDirectory.ReadOnly = true
         Me.txtDBDirectory.Size = New System.Drawing.Size(83, 23)
         Me.txtDBDirectory.TabIndex = 86
         '
         'butInstallMobile
         '
         Me.butInstallMobile.BackColor = System.Drawing.SystemColors.Control
-        Me.butInstallMobile.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butInstallMobile.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butInstallMobile.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butInstallMobile.Location = New System.Drawing.Point(16, 55)
         Me.butInstallMobile.Name = "butInstallMobile"
         Me.butInstallMobile.Size = New System.Drawing.Size(205, 57)
         Me.butInstallMobile.TabIndex = 85
         Me.butInstallMobile.Text = "Generate Mobile Insallation File"
-        Me.butInstallMobile.UseVisualStyleBackColor = False
+        Me.butInstallMobile.UseVisualStyleBackColor = false
         '
         'chkkey
         '
-        Me.chkkey.AutoSize = True
-        Me.chkkey.Checked = True
+        Me.chkkey.AutoSize = true
+        Me.chkkey.Checked = true
         Me.chkkey.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkkey.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkkey.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkkey.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkkey.Location = New System.Drawing.Point(272, 179)
         Me.chkkey.Name = "chkkey"
         Me.chkkey.Size = New System.Drawing.Size(75, 17)
         Me.chkkey.TabIndex = 168
         Me.chkkey.Text = "Contains"
-        Me.chkkey.UseVisualStyleBackColor = True
+        Me.chkkey.UseVisualStyleBackColor = true
         '
         'txtkey
         '
@@ -1853,8 +1825,8 @@ Partial Class HeadQHome
         '
         'Label31
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.AutoSize = true
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label31.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label31.Location = New System.Drawing.Point(16, 174)
         Me.Label31.Name = "Label31"
@@ -1864,17 +1836,17 @@ Partial Class HeadQHome
         '
         'chktel
         '
-        Me.chktel.AutoSize = True
-        Me.chktel.Checked = True
+        Me.chktel.AutoSize = true
+        Me.chktel.Checked = true
         Me.chktel.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chktel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chktel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chktel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chktel.Location = New System.Drawing.Point(272, 150)
         Me.chktel.Name = "chktel"
         Me.chktel.Size = New System.Drawing.Size(75, 17)
         Me.chktel.TabIndex = 165
         Me.chktel.Text = "Contains"
-        Me.chktel.UseVisualStyleBackColor = True
+        Me.chktel.UseVisualStyleBackColor = true
         '
         'txttel
         '
@@ -1885,8 +1857,8 @@ Partial Class HeadQHome
         '
         'Label30
         '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.AutoSize = true
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label30.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label30.Location = New System.Drawing.Point(16, 145)
         Me.Label30.Name = "Label30"
@@ -1902,38 +1874,38 @@ Partial Class HeadQHome
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(101, 36)
         Me.GroupBox4.TabIndex = 161
-        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.TabStop = false
         '
         'rdGarage2k
         '
-        Me.rdGarage2k.AutoSize = True
-        Me.rdGarage2k.Checked = True
-        Me.rdGarage2k.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdGarage2k.AutoSize = true
+        Me.rdGarage2k.Checked = true
+        Me.rdGarage2k.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdGarage2k.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.rdGarage2k.Location = New System.Drawing.Point(6, 12)
         Me.rdGarage2k.Name = "rdGarage2k"
         Me.rdGarage2k.Size = New System.Drawing.Size(40, 17)
         Me.rdGarage2k.TabIndex = 15
-        Me.rdGarage2k.TabStop = True
+        Me.rdGarage2k.TabStop = true
         Me.rdGarage2k.Text = "2K"
-        Me.rdGarage2k.UseVisualStyleBackColor = True
+        Me.rdGarage2k.UseVisualStyleBackColor = true
         '
         'rdGarageLS
         '
-        Me.rdGarageLS.AutoSize = True
-        Me.rdGarageLS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdGarageLS.AutoSize = true
+        Me.rdGarageLS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdGarageLS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.rdGarageLS.Location = New System.Drawing.Point(61, 12)
         Me.rdGarageLS.Name = "rdGarageLS"
         Me.rdGarageLS.Size = New System.Drawing.Size(40, 17)
         Me.rdGarageLS.TabIndex = 16
         Me.rdGarageLS.Text = "LS"
-        Me.rdGarageLS.UseVisualStyleBackColor = True
+        Me.rdGarageLS.UseVisualStyleBackColor = true
         '
         'Label28
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.AutoSize = true
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label28.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label28.Location = New System.Drawing.Point(16, 283)
         Me.Label28.Name = "Label28"
@@ -1943,17 +1915,17 @@ Partial Class HeadQHome
         '
         'chkversion
         '
-        Me.chkversion.AutoSize = True
-        Me.chkversion.Checked = True
+        Me.chkversion.AutoSize = true
+        Me.chkversion.Checked = true
         Me.chkversion.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkversion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkversion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkversion.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkversion.Location = New System.Drawing.Point(272, 120)
         Me.chkversion.Name = "chkversion"
         Me.chkversion.Size = New System.Drawing.Size(75, 17)
         Me.chkversion.TabIndex = 159
         Me.chkversion.Text = "Contains"
-        Me.chkversion.UseVisualStyleBackColor = True
+        Me.chkversion.UseVisualStyleBackColor = true
         '
         'txtversion
         '
@@ -1964,8 +1936,8 @@ Partial Class HeadQHome
         '
         'Label27
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.AutoSize = true
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label27.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label27.Location = New System.Drawing.Point(16, 115)
         Me.Label27.Name = "Label27"
@@ -1975,99 +1947,44 @@ Partial Class HeadQHome
         '
         'grpradio
         '
-        Me.grpradio.Controls.Add(Me.rdApply4)
-        Me.grpradio.Controls.Add(Me.rdApply3)
-        Me.grpradio.Controls.Add(Me.rdApply0)
         Me.grpradio.Controls.Add(Me.rdApply1)
-        Me.grpradio.Controls.Add(Me.rdApply2)
+        Me.grpradio.Controls.Add(Me.rdApply0)
         Me.grpradio.Location = New System.Drawing.Point(126, 236)
         Me.grpradio.Name = "grpradio"
-        Me.grpradio.Size = New System.Drawing.Size(539, 38)
+        Me.grpradio.Size = New System.Drawing.Size(221, 38)
         Me.grpradio.TabIndex = 156
-        Me.grpradio.TabStop = False
-        '
-        'rdApply4
-        '
-        Me.rdApply4.AutoSize = True
-        Me.rdApply4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdApply4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdApply4.Location = New System.Drawing.Point(450, 12)
-        Me.rdApply4.Name = "rdApply4"
-        Me.rdApply4.Size = New System.Drawing.Size(89, 17)
-        Me.rdApply4.TabIndex = 12
-        Me.rdApply4.TabStop = True
-        Me.rdApply4.Text = "Extended +"
-        Me.rdApply4.UseVisualStyleBackColor = True
-        '
-        'rdApply3
-        '
-        Me.rdApply3.AutoSize = True
-        Me.rdApply3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdApply3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdApply3.Location = New System.Drawing.Point(288, 12)
-        Me.rdApply3.Name = "rdApply3"
-        Me.rdApply3.Size = New System.Drawing.Size(155, 17)
-        Me.rdApply3.TabIndex = 11
-        Me.rdApply3.TabStop = True
-        Me.rdApply3.Text = "Apply Eq. (no 4581-91)"
-        Me.rdApply3.UseVisualStyleBackColor = True
+        Me.grpradio.TabStop = false
         '
         'rdApply0
         '
-        Me.rdApply0.AutoSize = True
-        Me.rdApply0.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdApply0.AutoSize = true
+        Me.rdApply0.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rdApply0.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.rdApply0.Location = New System.Drawing.Point(6, 12)
         Me.rdApply0.Name = "rdApply0"
         Me.rdApply0.Size = New System.Drawing.Size(55, 17)
         Me.rdApply0.TabIndex = 8
-        Me.rdApply0.TabStop = True
+        Me.rdApply0.TabStop = true
         Me.rdApply0.Text = "None"
-        Me.rdApply0.UseVisualStyleBackColor = True
-        '
-        'rdApply1
-        '
-        Me.rdApply1.AutoSize = True
-        Me.rdApply1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdApply1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdApply1.Location = New System.Drawing.Point(67, 12)
-        Me.rdApply1.Name = "rdApply1"
-        Me.rdApply1.Size = New System.Drawing.Size(79, 17)
-        Me.rdApply1.TabIndex = 9
-        Me.rdApply1.TabStop = True
-        Me.rdApply1.Text = "Apply Eq."
-        Me.rdApply1.UseVisualStyleBackColor = True
-        '
-        'rdApply2
-        '
-        Me.rdApply2.AutoSize = True
-        Me.rdApply2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdApply2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.rdApply2.Location = New System.Drawing.Point(146, 12)
-        Me.rdApply2.Name = "rdApply2"
-        Me.rdApply2.Size = New System.Drawing.Size(136, 17)
-        Me.rdApply2.TabIndex = 10
-        Me.rdApply2.TabStop = True
-        Me.rdApply2.Text = "Apply Extended Eq."
-        Me.rdApply2.UseVisualStyleBackColor = True
+        Me.rdApply0.UseVisualStyleBackColor = true
         '
         'butClearGarage
         '
-        Me.butClearGarage.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.butClearGarage.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.butClearGarage.BackColor = System.Drawing.SystemColors.Control
-        Me.butClearGarage.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butClearGarage.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butClearGarage.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butClearGarage.Location = New System.Drawing.Point(1056, 22)
         Me.butClearGarage.Name = "butClearGarage"
         Me.butClearGarage.Size = New System.Drawing.Size(113, 79)
         Me.butClearGarage.TabIndex = 153
         Me.butClearGarage.Text = "Clear"
-        Me.butClearGarage.UseVisualStyleBackColor = False
+        Me.butClearGarage.UseVisualStyleBackColor = false
         '
         'Label20
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.AutoSize = true
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label20.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label20.Location = New System.Drawing.Point(16, 245)
         Me.Label20.Name = "Label20"
@@ -2078,28 +1995,28 @@ Partial Class HeadQHome
         'butFindGarageImg
         '
         Me.butFindGarageImg.BackColor = System.Drawing.SystemColors.Control
-        Me.butFindGarageImg.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butFindGarageImg.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butFindGarageImg.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butFindGarageImg.Location = New System.Drawing.Point(521, 321)
         Me.butFindGarageImg.Name = "butFindGarageImg"
         Me.butFindGarageImg.Size = New System.Drawing.Size(35, 23)
         Me.butFindGarageImg.TabIndex = 21
         Me.butFindGarageImg.Text = " -- "
-        Me.butFindGarageImg.UseVisualStyleBackColor = False
+        Me.butFindGarageImg.UseVisualStyleBackColor = false
         '
         'txtGarageImgPath
         '
         Me.txtGarageImgPath.Location = New System.Drawing.Point(638, 348)
         Me.txtGarageImgPath.Name = "txtGarageImgPath"
-        Me.txtGarageImgPath.ReadOnly = True
+        Me.txtGarageImgPath.ReadOnly = true
         Me.txtGarageImgPath.Size = New System.Drawing.Size(161, 23)
         Me.txtGarageImgPath.TabIndex = 125
-        Me.txtGarageImgPath.Visible = False
+        Me.txtGarageImgPath.Visible = false
         '
         'Label19
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.AutoSize = true
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label19.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label19.Location = New System.Drawing.Point(347, 321)
         Me.Label19.Name = "Label19"
@@ -2111,22 +2028,22 @@ Partial Class HeadQHome
         '
         Me.txtfnamegaragehidden.Location = New System.Drawing.Point(563, 400)
         Me.txtfnamegaragehidden.Name = "txtfnamegaragehidden"
-        Me.txtfnamegaragehidden.ReadOnly = True
+        Me.txtfnamegaragehidden.ReadOnly = true
         Me.txtfnamegaragehidden.Size = New System.Drawing.Size(101, 23)
         Me.txtfnamegaragehidden.TabIndex = 123
-        Me.txtfnamegaragehidden.Visible = False
+        Me.txtfnamegaragehidden.Visible = false
         '
         'Label18
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.AutoSize = true
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label18.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label18.Location = New System.Drawing.Point(346, 362)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(79, 15)
         Me.Label18.TabIndex = 122
         Me.Label18.Text = "Thumbnail:"
-        Me.Label18.Visible = False
+        Me.Label18.Visible = false
         '
         'pctGarageImg
         '
@@ -2137,7 +2054,7 @@ Partial Class HeadQHome
         Me.pctGarageImg.Size = New System.Drawing.Size(101, 72)
         Me.pctGarageImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctGarageImg.TabIndex = 121
-        Me.pctGarageImg.TabStop = False
+        Me.pctGarageImg.TabStop = false
         '
         'GroupBox2
         '
@@ -2149,24 +2066,24 @@ Partial Class HeadQHome
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(236, 117)
         Me.GroupBox2.TabIndex = 88
-        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.TabStop = false
         '
         'butBrowse
         '
         Me.butBrowse.BackColor = System.Drawing.SystemColors.Control
-        Me.butBrowse.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butBrowse.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butBrowse.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butBrowse.Location = New System.Drawing.Point(194, 16)
         Me.butBrowse.Name = "butBrowse"
         Me.butBrowse.Size = New System.Drawing.Size(37, 26)
         Me.butBrowse.TabIndex = 88
         Me.butBrowse.Text = "--"
-        Me.butBrowse.UseVisualStyleBackColor = False
+        Me.butBrowse.UseVisualStyleBackColor = false
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.AutoSize = true
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label10.Location = New System.Drawing.Point(13, 23)
         Me.Label10.Name = "Label10"
@@ -2178,58 +2095,58 @@ Partial Class HeadQHome
         '
         Me.txtGarageDirectory.Location = New System.Drawing.Point(104, 18)
         Me.txtGarageDirectory.Name = "txtGarageDirectory"
-        Me.txtGarageDirectory.ReadOnly = True
+        Me.txtGarageDirectory.ReadOnly = true
         Me.txtGarageDirectory.Size = New System.Drawing.Size(84, 23)
         Me.txtGarageDirectory.TabIndex = 86
         '
         'butInstall
         '
         Me.butInstall.BackColor = System.Drawing.SystemColors.Control
-        Me.butInstall.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butInstall.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butInstall.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butInstall.Location = New System.Drawing.Point(16, 54)
         Me.butInstall.Name = "butInstall"
         Me.butInstall.Size = New System.Drawing.Size(205, 57)
         Me.butInstall.TabIndex = 85
         Me.butInstall.Text = "Generate Insallation File"
-        Me.butInstall.UseVisualStyleBackColor = False
+        Me.butInstall.UseVisualStyleBackColor = false
         '
         'butFindLang
         '
         Me.butFindLang.BackColor = System.Drawing.SystemColors.Control
-        Me.butFindLang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butFindLang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butFindLang.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butFindLang.Location = New System.Drawing.Point(268, 321)
         Me.butFindLang.Name = "butFindLang"
         Me.butFindLang.Size = New System.Drawing.Size(66, 23)
         Me.butFindLang.TabIndex = 20
         Me.butFindLang.Text = "Find"
-        Me.butFindLang.UseVisualStyleBackColor = False
+        Me.butFindLang.UseVisualStyleBackColor = false
         '
         'lbIdLanguage
         '
-        Me.lbIdLanguage.AutoSize = True
-        Me.lbIdLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbIdLanguage.AutoSize = true
+        Me.lbIdLanguage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbIdLanguage.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbIdLanguage.Location = New System.Drawing.Point(100, 324)
         Me.lbIdLanguage.Name = "lbIdLanguage"
         Me.lbIdLanguage.Size = New System.Drawing.Size(20, 15)
         Me.lbIdLanguage.TabIndex = 83
         Me.lbIdLanguage.Text = "-1"
-        Me.lbIdLanguage.Visible = False
+        Me.lbIdLanguage.Visible = false
         '
         'txtLanguage
         '
         Me.txtLanguage.Location = New System.Drawing.Point(126, 321)
         Me.txtLanguage.Name = "txtLanguage"
-        Me.txtLanguage.ReadOnly = True
+        Me.txtLanguage.ReadOnly = true
         Me.txtLanguage.Size = New System.Drawing.Size(136, 23)
         Me.txtLanguage.TabIndex = 82
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.AutoSize = true
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label6.Location = New System.Drawing.Point(16, 321)
         Me.Label6.Name = "Label6"
@@ -2239,17 +2156,17 @@ Partial Class HeadQHome
         '
         'chkGarageRespForm
         '
-        Me.chkGarageRespForm.AutoSize = True
-        Me.chkGarageRespForm.Checked = True
+        Me.chkGarageRespForm.AutoSize = true
+        Me.chkGarageRespForm.Checked = true
         Me.chkGarageRespForm.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkGarageRespForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkGarageRespForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkGarageRespForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkGarageRespForm.Location = New System.Drawing.Point(272, 91)
         Me.chkGarageRespForm.Name = "chkGarageRespForm"
         Me.chkGarageRespForm.Size = New System.Drawing.Size(75, 17)
         Me.chkGarageRespForm.TabIndex = 80
         Me.chkGarageRespForm.Text = "Contains"
-        Me.chkGarageRespForm.UseVisualStyleBackColor = True
+        Me.chkGarageRespForm.UseVisualStyleBackColor = true
         '
         'txtGarageRespform
         '
@@ -2260,8 +2177,8 @@ Partial Class HeadQHome
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.AutoSize = true
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label7.Location = New System.Drawing.Point(16, 86)
         Me.Label7.Name = "Label7"
@@ -2272,52 +2189,52 @@ Partial Class HeadQHome
         'butDeleteGarageForm
         '
         Me.butDeleteGarageForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butDeleteGarageForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butDeleteGarageForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butDeleteGarageForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butDeleteGarageForm.Location = New System.Drawing.Point(671, 22)
         Me.butDeleteGarageForm.Name = "butDeleteGarageForm"
         Me.butDeleteGarageForm.Size = New System.Drawing.Size(113, 78)
         Me.butDeleteGarageForm.TabIndex = 77
         Me.butDeleteGarageForm.Text = "Delete Selected"
-        Me.butDeleteGarageForm.UseVisualStyleBackColor = False
+        Me.butDeleteGarageForm.UseVisualStyleBackColor = false
         '
         'lbIdGarageForm
         '
-        Me.lbIdGarageForm.AutoSize = True
-        Me.lbIdGarageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbIdGarageForm.AutoSize = true
+        Me.lbIdGarageForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbIdGarageForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbIdGarageForm.Location = New System.Drawing.Point(347, 408)
         Me.lbIdGarageForm.Name = "lbIdGarageForm"
         Me.lbIdGarageForm.Size = New System.Drawing.Size(20, 15)
         Me.lbIdGarageForm.TabIndex = 76
         Me.lbIdGarageForm.Text = "-1"
-        Me.lbIdGarageForm.Visible = False
+        Me.lbIdGarageForm.Visible = false
         '
         'butEditGarageForm
         '
         Me.butEditGarageForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butEditGarageForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butEditGarageForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butEditGarageForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butEditGarageForm.Location = New System.Drawing.Point(552, 22)
         Me.butEditGarageForm.Name = "butEditGarageForm"
         Me.butEditGarageForm.Size = New System.Drawing.Size(113, 78)
         Me.butEditGarageForm.TabIndex = 75
         Me.butEditGarageForm.Text = "Edit Selected"
-        Me.butEditGarageForm.UseVisualStyleBackColor = False
+        Me.butEditGarageForm.UseVisualStyleBackColor = false
         '
         'chkGarageLocationForm
         '
-        Me.chkGarageLocationForm.AutoSize = True
-        Me.chkGarageLocationForm.Checked = True
+        Me.chkGarageLocationForm.AutoSize = true
+        Me.chkGarageLocationForm.Checked = true
         Me.chkGarageLocationForm.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkGarageLocationForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkGarageLocationForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkGarageLocationForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkGarageLocationForm.Location = New System.Drawing.Point(272, 62)
         Me.chkGarageLocationForm.Name = "chkGarageLocationForm"
         Me.chkGarageLocationForm.Size = New System.Drawing.Size(75, 17)
         Me.chkGarageLocationForm.TabIndex = 74
         Me.chkGarageLocationForm.Text = "Contains"
-        Me.chkGarageLocationForm.UseVisualStyleBackColor = True
+        Me.chkGarageLocationForm.UseVisualStyleBackColor = true
         '
         'txtGarageLocationForm
         '
@@ -2328,8 +2245,8 @@ Partial Class HeadQHome
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.AutoSize = true
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label8.Location = New System.Drawing.Point(16, 57)
         Me.Label8.Name = "Label8"
@@ -2340,28 +2257,28 @@ Partial Class HeadQHome
         'butAddGarage
         '
         Me.butAddGarage.BackColor = System.Drawing.SystemColors.Control
-        Me.butAddGarage.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butAddGarage.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butAddGarage.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butAddGarage.Location = New System.Drawing.Point(433, 22)
         Me.butAddGarage.Name = "butAddGarage"
         Me.butAddGarage.Size = New System.Drawing.Size(113, 78)
         Me.butAddGarage.TabIndex = 71
         Me.butAddGarage.Text = "Add New"
-        Me.butAddGarage.UseVisualStyleBackColor = False
+        Me.butAddGarage.UseVisualStyleBackColor = false
         '
         'chkGarageFormCode
         '
-        Me.chkGarageFormCode.AutoSize = True
-        Me.chkGarageFormCode.Checked = True
+        Me.chkGarageFormCode.AutoSize = true
+        Me.chkGarageFormCode.Checked = true
         Me.chkGarageFormCode.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkGarageFormCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkGarageFormCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkGarageFormCode.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkGarageFormCode.Location = New System.Drawing.Point(272, 30)
         Me.chkGarageFormCode.Name = "chkGarageFormCode"
         Me.chkGarageFormCode.Size = New System.Drawing.Size(75, 17)
         Me.chkGarageFormCode.TabIndex = 70
         Me.chkGarageFormCode.Text = "Contains"
-        Me.chkGarageFormCode.UseVisualStyleBackColor = True
+        Me.chkGarageFormCode.UseVisualStyleBackColor = true
         '
         'txtGarageNameForm
         '
@@ -2372,8 +2289,8 @@ Partial Class HeadQHome
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.AutoSize = true
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label9.Location = New System.Drawing.Point(16, 25)
         Me.Label9.Name = "Label9"
@@ -2383,20 +2300,20 @@ Partial Class HeadQHome
         '
         'lsvGarage
         '
-        Me.lsvGarage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvGarage.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lsvGarage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidGarage, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.cidlanggarage, Me.cappequation, Me.cgversion, Me.cgcoat})
-        Me.lsvGarage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvGarage.FullRowSelect = True
-        Me.lsvGarage.GridLines = True
-        Me.lsvGarage.HideSelection = False
+        Me.lsvGarage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lsvGarage.FullRowSelect = true
+        Me.lsvGarage.GridLines = true
+        Me.lsvGarage.HideSelection = false
         Me.lsvGarage.Location = New System.Drawing.Point(10, 455)
-        Me.lsvGarage.MultiSelect = False
+        Me.lsvGarage.MultiSelect = false
         Me.lsvGarage.Name = "lsvGarage"
         Me.lsvGarage.Size = New System.Drawing.Size(1159, 203)
         Me.lsvGarage.TabIndex = 99999999
-        Me.lsvGarage.UseCompatibleStateImageBehavior = False
+        Me.lsvGarage.UseCompatibleStateImageBehavior = false
         Me.lsvGarage.View = System.Windows.Forms.View.Details
         '
         'cidGarage
@@ -2447,14 +2364,14 @@ Partial Class HeadQHome
         'butSearchGarageForm
         '
         Me.butSearchGarageForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butSearchGarageForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butSearchGarageForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butSearchGarageForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butSearchGarageForm.Location = New System.Drawing.Point(790, 22)
         Me.butSearchGarageForm.Name = "butSearchGarageForm"
         Me.butSearchGarageForm.Size = New System.Drawing.Size(113, 78)
         Me.butSearchGarageForm.TabIndex = 9
         Me.butSearchGarageForm.Text = "Find"
-        Me.butSearchGarageForm.UseVisualStyleBackColor = False
+        Me.butSearchGarageForm.UseVisualStyleBackColor = false
         '
         'tbColors
         '
@@ -2465,13 +2382,13 @@ Partial Class HeadQHome
         Me.tbColors.Size = New System.Drawing.Size(1187, 657)
         Me.tbColors.TabIndex = 4
         Me.tbColors.Text = "Basic Colors"
-        Me.tbColors.UseVisualStyleBackColor = True
+        Me.tbColors.UseVisualStyleBackColor = true
         '
         'grpBColors
         '
-        Me.grpBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.grpBColors.BackColor = System.Drawing.Color.Transparent
         Me.grpBColors.Controls.Add(Me.chkBColorFormNameAlt2)
         Me.grpBColors.Controls.Add(Me.txtBColorNameFormAlt2)
@@ -2510,28 +2427,28 @@ Partial Class HeadQHome
         Me.grpBColors.Controls.Add(Me.lbBColorNameForm)
         Me.grpBColors.Controls.Add(Me.lsvBColors)
         Me.grpBColors.Controls.Add(Me.butSearchBColorForm)
-        Me.grpBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 10!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.grpBColors.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.grpBColors.Location = New System.Drawing.Point(6, 6)
         Me.grpBColors.Name = "grpBColors"
         Me.grpBColors.Size = New System.Drawing.Size(1159, 662)
         Me.grpBColors.TabIndex = 67
-        Me.grpBColors.TabStop = False
+        Me.grpBColors.TabStop = false
         Me.grpBColors.Text = "BColors"
         '
         'chkBColorFormNameAlt2
         '
-        Me.chkBColorFormNameAlt2.AutoSize = True
-        Me.chkBColorFormNameAlt2.Checked = True
+        Me.chkBColorFormNameAlt2.AutoSize = true
+        Me.chkBColorFormNameAlt2.Checked = true
         Me.chkBColorFormNameAlt2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkBColorFormNameAlt2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBColorFormNameAlt2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkBColorFormNameAlt2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkBColorFormNameAlt2.Location = New System.Drawing.Point(363, 132)
         Me.chkBColorFormNameAlt2.Name = "chkBColorFormNameAlt2"
         Me.chkBColorFormNameAlt2.Size = New System.Drawing.Size(75, 17)
         Me.chkBColorFormNameAlt2.TabIndex = 164
         Me.chkBColorFormNameAlt2.Text = "Contains"
-        Me.chkBColorFormNameAlt2.UseVisualStyleBackColor = True
+        Me.chkBColorFormNameAlt2.UseVisualStyleBackColor = true
         '
         'txtBColorNameFormAlt2
         '
@@ -2542,8 +2459,8 @@ Partial Class HeadQHome
         '
         'Label34
         '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.AutoSize = true
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label34.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label34.Location = New System.Drawing.Point(16, 130)
         Me.Label34.Name = "Label34"
@@ -2561,7 +2478,7 @@ Partial Class HeadQHome
         Me.pctBColorRGB.Size = New System.Drawing.Size(101, 80)
         Me.pctBColorRGB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctBColorRGB.TabIndex = 161
-        Me.pctBColorRGB.TabStop = False
+        Me.pctBColorRGB.TabStop = false
         '
         'txtMasseVolumiqueExt
         '
@@ -2572,8 +2489,8 @@ Partial Class HeadQHome
         '
         'Label29
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.AutoSize = true
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label29.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label29.Location = New System.Drawing.Point(15, 235)
         Me.Label29.Name = "Label29"
@@ -2583,17 +2500,17 @@ Partial Class HeadQHome
         '
         'chkBColorFormNameAlt
         '
-        Me.chkBColorFormNameAlt.AutoSize = True
-        Me.chkBColorFormNameAlt.Checked = True
+        Me.chkBColorFormNameAlt.AutoSize = true
+        Me.chkBColorFormNameAlt.Checked = true
         Me.chkBColorFormNameAlt.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkBColorFormNameAlt.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBColorFormNameAlt.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkBColorFormNameAlt.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkBColorFormNameAlt.Location = New System.Drawing.Point(363, 103)
         Me.chkBColorFormNameAlt.Name = "chkBColorFormNameAlt"
         Me.chkBColorFormNameAlt.Size = New System.Drawing.Size(75, 17)
         Me.chkBColorFormNameAlt.TabIndex = 158
         Me.chkBColorFormNameAlt.Text = "Contains"
-        Me.chkBColorFormNameAlt.UseVisualStyleBackColor = True
+        Me.chkBColorFormNameAlt.UseVisualStyleBackColor = true
         '
         'txtBColorNameFormAlt
         '
@@ -2604,8 +2521,8 @@ Partial Class HeadQHome
         '
         'lbBColorNameFormAlt
         '
-        Me.lbBColorNameFormAlt.AutoSize = True
-        Me.lbBColorNameFormAlt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbBColorNameFormAlt.AutoSize = true
+        Me.lbBColorNameFormAlt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbBColorNameFormAlt.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbBColorNameFormAlt.Location = New System.Drawing.Point(16, 101)
         Me.lbBColorNameFormAlt.Name = "lbBColorNameFormAlt"
@@ -2616,27 +2533,27 @@ Partial Class HeadQHome
         'butReportAll
         '
         Me.butReportAll.BackColor = System.Drawing.SystemColors.Control
-        Me.butReportAll.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.butReportAll.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.butReportAll.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.butReportAll.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.butReportAll.Location = New System.Drawing.Point(448, 106)
         Me.butReportAll.Name = "butReportAll"
         Me.butReportAll.Size = New System.Drawing.Size(113, 89)
         Me.butReportAll.TabIndex = 155
         Me.butReportAll.Text = "Report all basic colors"
-        Me.butReportAll.UseVisualStyleBackColor = False
+        Me.butReportAll.UseVisualStyleBackColor = false
         '
         'butClearBColor
         '
-        Me.butClearBColor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.butClearBColor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.butClearBColor.BackColor = System.Drawing.SystemColors.Control
-        Me.butClearBColor.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butClearBColor.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butClearBColor.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butClearBColor.Location = New System.Drawing.Point(1040, 22)
         Me.butClearBColor.Name = "butClearBColor"
         Me.butClearBColor.Size = New System.Drawing.Size(113, 79)
         Me.butClearBColor.TabIndex = 154
         Me.butClearBColor.Text = "Clear"
-        Me.butClearBColor.UseVisualStyleBackColor = False
+        Me.butClearBColor.UseVisualStyleBackColor = false
         '
         'txtMasseVolumique
         '
@@ -2647,8 +2564,8 @@ Partial Class HeadQHome
         '
         'Label25
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.AutoSize = true
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label25.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label25.Location = New System.Drawing.Point(15, 201)
         Me.Label25.Name = "Label25"
@@ -2659,7 +2576,7 @@ Partial Class HeadQHome
         'cmbUnit
         '
         Me.cmbUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbUnit.FormattingEnabled = True
+        Me.cmbUnit.FormattingEnabled = true
         Me.cmbUnit.Items.AddRange(New Object() {"2.5L", "Gallon", "Liter", "500ML"})
         Me.cmbUnit.Location = New System.Drawing.Point(343, 162)
         Me.cmbUnit.Name = "cmbUnit"
@@ -2668,7 +2585,7 @@ Partial Class HeadQHome
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label4.Location = New System.Drawing.Point(324, 165)
         Me.Label4.Name = "Label4"
@@ -2678,17 +2595,17 @@ Partial Class HeadQHome
         '
         'chkBColorFormCode
         '
-        Me.chkBColorFormCode.AutoSize = True
-        Me.chkBColorFormCode.Checked = True
+        Me.chkBColorFormCode.AutoSize = true
+        Me.chkBColorFormCode.Checked = true
         Me.chkBColorFormCode.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkBColorFormCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBColorFormCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkBColorFormCode.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkBColorFormCode.Location = New System.Drawing.Point(363, 45)
         Me.chkBColorFormCode.Name = "chkBColorFormCode"
         Me.chkBColorFormCode.Size = New System.Drawing.Size(75, 17)
         Me.chkBColorFormCode.TabIndex = 121
         Me.chkBColorFormCode.Text = "Contains"
-        Me.chkBColorFormCode.UseVisualStyleBackColor = True
+        Me.chkBColorFormCode.UseVisualStyleBackColor = true
         '
         'txtBColorCodeForm
         '
@@ -2699,8 +2616,8 @@ Partial Class HeadQHome
         '
         'Label21
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.AutoSize = true
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label21.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label21.Location = New System.Drawing.Point(16, 43)
         Me.Label21.Name = "Label21"
@@ -2712,35 +2629,35 @@ Partial Class HeadQHome
         '
         Me.txtfnamehideenColor.Location = New System.Drawing.Point(343, 270)
         Me.txtfnamehideenColor.Name = "txtfnamehideenColor"
-        Me.txtfnamehideenColor.ReadOnly = True
+        Me.txtfnamehideenColor.ReadOnly = true
         Me.txtfnamehideenColor.Size = New System.Drawing.Size(101, 23)
         Me.txtfnamehideenColor.TabIndex = 118
-        Me.txtfnamehideenColor.Visible = False
+        Me.txtfnamehideenColor.Visible = false
         '
         'butFindBColorImg
         '
         Me.butFindBColorImg.BackColor = System.Drawing.SystemColors.Control
-        Me.butFindBColorImg.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butFindBColorImg.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butFindBColorImg.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butFindBColorImg.Location = New System.Drawing.Point(302, 270)
         Me.butFindBColorImg.Name = "butFindBColorImg"
         Me.butFindBColorImg.Size = New System.Drawing.Size(35, 23)
         Me.butFindBColorImg.TabIndex = 117
         Me.butFindBColorImg.Text = " -- "
-        Me.butFindBColorImg.UseVisualStyleBackColor = False
+        Me.butFindBColorImg.UseVisualStyleBackColor = false
         '
         'txtBColorImgPath
         '
         Me.txtBColorImgPath.Location = New System.Drawing.Point(138, 270)
         Me.txtBColorImgPath.Name = "txtBColorImgPath"
-        Me.txtBColorImgPath.ReadOnly = True
+        Me.txtBColorImgPath.ReadOnly = true
         Me.txtBColorImgPath.Size = New System.Drawing.Size(154, 23)
         Me.txtBColorImgPath.TabIndex = 116
         '
         'Label17
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.AutoSize = true
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label17.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label17.Location = New System.Drawing.Point(16, 270)
         Me.Label17.Name = "Label17"
@@ -2750,8 +2667,8 @@ Partial Class HeadQHome
         '
         'Label16
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.AutoSize = true
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label16.Location = New System.Drawing.Point(16, 320)
         Me.Label16.Name = "Label16"
@@ -2768,7 +2685,7 @@ Partial Class HeadQHome
         Me.pctBColorImg.Size = New System.Drawing.Size(101, 80)
         Me.pctBColorImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctBColorImg.TabIndex = 113
-        Me.pctBColorImg.TabStop = False
+        Me.pctBColorImg.TabStop = false
         '
         'txtPriceBcolorForm
         '
@@ -2779,8 +2696,8 @@ Partial Class HeadQHome
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.AutoSize = true
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label11.Location = New System.Drawing.Point(16, 162)
         Me.Label11.Name = "Label11"
@@ -2790,10 +2707,10 @@ Partial Class HeadQHome
         '
         'lbCurrencyDetailsValue2
         '
-        Me.lbCurrencyDetailsValue2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbCurrencyDetailsValue2.AutoSize = True
-        Me.lbCurrencyDetailsValue2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCurrencyDetailsValue2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lbCurrencyDetailsValue2.AutoSize = true
+        Me.lbCurrencyDetailsValue2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbCurrencyDetailsValue2.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.lbCurrencyDetailsValue2.Location = New System.Drawing.Point(997, 53)
         Me.lbCurrencyDetailsValue2.Name = "lbCurrencyDetailsValue2"
@@ -2803,10 +2720,10 @@ Partial Class HeadQHome
         '
         'Label13
         '
-        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label13.AutoSize = true
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label13.Location = New System.Drawing.Point(924, 53)
         Me.Label13.Name = "Label13"
@@ -2817,64 +2734,64 @@ Partial Class HeadQHome
         'butDeleteBColorForm
         '
         Me.butDeleteBColorForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butDeleteBColorForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butDeleteBColorForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butDeleteBColorForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butDeleteBColorForm.Location = New System.Drawing.Point(686, 22)
         Me.butDeleteBColorForm.Name = "butDeleteBColorForm"
         Me.butDeleteBColorForm.Size = New System.Drawing.Size(113, 78)
         Me.butDeleteBColorForm.TabIndex = 77
         Me.butDeleteBColorForm.Text = "Delete Selected"
-        Me.butDeleteBColorForm.UseVisualStyleBackColor = False
+        Me.butDeleteBColorForm.UseVisualStyleBackColor = false
         '
         'lbIdBColorForm
         '
-        Me.lbIdBColorForm.AutoSize = True
-        Me.lbIdBColorForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbIdBColorForm.AutoSize = true
+        Me.lbIdBColorForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbIdBColorForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbIdBColorForm.Location = New System.Drawing.Point(16, 174)
         Me.lbIdBColorForm.Name = "lbIdBColorForm"
         Me.lbIdBColorForm.Size = New System.Drawing.Size(20, 15)
         Me.lbIdBColorForm.TabIndex = 76
         Me.lbIdBColorForm.Text = "-1"
-        Me.lbIdBColorForm.Visible = False
+        Me.lbIdBColorForm.Visible = false
         '
         'butEditBColorForm
         '
         Me.butEditBColorForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butEditBColorForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butEditBColorForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butEditBColorForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butEditBColorForm.Location = New System.Drawing.Point(567, 22)
         Me.butEditBColorForm.Name = "butEditBColorForm"
         Me.butEditBColorForm.Size = New System.Drawing.Size(113, 78)
         Me.butEditBColorForm.TabIndex = 75
         Me.butEditBColorForm.Text = "Edit Selected"
-        Me.butEditBColorForm.UseVisualStyleBackColor = False
+        Me.butEditBColorForm.UseVisualStyleBackColor = false
         '
         'butAddBColor
         '
         Me.butAddBColor.BackColor = System.Drawing.SystemColors.Control
-        Me.butAddBColor.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butAddBColor.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butAddBColor.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butAddBColor.Location = New System.Drawing.Point(448, 22)
         Me.butAddBColor.Name = "butAddBColor"
         Me.butAddBColor.Size = New System.Drawing.Size(113, 78)
         Me.butAddBColor.TabIndex = 71
         Me.butAddBColor.Text = "Add New"
-        Me.butAddBColor.UseVisualStyleBackColor = False
+        Me.butAddBColor.UseVisualStyleBackColor = false
         '
         'chkBColorFormName
         '
-        Me.chkBColorFormName.AutoSize = True
-        Me.chkBColorFormName.Checked = True
+        Me.chkBColorFormName.AutoSize = true
+        Me.chkBColorFormName.Checked = true
         Me.chkBColorFormName.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkBColorFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBColorFormName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.chkBColorFormName.ForeColor = System.Drawing.SystemColors.ControlText
         Me.chkBColorFormName.Location = New System.Drawing.Point(363, 74)
         Me.chkBColorFormName.Name = "chkBColorFormName"
         Me.chkBColorFormName.Size = New System.Drawing.Size(75, 17)
         Me.chkBColorFormName.TabIndex = 70
         Me.chkBColorFormName.Text = "Contains"
-        Me.chkBColorFormName.UseVisualStyleBackColor = True
+        Me.chkBColorFormName.UseVisualStyleBackColor = true
         '
         'txtBColorNameForm
         '
@@ -2885,8 +2802,8 @@ Partial Class HeadQHome
         '
         'lbBColorNameForm
         '
-        Me.lbBColorNameForm.AutoSize = True
-        Me.lbBColorNameForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbBColorNameForm.AutoSize = true
+        Me.lbBColorNameForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lbBColorNameForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lbBColorNameForm.Location = New System.Drawing.Point(16, 72)
         Me.lbBColorNameForm.Name = "lbBColorNameForm"
@@ -2896,20 +2813,20 @@ Partial Class HeadQHome
         '
         'lsvBColors
         '
-        Me.lsvBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lsvBColors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lsvBColors.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cidBColor, Me.ColumnHeader2, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader9, Me.ColumnHeader14})
-        Me.lsvBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lsvBColors.FullRowSelect = True
-        Me.lsvBColors.GridLines = True
-        Me.lsvBColors.HideSelection = False
+        Me.lsvBColors.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lsvBColors.FullRowSelect = true
+        Me.lsvBColors.GridLines = true
+        Me.lsvBColors.HideSelection = false
         Me.lsvBColors.Location = New System.Drawing.Point(8, 395)
-        Me.lsvBColors.MultiSelect = False
+        Me.lsvBColors.MultiSelect = false
         Me.lsvBColors.Name = "lsvBColors"
         Me.lsvBColors.Size = New System.Drawing.Size(1145, 250)
         Me.lsvBColors.TabIndex = 55
-        Me.lsvBColors.UseCompatibleStateImageBehavior = False
+        Me.lsvBColors.UseCompatibleStateImageBehavior = false
         Me.lsvBColors.View = System.Windows.Forms.View.Details
         '
         'cidBColor
@@ -2955,14 +2872,14 @@ Partial Class HeadQHome
         'butSearchBColorForm
         '
         Me.butSearchBColorForm.BackColor = System.Drawing.SystemColors.Control
-        Me.butSearchBColorForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butSearchBColorForm.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butSearchBColorForm.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butSearchBColorForm.Location = New System.Drawing.Point(805, 22)
         Me.butSearchBColorForm.Name = "butSearchBColorForm"
         Me.butSearchBColorForm.Size = New System.Drawing.Size(113, 78)
         Me.butSearchBColorForm.TabIndex = 9
         Me.butSearchBColorForm.Text = "Find"
-        Me.butSearchBColorForm.UseVisualStyleBackColor = False
+        Me.butSearchBColorForm.UseVisualStyleBackColor = false
         '
         'tbUpdate
         '
@@ -2973,13 +2890,13 @@ Partial Class HeadQHome
         Me.tbUpdate.Size = New System.Drawing.Size(1187, 657)
         Me.tbUpdate.TabIndex = 5
         Me.tbUpdate.Text = "Update"
-        Me.tbUpdate.UseVisualStyleBackColor = True
+        Me.tbUpdate.UseVisualStyleBackColor = true
         '
         'GroupBox3
         '
-        Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.Controls.Add(Me.butClearUpdate)
         Me.GroupBox3.Controls.Add(Me.butBrowseUpdate)
         Me.GroupBox3.Controls.Add(Me.Label12)
@@ -2989,38 +2906,38 @@ Partial Class HeadQHome
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(702, 187)
         Me.GroupBox3.TabIndex = 89
-        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.TabStop = false
         '
         'butClearUpdate
         '
-        Me.butClearUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.butClearUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.butClearUpdate.BackColor = System.Drawing.SystemColors.Control
-        Me.butClearUpdate.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butClearUpdate.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butClearUpdate.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butClearUpdate.Location = New System.Drawing.Point(583, 116)
         Me.butClearUpdate.Name = "butClearUpdate"
         Me.butClearUpdate.Size = New System.Drawing.Size(113, 57)
         Me.butClearUpdate.TabIndex = 155
         Me.butClearUpdate.Text = "Clear"
-        Me.butClearUpdate.UseVisualStyleBackColor = False
+        Me.butClearUpdate.UseVisualStyleBackColor = false
         '
         'butBrowseUpdate
         '
-        Me.butBrowseUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.butBrowseUpdate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.butBrowseUpdate.BackColor = System.Drawing.SystemColors.Control
-        Me.butBrowseUpdate.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butBrowseUpdate.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butBrowseUpdate.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butBrowseUpdate.Location = New System.Drawing.Point(659, 18)
         Me.butBrowseUpdate.Name = "butBrowseUpdate"
         Me.butBrowseUpdate.Size = New System.Drawing.Size(37, 26)
         Me.butBrowseUpdate.TabIndex = 88
         Me.butBrowseUpdate.Text = "--"
-        Me.butBrowseUpdate.UseVisualStyleBackColor = False
+        Me.butBrowseUpdate.UseVisualStyleBackColor = false
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.AutoSize = true
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label12.Location = New System.Drawing.Point(13, 20)
         Me.Label12.Name = "Label12"
@@ -3030,41 +2947,41 @@ Partial Class HeadQHome
         '
         'txtUpdatePath
         '
-        Me.txtUpdatePath.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtUpdatePath.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtUpdatePath.Location = New System.Drawing.Point(104, 18)
         Me.txtUpdatePath.Name = "txtUpdatePath"
-        Me.txtUpdatePath.ReadOnly = True
+        Me.txtUpdatePath.ReadOnly = true
         Me.txtUpdatePath.Size = New System.Drawing.Size(549, 23)
         Me.txtUpdatePath.TabIndex = 86
         '
         'butUpdateFile
         '
-        Me.butUpdateFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.butUpdateFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.butUpdateFile.BackColor = System.Drawing.SystemColors.Control
-        Me.butUpdateFile.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butUpdateFile.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butUpdateFile.ForeColor = System.Drawing.SystemColors.ControlText
         Me.butUpdateFile.Location = New System.Drawing.Point(215, 117)
         Me.butUpdateFile.Name = "butUpdateFile"
         Me.butUpdateFile.Size = New System.Drawing.Size(303, 57)
         Me.butUpdateFile.TabIndex = 85
         Me.butUpdateFile.Text = "Generate Update File"
-        Me.butUpdateFile.UseVisualStyleBackColor = False
+        Me.butUpdateFile.UseVisualStyleBackColor = false
         '
         'butExit
         '
-        Me.butExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.butExit.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.butExit.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.butExit.Location = New System.Drawing.Point(1134, 715)
         Me.butExit.Name = "butExit"
         Me.butExit.Size = New System.Drawing.Size(73, 26)
         Me.butExit.TabIndex = 62
         Me.butExit.Text = "Exit"
-        Me.butExit.UseVisualStyleBackColor = True
+        Me.butExit.UseVisualStyleBackColor = true
         '
         'MenuStrip2
         '
-        Me.MenuStrip2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip2.Font = New System.Drawing.Font("Tahoma", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem3})
         Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip2.Name = "MenuStrip2"
@@ -3111,78 +3028,86 @@ Partial Class HeadQHome
         '
         'prgBar
         '
-        Me.prgBar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.prgBar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left),System.Windows.Forms.AnchorStyles)
         Me.prgBar.Location = New System.Drawing.Point(12, 718)
         Me.prgBar.Name = "prgBar"
         Me.prgBar.Size = New System.Drawing.Size(1111, 23)
         Me.prgBar.TabIndex = 63
-        Me.prgBar.Visible = False
+        Me.prgBar.Visible = false
         '
-        'cmodcredate
+        'rdApply1
         '
-        Me.cmodcredate.Text = "Mod/Cre. Date"
-        Me.cmodcredate.Width = 114
+        Me.rdApply1.AutoSize = true
+        Me.rdApply1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.rdApply1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.rdApply1.Location = New System.Drawing.Point(81, 12)
+        Me.rdApply1.Name = "rdApply1"
+        Me.rdApply1.Size = New System.Drawing.Size(109, 17)
+        Me.rdApply1.TabIndex = 9
+        Me.rdApply1.TabStop = true
+        Me.rdApply1.Text = "Apply equation"
+        Me.rdApply1.UseVisualStyleBackColor = true
         '
         'HeadQHome
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1219, 742)
         Me.Controls.Add(Me.prgBar)
         Me.Controls.Add(Me.butExit)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Controls.Add(Me.tbTabs)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(1235, 726)
         Me.Name = "HeadQHome"
         Me.Text = "HeadQuarters"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.tbTabs.ResumeLayout(False)
-        Me.tbFormulas.ResumeLayout(False)
-        Me.grpFormulas.ResumeLayout(False)
-        Me.grpFormulas.PerformLayout()
-        Me.grpXY.ResumeLayout(False)
-        Me.grpXY.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.tbCars.ResumeLayout(False)
-        Me.grpCars.ResumeLayout(False)
-        Me.grpCars.PerformLayout()
-        CType(Me.pctCarImg, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tbLanguage.ResumeLayout(False)
-        Me.grpLanguageForm.ResumeLayout(False)
-        Me.grpLanguageForm.PerformLayout()
-        Me.tbGarages.ResumeLayout(False)
-        Me.grpGarageForm.ResumeLayout(False)
-        Me.grpGarageForm.PerformLayout()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
-        Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox6.PerformLayout()
-        CType(Me.pctThemeColor, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.grpradio.ResumeLayout(False)
-        Me.grpradio.PerformLayout()
-        CType(Me.pctGarageImg, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.tbColors.ResumeLayout(False)
-        Me.grpBColors.ResumeLayout(False)
-        Me.grpBColors.PerformLayout()
-        CType(Me.pctBColorRGB, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pctBColorImg, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tbUpdate.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.MenuStrip2.ResumeLayout(False)
-        Me.MenuStrip2.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.tbTabs.ResumeLayout(false)
+        Me.tbFormulas.ResumeLayout(false)
+        Me.grpFormulas.ResumeLayout(false)
+        Me.grpFormulas.PerformLayout
+        Me.grpXY.ResumeLayout(false)
+        Me.grpXY.PerformLayout
+        Me.GroupBox1.ResumeLayout(false)
+        Me.GroupBox1.PerformLayout
+        Me.tbCars.ResumeLayout(false)
+        Me.grpCars.ResumeLayout(false)
+        Me.grpCars.PerformLayout
+        CType(Me.pctCarImg,System.ComponentModel.ISupportInitialize).EndInit
+        Me.tbLanguage.ResumeLayout(false)
+        Me.grpLanguageForm.ResumeLayout(false)
+        Me.grpLanguageForm.PerformLayout
+        Me.tbGarages.ResumeLayout(false)
+        Me.grpGarageForm.ResumeLayout(false)
+        Me.grpGarageForm.PerformLayout
+        Me.GroupBox7.ResumeLayout(false)
+        Me.GroupBox7.PerformLayout
+        Me.GroupBox6.ResumeLayout(false)
+        Me.GroupBox6.PerformLayout
+        CType(Me.pctThemeColor,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox5.ResumeLayout(false)
+        Me.GroupBox5.PerformLayout
+        Me.GroupBox4.ResumeLayout(false)
+        Me.GroupBox4.PerformLayout
+        Me.grpradio.ResumeLayout(false)
+        Me.grpradio.PerformLayout
+        CType(Me.pctGarageImg,System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox2.ResumeLayout(false)
+        Me.GroupBox2.PerformLayout
+        Me.tbColors.ResumeLayout(false)
+        Me.grpBColors.ResumeLayout(false)
+        Me.grpBColors.PerformLayout
+        CType(Me.pctBColorRGB,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.pctBColorImg,System.ComponentModel.ISupportInitialize).EndInit
+        Me.tbUpdate.ResumeLayout(false)
+        Me.GroupBox3.ResumeLayout(false)
+        Me.GroupBox3.PerformLayout
+        Me.MenuStrip2.ResumeLayout(false)
+        Me.MenuStrip2.PerformLayout
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
 
     Friend WithEvents tbTabs As System.Windows.Forms.TabControl
     Friend WithEvents tbFormulas As System.Windows.Forms.TabPage
@@ -3386,8 +3311,6 @@ Partial Class HeadQHome
     Friend WithEvents txtBasicColor As HeadQApplication.MyTextBox
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents grpradio As System.Windows.Forms.GroupBox
-    Friend WithEvents rdApply1 As System.Windows.Forms.RadioButton
-    Friend WithEvents rdApply2 As System.Windows.Forms.RadioButton
     Friend WithEvents rdApply0 As System.Windows.Forms.RadioButton
     Friend WithEvents lbAttention As System.Windows.Forms.Label
     Friend WithEvents chkversion As System.Windows.Forms.CheckBox
@@ -3400,7 +3323,6 @@ Partial Class HeadQHome
     Friend WithEvents rdGarageLS As System.Windows.Forms.RadioButton
     Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents cgcoat As System.Windows.Forms.ColumnHeader
-    Friend WithEvents rdApply3 As System.Windows.Forms.RadioButton
     Friend WithEvents butReportAll As System.Windows.Forms.Button
     Friend WithEvents chkBColorFormNameAlt As System.Windows.Forms.CheckBox
     Friend WithEvents txtBColorNameFormAlt As HeadQApplication.MyTextBox
@@ -3414,7 +3336,6 @@ Partial Class HeadQHome
     Friend WithEvents chktel As System.Windows.Forms.CheckBox
     Friend WithEvents txttel As HeadQApplication.MyTextBox
     Friend WithEvents Label30 As System.Windows.Forms.Label
-    Friend WithEvents rdApply4 As System.Windows.Forms.RadioButton
     Friend WithEvents pctBColorRGB As System.Windows.Forms.PictureBox
     Friend WithEvents dlgBasicColorDialog As System.Windows.Forms.ColorDialog
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
@@ -3424,7 +3345,6 @@ Partial Class HeadQHome
     Friend WithEvents butInstallMobile As System.Windows.Forms.Button
     Friend WithEvents Label33 As System.Windows.Forms.Label
     Friend WithEvents pctThemeColor As System.Windows.Forms.PictureBox
-    Friend WithEvents chkApply5 As System.Windows.Forms.CheckBox
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
     Friend WithEvents rdShowAltNone As System.Windows.Forms.RadioButton
     Friend WithEvents rdShowAlternative As System.Windows.Forms.RadioButton
@@ -3436,7 +3356,6 @@ Partial Class HeadQHome
     Friend WithEvents txtusername As HeadQApplication.MyTextBox
     Friend WithEvents Label35 As System.Windows.Forms.Label
     Friend WithEvents MobileSyncToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents chkApply6 As System.Windows.Forms.CheckBox
     Friend WithEvents butNegativeQty As System.Windows.Forms.Button
     Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
     Friend WithEvents butBrowseHqDirectory As System.Windows.Forms.Button
@@ -3445,4 +3364,5 @@ Partial Class HeadQHome
     Friend WithEvents butConvertToHQ As System.Windows.Forms.Button
     Friend WithEvents lbHqConversionProgress As System.Windows.Forms.Label
     Friend WithEvents cmodcredate As System.Windows.Forms.ColumnHeader
+    Friend WithEvents rdApply1 As System.Windows.Forms.RadioButton
 End Class

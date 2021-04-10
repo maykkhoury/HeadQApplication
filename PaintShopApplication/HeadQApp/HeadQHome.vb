@@ -1688,18 +1688,6 @@ Public Class HeadQHome
             Dim applyEq As String = "0"
             If rdApply1.Checked Then
                 applyEq = "1"
-            Else
-                If rdApply2.Checked Then
-                    applyEq = "2"
-                Else
-                    If rdApply3.Checked Then
-                        applyEq = "3"
-                    Else
-                        If rdApply4.Checked Then
-                            applyEq = "4"
-                        End If
-                    End If
-                End If
             End If
             Dim coat As String = "2K"
             If rdGarageLS.Checked Then
@@ -1712,11 +1700,6 @@ Public Class HeadQHome
             If rdShowAlternative2.Checked Then
                 showAlternative = "2"
             End If
-            Dim applyEq5 As Boolean = chkApply5.Checked
-            applyEq = applyEq & "+" & applyEq5
-
-            Dim applyEq6 As Boolean = chkApply6.Checked
-            applyEq = applyEq & "eq6" & applyEq6
             'validate key uniquness
             Dim keyExist As Boolean = False
             Dim foundGarages() As Garage = getGarageByKey(txtkey.Text)
@@ -1992,18 +1975,7 @@ Public Class HeadQHome
             Dim applyEq As String = "0"
             If rdApply1.Checked Then
                 applyEq = "1"
-            Else
-                If rdApply2.Checked Then
-                    applyEq = "2"
-                Else
-                    If rdApply3.Checked Then
-                        applyEq = "3"
-                    Else
-                        If rdApply4.Checked Then
-                            applyEq = "4"
-                        End If
-                    End If
-                End If
+           
             End If
             Dim coat As String = "2K"
             If rdGarageLS.Checked Then
@@ -2017,10 +1989,7 @@ Public Class HeadQHome
             If rdShowAlternative2.Checked Then
                 showAlternative = "2"
             End If
-            applyEq = applyEq & "+" & chkApply5.Checked
-
-            Dim applyEq6 As Boolean = chkApply6.Checked
-            applyEq = applyEq & "eq6" & applyEq6
+           
 
             'validate key uniquness
             Dim keyExist As Boolean = False
@@ -2082,20 +2051,7 @@ Public Class HeadQHome
         
             If lsvGarage.SelectedItems(0).SubItems(6).Text = "Eq. applied" Then
                 rdApply1.Checked = True
-            Else
-                If lsvGarage.SelectedItems(0).SubItems(6).Text = "Extended Eq. applied" Then
-                    rdApply2.Checked = True
-                Else
-                    If lsvGarage.SelectedItems(0).SubItems(6).Text = "Extended +" Then
-                        rdApply4.Checked = True
-                    Else
-                        If lsvGarage.SelectedItems(0).SubItems(6).Text = "no 4581-91 Eq. applied" Then
-                            rdApply3.Checked = True
-                        Else
-                            rdApply0.Checked = True
-                        End If
-                    End If
-                End If
+           
             End If
 
             txtversion.Text = lsvGarage.SelectedItems(0).SubItems(7).Text
@@ -2129,8 +2085,7 @@ Public Class HeadQHome
             End If
 
         End If
-        chkApply5.Checked = theGarage.apply_equation5
-        chkApply6.Checked = theGarage.apply_equation6
+       
         Try
             imageToPreview = Image.FromFile(imgPath)
             'pctCarImg.Image = imageToPreview
