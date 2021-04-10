@@ -2360,13 +2360,20 @@ Public Class HeadQHome
         Dim newId_formulaColor As Integer = getLastInsertedFormulaColorId(specificConString) + 1
 
         Dim formulaIdToDeleteArray As New ArrayList
-
+        Dim lastOldIdFormulaColor As Integer = -1
         Dim indexFormula As Integer = 0
+        Dim keepContinue As Boolean = True
+        Dim limitIdFormula As Integer = 51552
         For Each formula In allFormulas
             indexFormula += 1
-            If indexFormula > 50 Then
-                'Exit For
 
+            If limitIdFormula = formula.id_formula Then
+                keepContinue = False
+
+            End If
+
+            If keepContinue Then
+               ' Continue For
             End If
             lbHqConversionProgress.Text = indexFormula & " of " & allFormulas.Length
 
@@ -2477,6 +2484,10 @@ Public Class HeadQHome
             End If
 
             If formulaColorTab.Length > 0 Then
+                If formulaColorTab(formulaColorTab.Length - 1).id_formulaColor > lastOldIdFormulaColor Then
+                    lastOldIdFormulaColor = formulaColorTab(formulaColorTab.Length - 1).id_formulaColor
+                End If
+
                 Starttime = DateTime.Now
                 'deleteFromFormulaColorSpecificDB(formula.id_formula, specificConString)
                 'deleteFromFormulaColorSpecificDBDAO(formula.id_formula, dbFileLocation)
@@ -2487,8 +2498,8 @@ Public Class HeadQHome
                 Starttime = DateTime.Now
                 For i = 0 To formulaColorTab.Length - 1
                     newId_formulaColor += 1
-                    If Not insertIntoFormulaColorSpecificDBDAO(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, dbFileLocation) Then
-                        'If Not insertIntoFormulaColorSpecificDB(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, specificConString) Then
+                    'If Not insertIntoFormulaColorSpecificDBDAO(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, dbFileLocation) Then
+                    If Not insertIntoFormulaColorSpecificDB(newId_formulaColor, formulaColorTab(i).id_formula, formulaColorTab(i).id_color, formulaColorTab(i).quantite, formulaColorTab(i).id_Unit, specificConString) Then
                         MsgBox("problem setting color '" & formulaColorTab(i).id_color & "' to formula '" & formulaColorTab(i).id_formula & "'")
                         Me.Enabled = True
                         Exit Sub
@@ -2507,10 +2518,16 @@ Public Class HeadQHome
             Console.WriteLine("-------------All time:" & timePassedAll.ToString)
         Next
 
+        Dim timePassedDelete As TimeSpan
+        Dim StarttimeDelete As DateTime = DateTime.Now
+        Dim EndTimeDelete As DateTime
+        StarttimeDelete = DateTime.Now
         'delete formula colors
         Dim inSql As String = ""
         Dim inSqlIndex As Integer = 0
         For Each formulaId In formulaIdToDeleteArray
+            'deleteFromFormulaColorSpecificDBDAO("(" & formulaId & ")", dbFileLocation)
+
             If inSqlIndex = 0 Then
                 inSql = "("
             End If
@@ -2524,13 +2541,10 @@ Public Class HeadQHome
 
             inSqlIndex += 1
         Next
-        Dim timePassedDelete As TimeSpan
-        Dim StarttimeDelete As DateTime = DateTime.Now
-        Dim EndTimeDelete As DateTime
-
-
-        StarttimeDelete = DateTime.Now
-        deleteFromFormulaColorSpecificDBDAO(inSql, dbFileLocation)
+        Console.WriteLine("formulasColorMax old id to delete:" & lastOldIdFormulaColor)
+        Console.WriteLine("formulas to delete sql:" & inSql)
+        deleteFromFormulaColorSpecificDBWhere(" where id_formulaColor<=" & lastOldIdFormulaColor, specificConString)
+        
         EndTimeDelete = DateTime.Now
 
         timePassedDelete = EndTimeDelete - StarttimeDelete

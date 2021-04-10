@@ -905,6 +905,22 @@ Module dbNonQueries
 
     End Function
 
+    Public Function deleteFromFormulaColorSpecificDBWhere(ByVal whereStr As String, ByVal specificConString As String) As Boolean
+        openSpecificConnection(specificConString)
+        Dim SQLstr As String = String.Format("DELETE FROM [formulaColor] " & whereStr)
+        Dim Command2 As New OleDb.OleDbCommand(SQLstr, specifDB)
+
+        Dim icount2 As Integer = Command2.ExecuteNonQuery()
+        If icount2 > 0 Then
+            deleteFromFormulaColorSpecificDBWhere = True
+            'insertIntoUpdateTable(SQLstr, "DELETE")
+        Else
+            deleteFromFormulaColorSpecificDBWhere = False
+        End If
+        closeSpecificConnection()
+
+    End Function
+
 #End Region
 
 #Region "Cars"
