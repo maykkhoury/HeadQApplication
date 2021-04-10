@@ -28,27 +28,36 @@ Partial Class edit
         Me.chkApplyEquation = New System.Windows.Forms.CheckBox()
         Me.butExit = New System.Windows.Forms.Button()
         Me.spltColor = New System.Windows.Forms.SplitContainer()
+        Me.txtColorsDetailHidden = New HeadQApplication.MyTextBox()
         Me.pctColorDetailHidden = New System.Windows.Forms.PictureBox()
         Me.lbColorDetails = New System.Windows.Forms.Label()
         Me.butAddHidden = New System.Windows.Forms.Button()
         Me.lbQuantity = New System.Windows.Forms.Label()
+        Me.txtQuantityDetailHidden = New HeadQApplication.MyTextBox()
         Me.butDeleteHidden = New System.Windows.Forms.Button()
         Me.grpEditFormula = New System.Windows.Forms.GroupBox()
+        Me.lbAsteriks = New System.Windows.Forms.Label()
         Me.lbMultiplyBy = New System.Windows.Forms.Label()
         Me.chkEquation4201_180 = New System.Windows.Forms.CheckBox()
         Me.butMultiply = New System.Windows.Forms.Button()
+        Me.txtModDate = New HeadQApplication.MyTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.chkMajdi4conv = New System.Windows.Forms.CheckBox()
         Me.chkClearLs = New System.Windows.Forms.CheckBox()
         Me.chkMajdi = New System.Windows.Forms.CheckBox()
+        Me.txtLSConv = New HeadQApplication.MyTextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lbEquation = New System.Windows.Forms.Label()
         Me.chkEquation15perc4201 = New System.Windows.Forms.CheckBox()
         Me.butAddCar = New System.Windows.Forms.Button()
         Me.lbVariants = New System.Windows.Forms.Label()
+        Me.txtCardNumber = New HeadQApplication.MyTextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtFormulaCode = New HeadQApplication.MyTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtYearMax = New HeadQApplication.MyTextBox()
+        Me.txtYearMin = New HeadQApplication.MyTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.pctFormulaColor = New System.Windows.Forms.PictureBox()
         Me.pctCarImgDetails = New System.Windows.Forms.PictureBox()
@@ -74,15 +83,6 @@ Partial Class edit
         Me.butValidateHidden = New System.Windows.Forms.Button()
         Me.dlgColor = New System.Windows.Forms.ColorDialog()
         Me.ToolTipVariant = New System.Windows.Forms.ToolTip(Me.components)
-        Me.txtColorsDetailHidden = New HeadQApplication.MyTextBox()
-        Me.txtQuantityDetailHidden = New HeadQApplication.MyTextBox()
-        Me.txtModDate = New HeadQApplication.MyTextBox()
-        Me.txtLSConv = New HeadQApplication.MyTextBox()
-        Me.txtCardNumber = New HeadQApplication.MyTextBox()
-        Me.txtFormulaCode = New HeadQApplication.MyTextBox()
-        Me.txtYearMax = New HeadQApplication.MyTextBox()
-        Me.txtYearMin = New HeadQApplication.MyTextBox()
-        Me.lbAsteriks = New System.Windows.Forms.Label()
         Me.grpEdit.SuspendLayout()
         Me.spltColor.Panel1.SuspendLayout()
         Me.spltColor.Panel2.SuspendLayout()
@@ -178,6 +178,17 @@ Partial Class edit
         Me.spltColor.SplitterWidth = 1
         Me.spltColor.TabIndex = 151
         '
+        'txtColorsDetailHidden
+        '
+        Me.txtColorsDetailHidden.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtColorsDetailHidden.Location = New System.Drawing.Point(68, 36)
+        Me.txtColorsDetailHidden.Name = "txtColorsDetailHidden"
+        Me.txtColorsDetailHidden.ReadOnly = True
+        Me.txtColorsDetailHidden.Size = New System.Drawing.Size(1226, 23)
+        Me.txtColorsDetailHidden.TabIndex = 91
+        Me.txtColorsDetailHidden.Visible = False
+        '
         'pctColorDetailHidden
         '
         Me.pctColorDetailHidden.InitialImage = Nothing
@@ -225,6 +236,17 @@ Partial Class edit
         Me.lbQuantity.Size = New System.Drawing.Size(59, 15)
         Me.lbQuantity.TabIndex = 89
         Me.lbQuantity.Text = "Quantity"
+        '
+        'txtQuantityDetailHidden
+        '
+        Me.txtQuantityDetailHidden.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtQuantityDetailHidden.Location = New System.Drawing.Point(6, 36)
+        Me.txtQuantityDetailHidden.Name = "txtQuantityDetailHidden"
+        Me.txtQuantityDetailHidden.ReadOnly = True
+        Me.txtQuantityDetailHidden.Size = New System.Drawing.Size(373, 23)
+        Me.txtQuantityDetailHidden.TabIndex = 92
+        Me.txtQuantityDetailHidden.Visible = False
         '
         'butDeleteHidden
         '
@@ -296,6 +318,17 @@ Partial Class edit
         Me.grpEditFormula.TabIndex = 78
         Me.grpEditFormula.TabStop = False
         '
+        'lbAsteriks
+        '
+        Me.lbAsteriks.AutoSize = True
+        Me.lbAsteriks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbAsteriks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lbAsteriks.Location = New System.Drawing.Point(271, 47)
+        Me.lbAsteriks.Name = "lbAsteriks"
+        Me.lbAsteriks.Size = New System.Drawing.Size(16, 20)
+        Me.lbAsteriks.TabIndex = 174
+        Me.lbAsteriks.Text = "*"
+        '
         'lbMultiplyBy
         '
         Me.lbMultiplyBy.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -328,6 +361,15 @@ Partial Class edit
         Me.butMultiply.TabIndex = 155
         Me.butMultiply.Text = "Multiply quantities by"
         Me.butMultiply.UseVisualStyleBackColor = True
+        '
+        'txtModDate
+        '
+        Me.txtModDate.Location = New System.Drawing.Point(289, 45)
+        Me.txtModDate.MaxLength = 30
+        Me.txtModDate.Name = "txtModDate"
+        Me.txtModDate.ReadOnly = True
+        Me.txtModDate.Size = New System.Drawing.Size(210, 20)
+        Me.txtModDate.TabIndex = 172
         '
         'Label9
         '
@@ -372,6 +414,15 @@ Partial Class edit
         Me.chkMajdi.Text = "Majdi %"
         Me.chkMajdi.UseVisualStyleBackColor = True
         Me.chkMajdi.Visible = False
+        '
+        'txtLSConv
+        '
+        Me.txtLSConv.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtLSConv.Location = New System.Drawing.Point(808, 44)
+        Me.txtLSConv.MaxLength = 30
+        Me.txtLSConv.Name = "txtLSConv"
+        Me.txtLSConv.Size = New System.Drawing.Size(115, 20)
+        Me.txtLSConv.TabIndex = 167
         '
         'Label8
         '
@@ -429,6 +480,14 @@ Partial Class edit
         Me.lbVariants.TabIndex = 161
         Me.lbVariants.Text = "+"
         '
+        'txtCardNumber
+        '
+        Me.txtCardNumber.Location = New System.Drawing.Point(605, 45)
+        Me.txtCardNumber.MaxLength = 30
+        Me.txtCardNumber.Name = "txtCardNumber"
+        Me.txtCardNumber.Size = New System.Drawing.Size(129, 20)
+        Me.txtCardNumber.TabIndex = 157
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -437,6 +496,14 @@ Partial Class edit
         Me.Label7.Size = New System.Drawing.Size(82, 13)
         Me.Label7.TabIndex = 156
         Me.Label7.Text = "Card number:"
+        '
+        'txtFormulaCode
+        '
+        Me.txtFormulaCode.Location = New System.Drawing.Point(605, 16)
+        Me.txtFormulaCode.MaxLength = 30
+        Me.txtFormulaCode.Name = "txtFormulaCode"
+        Me.txtFormulaCode.Size = New System.Drawing.Size(129, 20)
+        Me.txtFormulaCode.TabIndex = 155
         '
         'Label6
         '
@@ -456,6 +523,22 @@ Partial Class edit
         Me.Label5.Size = New System.Drawing.Size(11, 13)
         Me.Label5.TabIndex = 153
         Me.Label5.Text = "-"
+        '
+        'txtYearMax
+        '
+        Me.txtYearMax.Location = New System.Drawing.Point(232, 100)
+        Me.txtYearMax.MaxLength = 5
+        Me.txtYearMax.Name = "txtYearMax"
+        Me.txtYearMax.Size = New System.Drawing.Size(74, 20)
+        Me.txtYearMax.TabIndex = 152
+        '
+        'txtYearMin
+        '
+        Me.txtYearMin.Location = New System.Drawing.Point(119, 100)
+        Me.txtYearMin.MaxLength = 5
+        Me.txtYearMin.Name = "txtYearMin"
+        Me.txtYearMin.Size = New System.Drawing.Size(75, 20)
+        Me.txtYearMin.TabIndex = 151
         '
         'Label2
         '
@@ -783,89 +866,6 @@ Partial Class edit
         Me.butValidateHidden.Text = "Validate"
         Me.butValidateHidden.UseVisualStyleBackColor = True
         Me.butValidateHidden.Visible = False
-        '
-        'txtColorsDetailHidden
-        '
-        Me.txtColorsDetailHidden.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtColorsDetailHidden.Location = New System.Drawing.Point(68, 36)
-        Me.txtColorsDetailHidden.Name = "txtColorsDetailHidden"
-        Me.txtColorsDetailHidden.ReadOnly = True
-        Me.txtColorsDetailHidden.Size = New System.Drawing.Size(1226, 23)
-        Me.txtColorsDetailHidden.TabIndex = 91
-        Me.txtColorsDetailHidden.Visible = False
-        '
-        'txtQuantityDetailHidden
-        '
-        Me.txtQuantityDetailHidden.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtQuantityDetailHidden.Location = New System.Drawing.Point(6, 36)
-        Me.txtQuantityDetailHidden.Name = "txtQuantityDetailHidden"
-        Me.txtQuantityDetailHidden.ReadOnly = True
-        Me.txtQuantityDetailHidden.Size = New System.Drawing.Size(373, 23)
-        Me.txtQuantityDetailHidden.TabIndex = 92
-        Me.txtQuantityDetailHidden.Visible = False
-        '
-        'txtModDate
-        '
-        Me.txtModDate.Location = New System.Drawing.Point(289, 45)
-        Me.txtModDate.MaxLength = 30
-        Me.txtModDate.Name = "txtModDate"
-        Me.txtModDate.ReadOnly = True
-        Me.txtModDate.Size = New System.Drawing.Size(210, 20)
-        Me.txtModDate.TabIndex = 172
-        '
-        'txtLSConv
-        '
-        Me.txtLSConv.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtLSConv.Location = New System.Drawing.Point(808, 44)
-        Me.txtLSConv.MaxLength = 30
-        Me.txtLSConv.Name = "txtLSConv"
-        Me.txtLSConv.Size = New System.Drawing.Size(115, 20)
-        Me.txtLSConv.TabIndex = 167
-        '
-        'txtCardNumber
-        '
-        Me.txtCardNumber.Location = New System.Drawing.Point(605, 45)
-        Me.txtCardNumber.MaxLength = 30
-        Me.txtCardNumber.Name = "txtCardNumber"
-        Me.txtCardNumber.Size = New System.Drawing.Size(129, 20)
-        Me.txtCardNumber.TabIndex = 157
-        '
-        'txtFormulaCode
-        '
-        Me.txtFormulaCode.Location = New System.Drawing.Point(605, 16)
-        Me.txtFormulaCode.MaxLength = 30
-        Me.txtFormulaCode.Name = "txtFormulaCode"
-        Me.txtFormulaCode.Size = New System.Drawing.Size(129, 20)
-        Me.txtFormulaCode.TabIndex = 155
-        '
-        'txtYearMax
-        '
-        Me.txtYearMax.Location = New System.Drawing.Point(232, 100)
-        Me.txtYearMax.MaxLength = 5
-        Me.txtYearMax.Name = "txtYearMax"
-        Me.txtYearMax.Size = New System.Drawing.Size(74, 20)
-        Me.txtYearMax.TabIndex = 152
-        '
-        'txtYearMin
-        '
-        Me.txtYearMin.Location = New System.Drawing.Point(119, 100)
-        Me.txtYearMin.MaxLength = 5
-        Me.txtYearMin.Name = "txtYearMin"
-        Me.txtYearMin.Size = New System.Drawing.Size(75, 20)
-        Me.txtYearMin.TabIndex = 151
-        '
-        'lbAsteriks
-        '
-        Me.lbAsteriks.AutoSize = True
-        Me.lbAsteriks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbAsteriks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lbAsteriks.Location = New System.Drawing.Point(271, 47)
-        Me.lbAsteriks.Name = "lbAsteriks"
-        Me.lbAsteriks.Size = New System.Drawing.Size(16, 20)
-        Me.lbAsteriks.TabIndex = 174
-        Me.lbAsteriks.Text = "*"
         '
         'edit
         '
