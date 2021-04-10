@@ -63,14 +63,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HeadQApplication.exe" size="857600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HeadQApplication.exe" size="871424">
       <assemblyIdentity name="HeadQApplication" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>j+HVxgpkwnNwgamdKfJpCBCrOfs=</dsig:DigestValue>
+        <dsig:DigestValue>Gq1zjSgw2eUL9KSP39ivIMzPqq4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.DAO.dll" size="65536">
+      <assemblyIdentity name="Interop.DAO" version="5.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>uBTeSwKiPe/K+i50JVJs9+VP8X8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
