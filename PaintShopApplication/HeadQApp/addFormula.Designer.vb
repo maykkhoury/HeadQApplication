@@ -633,27 +633,25 @@ Partial Class addFormula
         '
         Me.chkMajdi.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.chkMajdi.AutoSize = True
-        Me.chkMajdi.Checked = True
-        Me.chkMajdi.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkMajdi.Location = New System.Drawing.Point(177, 657)
         Me.chkMajdi.Name = "chkMajdi"
         Me.chkMajdi.Size = New System.Drawing.Size(83, 21)
         Me.chkMajdi.TabIndex = 164
         Me.chkMajdi.Text = "Majdi %"
         Me.chkMajdi.UseVisualStyleBackColor = True
+        Me.chkMajdi.Visible = False
         '
         'chkClearLs
         '
         Me.chkClearLs.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.chkClearLs.AutoSize = True
-        Me.chkClearLs.Checked = True
-        Me.chkClearLs.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkClearLs.Location = New System.Drawing.Point(177, 630)
         Me.chkClearLs.Name = "chkClearLs"
         Me.chkClearLs.Size = New System.Drawing.Size(89, 21)
         Me.chkClearLs.TabIndex = 165
         Me.chkClearLs.Text = "Clear LS"
         Me.chkClearLs.UseVisualStyleBackColor = True
+        Me.chkClearLs.Visible = False
         '
         'txtQuantityDetailHidden
         '
