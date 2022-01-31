@@ -522,7 +522,8 @@ Public Class Formula
         End Set
 
     End Property
-    <JsonProperty("id_formulaYp")>
+
+    <JsonProperty("id_formulaYp")>
     Property id_formulaYpStr() As String
         Get
             Return id_formulaYpStrAtt
@@ -532,7 +533,8 @@ Public Class Formula
         End Set
 
     End Property
-    <JsonProperty("id_formulaY2p")>
+
+    <JsonProperty("id_formulaY2p")>
     Property id_formulaY2pStr() As String
         Get
             Return id_formulaY2pStrAtt
@@ -542,7 +544,8 @@ Public Class Formula
         End Set
 
     End Property
-    <JsonProperty("id_formulaZp")>
+
+    <JsonProperty("id_formulaZp")>
     Property id_formulaZpStr() As String
         Get
             Return id_formulaZpStrAtt
@@ -551,7 +554,8 @@ Public Class Formula
             id_formulaZpStrAtt = Value
         End Set
     End Property
-    <JsonProperty("id_formulaZ2p")>
+
+    <JsonProperty("id_formulaZ2p")>
     Property id_formulaZ2pStr() As String
         Get
             Return id_formulaZ2pStrAtt
@@ -560,7 +564,8 @@ Public Class Formula
             id_formulaZ2pStrAtt = Value
         End Set
     End Property
-    <JsonProperty("id_formulaY")>
+
+    <JsonProperty("id_formulaY")>
     Property id_formulaYStr() As String
         Get
             Return id_formulaYStrAtt
@@ -570,7 +575,8 @@ Public Class Formula
         End Set
 
     End Property
-    <JsonProperty("id_formulaX")>
+
+    <JsonProperty("id_formulaX")>
     Property id_formulaXStr() As String
         Get
             Return id_formulaXStrAtt
@@ -579,7 +585,8 @@ Public Class Formula
             id_formulaXStrAtt = Value
         End Set
     End Property
-    <JsonProperty("id_formulaZ")>
+
+    <JsonProperty("id_formulaZ")>
     Property id_formulaZStr() As String
         Get
             Return id_formulaZStrAtt

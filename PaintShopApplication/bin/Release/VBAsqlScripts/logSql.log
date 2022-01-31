@@ -1,0 +1,1716 @@
+12/13/2021 8:03:42 AM: NO RESULT with the query: 
+insert into Color_Cards select * from formula where id_car=(select id_car from car where tableName='Color_Cards')
+12/13/2021 8:04:11 AM: NO RESULT with the query: 
+
+insert into Color_Cards_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=(select id_car from car where tableName='Color_Cards'))
+12/13/2021 8:04:15 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:15 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:15 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:15 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:16 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:17 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:18 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:19 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:20 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:21 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:22 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:23 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:24 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:25 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:26 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:27 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:27 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:27 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:27 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:27 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:27 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:28 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:29 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:30 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:31 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:32 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:33 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Bentley mt INNER JOIN Bentley st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:34 AM: NO RESULT with the query: 
+UPDATE Citroen mt INNER JOIN Citroen st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:35 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Rolls_Royce mt INNER JOIN Rolls_Royce st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Rover mt INNER JOIN Rover st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:36 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Bentley mt INNER JOIN Bentley st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:37 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Chrysler mt INNER JOIN Chrysler st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Citroen mt INNER JOIN Citroen st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Daihatsu mt INNER JOIN Daihatsu st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Fiat mt INNER JOIN Fiat st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Kia mt INNER JOIN Kia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:38 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Mazda mt INNER JOIN Mazda st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Mitsubishi mt INNER JOIN Mitsubishi st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Mitsubishi_Australia mt INNER JOIN Mitsubishi_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Renault mt INNER JOIN Renault st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Rolls_Royce mt INNER JOIN Rolls_Royce st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Rover mt INNER JOIN Rover st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:39 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Subaru mt INNER JOIN Subaru st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Suzuki mt INNER JOIN Suzuki st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Bentley mt INNER JOIN Bentley st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:40 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Chrysler mt INNER JOIN Chrysler st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Citroen mt INNER JOIN Citroen st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Daihatsu mt INNER JOIN Daihatsu st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Fiat mt INNER JOIN Fiat st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Kia mt INNER JOIN Kia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:41 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Mazda mt INNER JOIN Mazda st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Mitsubishi mt INNER JOIN Mitsubishi st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Mitsubishi_Australia mt INNER JOIN Mitsubishi_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Renault mt INNER JOIN Renault st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Rolls_Royce mt INNER JOIN Rolls_Royce st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Rover mt INNER JOIN Rover st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:42 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Subaru mt INNER JOIN Subaru st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Suzuki mt INNER JOIN Suzuki st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+12/13/2021 8:04:43 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:00 AM: NO RESULT with the query: 
+insert into Color_Cards select * from formula where id_car=(select id_car from car where tableName='Color_Cards')
+1/23/2022 12:11:28 AM: NO RESULT with the query: 
+
+insert into Color_Cards_formulaColor select * from formulaColor where id_formula in (select id_formula from formula where id_car=(select id_car from car where tableName='Color_Cards'))
+1/23/2022 12:11:31 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:31 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:32 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:33 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulax = st.id_formula SET mt.code_formulax=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:34 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:35 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:36 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulaxp = st.id_formula SET mt.code_formulaxp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:37 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:38 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:39 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulax2p = st.id_formula SET mt.code_formulaxpp=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:40 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:41 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:42 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulay = st.id_formula SET mt.code_formulay=st.colorCode
+1/23/2022 12:11:43 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:44 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:45 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulayp = st.id_formula SET mt.code_formulayp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:46 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:47 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:48 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulay2p = st.id_formula SET mt.code_formulaypp=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Bentley mt INNER JOIN Bentley st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:49 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Citroen mt INNER JOIN Citroen st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:50 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Rolls_Royce mt INNER JOIN Rolls_Royce st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Rover mt INNER JOIN Rover st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:51 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulaz = st.id_formula SET mt.code_formulaz=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Bentley mt INNER JOIN Bentley st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Chrysler mt INNER JOIN Chrysler st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Citroen mt INNER JOIN Citroen st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:52 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Daihatsu mt INNER JOIN Daihatsu st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Fiat mt INNER JOIN Fiat st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Kia mt INNER JOIN Kia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:53 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Mazda mt INNER JOIN Mazda st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Mitsubishi mt INNER JOIN Mitsubishi st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Mitsubishi_Australia mt INNER JOIN Mitsubishi_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Renault mt INNER JOIN Renault st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Rolls_Royce mt INNER JOIN Rolls_Royce st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Rover mt INNER JOIN Rover st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:54 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Subaru mt INNER JOIN Subaru st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Suzuki mt INNER JOIN Suzuki st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulazp = st.id_formula SET mt.code_formulazp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: UPDATE Alfa_Romeo mt INNER JOIN Alfa_Romeo st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Aston_Martin mt INNER JOIN Aston_Martin st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Bentley mt INNER JOIN Bentley st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Chery mt INNER JOIN Chery st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Chrysler mt INNER JOIN Chrysler st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:55 AM: NO RESULT with the query: 
+UPDATE Citroen mt INNER JOIN Citroen st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Dacia mt INNER JOIN Dacia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Daewoo mt INNER JOIN Daewoo st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Daihatsu mt INNER JOIN Daihatsu st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Ferrari mt INNER JOIN Ferrari st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Fiat mt INNER JOIN Fiat st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Ford_America mt INNER JOIN Ford_America st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Ford_Australia mt INNER JOIN Ford_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Ford_Europe mt INNER JOIN Ford_Europe st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE GM mt INNER JOIN GM st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE GM_Australia mt INNER JOIN GM_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Hino mt INNER JOIN Hino st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Honda mt INNER JOIN Honda st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Hummer mt INNER JOIN Hummer st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Hyundai mt INNER JOIN Hyundai st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Isuzu mt INNER JOIN Isuzu st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Iveco mt INNER JOIN Iveco st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Jaguar mt INNER JOIN Jaguar st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Kia mt INNER JOIN Kia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Kia_Syria mt INNER JOIN Kia_Syria st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Lada mt INNER JOIN Lada st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Lamborghini mt INNER JOIN Lamborghini st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Lancia mt INNER JOIN Lancia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Lotus mt INNER JOIN Lotus st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:56 AM: NO RESULT with the query: 
+UPDATE Man mt INNER JOIN Man st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Maserati mt INNER JOIN Maserati st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Mazda mt INNER JOIN Mazda st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Mercedes mt INNER JOIN Mercedes st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Mini mt INNER JOIN Mini st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Mitsubishi mt INNER JOIN Mitsubishi st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Mitsubishi_Australia mt INNER JOIN Mitsubishi_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Nissan_Australia mt INNER JOIN Nissan_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Opel mt INNER JOIN Opel st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Peugeot mt INNER JOIN Peugeot st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Porsche mt INNER JOIN Porsche st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Proton mt INNER JOIN Proton st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Ral mt INNER JOIN Ral st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Range_Rover mt INNER JOIN Range_Rover st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Renault mt INNER JOIN Renault st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Rolls_Royce mt INNER JOIN Rolls_Royce st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Rover mt INNER JOIN Rover st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Saab mt INNER JOIN Saab st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Samsung mt INNER JOIN Samsung st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Scania mt INNER JOIN Scania st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Seat mt INNER JOIN Seat st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Skoda mt INNER JOIN Skoda st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Smart mt INNER JOIN Smart st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Ssangyong mt INNER JOIN Ssangyong st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Subaru mt INNER JOIN Subaru st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:57 AM: NO RESULT with the query: 
+UPDATE Suzuki mt INNER JOIN Suzuki st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Toyota_Australia mt INNER JOIN Toyota_Australia st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Vauxhall mt INNER JOIN Vauxhall st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Volvo mt INNER JOIN Volvo st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Audi_VW mt INNER JOIN Audi_VW st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Brilliance_Auto mt INNER JOIN Brilliance_Auto st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE BYD_Auto mt INNER JOIN BYD_Auto st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE JAC mt INNER JOIN JAC st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Geely mt INNER JOIN Geely st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Haima_Auto mt INNER JOIN Haima_Auto st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Saipa mt INNER JOIN Saipa st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode
+1/23/2022 12:11:58 AM: NO RESULT with the query: 
+UPDATE Color_Cards mt INNER JOIN Color_Cards st ON mt.id_formulaz2p = st.id_formula SET mt.code_formulazpp=st.colorCode

@@ -2085,7 +2085,14 @@ Public Class HeadQHome
             End If
 
         End If
-       
+
+        If theGarage.apply_equation Then
+            rdApply0.Checked = False
+            rdApply1.Checked = True
+        Else
+            rdApply0.Checked = True
+            rdApply1.Checked = False
+        End If
         Try
             imageToPreview = Image.FromFile(imgPath)
             'pctCarImg.Image = imageToPreview
